@@ -42,6 +42,18 @@ protected:
 	/** Bound to the horizontal axis */
 	void MoveRightInput(float Val);
 
+	/** Bound to the left vertical axis */
+	void Throttle(float Val);
+
+	/** Bound to the left vertical axis */
+	void Yaw(float Val);
+
+	/** Bound to the left vertical axis */
+	void Pitch(float Val);
+
+	/** Bound to the left vertical axis */
+	void Roll(float Val);
+
 private:
 
 	/** How quickly forward speed changes */
@@ -62,6 +74,9 @@ private:
 
 	/** Current forward speed */
 	float CurrentForwardSpeed;
+
+	float CurrentRightwardSpeed;
+	float CurrentUpwardSpeed;
 
 	/** Current yaw speed */
 	float CurrentYawSpeed;
