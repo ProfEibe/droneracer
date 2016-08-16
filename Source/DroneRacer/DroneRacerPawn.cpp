@@ -37,6 +37,7 @@ ADroneRacerPawn::ADroneRacerPawn()
 	// Set handling parameters
 	Acceleration = 500.f;
 	TurnSpeed = 50.f;
+	TiltSpeed = 50.f;
 	MaxSpeed = 4000.f;
 	MinSpeed = 500.f;
 	CurrentForwardSpeed = 0.f;
@@ -166,7 +167,13 @@ void ADroneRacerPawn::Pitch(float Val)
 	
 	const bool bIsPitching = FMath::Abs(Val) > 0.2f;
 
-	float TargetPitchSpeed = bIsPitching ? Val * TurnSpeed * 0.5f : GetActorRotation().Pitch * -2.f;
+	float TargetTilt = Val * 20.f;
+
+	TargetTilt -= GetActorRotation().Pitch;
+
+
+	float TargetPitchSpeed = bIsPitching ? TargetTilt  : GetActorRotation().Pitch * -2.f;
+	//float TargetPitchSpeed = Val * TiltSpeed;
 	CurrentPitchSpeed = FMath::FInterpTo(CurrentPitchSpeed, TargetPitchSpeed, GetWorld()->GetDeltaSeconds(), 2.f);
 
 	CurrentForwardSpeed = GetActorRotation().Pitch * -Acceleration;
@@ -180,9 +187,14 @@ void ADroneRacerPawn::Roll(float Val)
 	// Is there any left/right input?
 	const bool bIsTurning = FMath::Abs(Val) > 0.2f;
 
+	float TargetTilt = Val * 20.f;
+
+	TargetTilt -= GetActorRotation().Roll;
+
 	// If turning, yaw value is used to influence roll
 	// If not turning, roll to reverse current roll value
-	float TargetRollSpeed = bIsTurning ? ((Val * TurnSpeed) * 0.5f) : (GetActorRotation().Roll * -2.f);
+	//float TargetRollSpeed = bIsTurning ? ((Val * TurnSpeed) * 0.5f) : (GetActorRotation().Roll * -2.f);
+	float TargetRollSpeed = bIsTurning ? TargetTilt : (GetActorRotation().Roll * -2.f);
 
 	// Smoothly interpolate roll speed
 	CurrentRollSpeed = FMath::FInterpTo(CurrentRollSpeed, TargetRollSpeed, GetWorld()->GetDeltaSeconds(), 2.f);

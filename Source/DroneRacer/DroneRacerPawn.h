@@ -64,6 +64,10 @@ private:
 	UPROPERTY(Category=Plane, EditAnywhere)
 	float TurnSpeed;
 
+	/** How quickly the drone can tilt */
+	UPROPERTY(Category = Plane, EditAnywhere)
+	float TiltSpeed;
+
 	/** Max forward speed */
 	UPROPERTY(Category = Pitch, EditAnywhere)
 	float MaxSpeed;
