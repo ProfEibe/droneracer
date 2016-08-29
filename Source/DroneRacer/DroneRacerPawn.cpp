@@ -47,26 +47,23 @@ ADroneRacerPawn::ADroneRacerPawn()
 
 void ADroneRacerPawn::Tick(float DeltaSeconds)
 {
-	const FVector LocalMove = FVector(CurrentForwardSpeed * DeltaSeconds, CurrentRightwardSpeed * DeltaSeconds, CurrentUpwardSpeed * DeltaSeconds);
+	FVector worldOffset;
 
-	// Move plan forwards (with sweep so we stop when we collide with things)
-	//AddActorLocalOffset(LocalMove, true);
-	//AddActorLocalOffset(LocalMove, true);
+	//Move Forward and Right just on XY-Plane and ignore the z-value
+	FVector direction = GetActorForwardVector();
+	direction.Z = 0.f;
+	direction.Normalize();
+	worldOffset = direction * GetActorRotation().Pitch * -Acceleration * DeltaSeconds;
 
-	FVector vec = GetActorRightVector();
-	vec.Z = 0.f;
-	vec.Normalize();
-	FVector final = vec * CurrentRightwardSpeed * DeltaSeconds;
+	direction = GetActorRightVector();
+	direction.Z = 0.f;
+	direction.Normalize();
+	worldOffset += direction * CurrentRightwardSpeed * DeltaSeconds;
 
-	vec = GetActorForwardVector();
-	vec.Z = 0.f;
-	vec.Normalize();
-	final += vec * CurrentForwardSpeed * DeltaSeconds;
+	direction = GetActorUpVector();
+	worldOffset += direction * CurrentUpwardSpeed * DeltaSeconds;
 
-	vec = GetActorUpVector();
-	final += vec * CurrentUpwardSpeed * DeltaSeconds;
-
-	AddActorWorldOffset(final, true);
+	AddActorWorldOffset(worldOffset, true);
 
 	// Calculate change in rotation this frame
 	FRotator DeltaRotation(0,0,0);
@@ -76,6 +73,7 @@ void ADroneRacerPawn::Tick(float DeltaSeconds)
 
 	// Rotate plane
 	AddActorLocalRotation(DeltaRotation);
+	//AddActorWorldRotation(DeltaRotation);
 
 	// Call any parent class Tick implementation
 	Super::Tick(DeltaSeconds);
@@ -95,58 +93,10 @@ void ADroneRacerPawn::SetupPlayerInputComponent(class UInputComponent* InputComp
 {
 	check(InputComponent);
 
-	// Bind our control axis' to callback functions
-	//InputComponent->BindAxis("Thrust", this, &ADroneRacerPawn::ThrustInput);
-	//InputComponent->BindAxis("MoveUp", this, &ADroneRacerPawn::MoveUpInput);
-	//InputComponent->BindAxis("MoveRight", this, &ADroneRacerPawn::MoveRightInput);
-
 	InputComponent->BindAxis("Throttle", this, &ADroneRacerPawn::Throttle);
 	InputComponent->BindAxis("Yaw", this, &ADroneRacerPawn::Yaw);
 	InputComponent->BindAxis("Pitch", this, &ADroneRacerPawn::Pitch);
 	InputComponent->BindAxis("Roll", this, &ADroneRacerPawn::Roll);
-}
-
-void ADroneRacerPawn::ThrustInput(float Val)
-{
-	// Is there no input?
-	bool bHasInput = !FMath::IsNearlyEqual(Val, 0.f);
-	// If input is not held down, reduce speed
-	float CurrentAcc = bHasInput ? (Val * Acceleration) : (-0.5f * Acceleration);
-	// Calculate new speed
-	float NewForwardSpeed = CurrentForwardSpeed + (GetWorld()->GetDeltaSeconds() * CurrentAcc);
-	// Clamp between MinSpeed and MaxSpeed
-	CurrentForwardSpeed = FMath::Clamp(NewForwardSpeed, MinSpeed, MaxSpeed);
-}
-
-void ADroneRacerPawn::MoveUpInput(float Val)
-{
-	// Target pitch speed is based in input
-	float TargetPitchSpeed = (Val * TurnSpeed * -1.f);
-
-	// When steering, we decrease pitch slightly
-	TargetPitchSpeed += (FMath::Abs(CurrentYawSpeed) * -0.2f);
-
-	// Smoothly interpolate to target pitch speed
-	CurrentPitchSpeed = FMath::FInterpTo(CurrentPitchSpeed, TargetPitchSpeed, GetWorld()->GetDeltaSeconds(), 2.f);
-}
-
-void ADroneRacerPawn::MoveRightInput(float Val)
-{
-	// Target yaw speed is based on input
-	float TargetYawSpeed = (Val * TurnSpeed);
-
-	// Smoothly interpolate to target yaw speed
-	CurrentYawSpeed = FMath::FInterpTo(CurrentYawSpeed, TargetYawSpeed, GetWorld()->GetDeltaSeconds(), 2.f);
-
-	// Is there any left/right input?
-	const bool bIsTurning = FMath::Abs(Val) > 0.2f;
-
-	// If turning, yaw value is used to influence roll
-	// If not turning, roll to reverse current roll value
-	float TargetRollSpeed = bIsTurning ? (CurrentYawSpeed * 0.5f) : (GetActorRotation().Roll * -2.f);
-
-	// Smoothly interpolate roll speed
-	CurrentRollSpeed = FMath::FInterpTo(CurrentRollSpeed, TargetRollSpeed, GetWorld()->GetDeltaSeconds(), 2.f);
 }
 
 void ADroneRacerPawn::Throttle(float Val)
@@ -161,46 +111,34 @@ void ADroneRacerPawn::Yaw(float Val)
 
 void ADroneRacerPawn::Pitch(float Val)
 {
-	/*CurrentPitchSpeed = -(Val) * TurnSpeed;
-
-	CurrentForwardSpeed = CurrentPitchSpeed;*/
-	
-	const bool bIsPitching = FMath::Abs(Val) > 0.2f;
-
+	// 20 is how much the drone will tilt (but no degrees)
 	float TargetTilt = Val * 20.f;
 
-	TargetTilt -= GetActorRotation().Pitch;
+	// difference between current rotation and target
+	float TiltDifference = TargetTilt - GetActorRotation().Pitch;
 
+	float TargetPitchSpeed = TiltDifference * 2.5;
 
-	float TargetPitchSpeed = bIsPitching ? TargetTilt  : GetActorRotation().Pitch * -2.f;
-	//float TargetPitchSpeed = Val * TiltSpeed;
+	// Smoothly interpolate roll speed
 	CurrentPitchSpeed = FMath::FInterpTo(CurrentPitchSpeed, TargetPitchSpeed, GetWorld()->GetDeltaSeconds(), 2.f);
 
+	// New speed depends on how much the drone is tilted
 	CurrentForwardSpeed = GetActorRotation().Pitch * -Acceleration;
 }
 
 void ADroneRacerPawn::Roll(float Val)
 {
-	//CurrentRollSpeed = Val * TurnSpeed;
-	
-
-	// Is there any left/right input?
-	const bool bIsTurning = FMath::Abs(Val) > 0.2f;
-
+	// 20 is how much the drone will tilt (but no degrees)
 	float TargetTilt = Val * 20.f;
 
-	TargetTilt -= GetActorRotation().Roll;
+	// difference between current rotation and target
+	float TiltDifference = TargetTilt - GetActorRotation().Roll;
 
-	// If turning, yaw value is used to influence roll
-	// If not turning, roll to reverse current roll value
-	//float TargetRollSpeed = bIsTurning ? ((Val * TurnSpeed) * 0.5f) : (GetActorRotation().Roll * -2.f);
-	float TargetRollSpeed = bIsTurning ? TargetTilt : (GetActorRotation().Roll * -2.f);
+	float TargetRollSpeed = TiltDifference * 2.5;
 
 	// Smoothly interpolate roll speed
 	CurrentRollSpeed = FMath::FInterpTo(CurrentRollSpeed, TargetRollSpeed, GetWorld()->GetDeltaSeconds(), 2.f);
 
-	//CurrentRightwardSpeed = bIsTurning ? CurrentRollSpeed*100 : 0.f;
-
-	// 100 noch durch geeigneteren Wert ersetzen.
+	// New speed depends on how much the drone is tilted
 	CurrentRightwardSpeed = GetActorRotation().Roll * Acceleration;
 }

@@ -33,15 +33,6 @@ protected:
 	virtual void SetupPlayerInputComponent(class UInputComponent* InputComponent) override; // Allows binding actions/axes to functions
 	// End APawn overrides
 
-	/** Bound to the thrust axis */
-	void ThrustInput(float Val);
-	
-	/** Bound to the vertical axis */
-	void MoveUpInput(float Val);
-
-	/** Bound to the horizontal axis */
-	void MoveRightInput(float Val);
-
 	/** Bound to the left vertical axis */
 	void Throttle(float Val);
 
