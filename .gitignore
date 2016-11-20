@@ -60,3 +60,6 @@ Intermediate/*
 
 # Cache files for the editor to use
 DerivedDataCache/*
+
+#editor settings per user
+Config/DefaultEditorPerProjectUserSettings.ini
