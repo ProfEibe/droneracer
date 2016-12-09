@@ -6,6 +6,7 @@
 *.lo
 *.o
 *.obj
+*.VC.db
 
 # Precompiled Headers
 *.gch
