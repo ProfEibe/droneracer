@@ -1,1 +1,13 @@
 *.umap filter=lfs diff=lfs merge=lfs -text
+Content/Level/ filter=lfs diff=lfs merge=lfs -text
+Content/Level/Elven.uasset filter=lfs diff=lfs merge=lfs -text
+Content/Level/ElvenRuins.umap filter=lfs diff=lfs merge=lfs -text
+Content/Level/ElvenRuins_BuiltData.uasset filter=lfs diff=lfs merge=lfs -text
+Content/Level/ElvenRuinsData.umap filter=lfs diff=lfs merge=lfs -text
+Content/Level/ElvenRuinsData_BuiltData.uasset filter=lfs diff=lfs merge=lfs -text
+Content/Level/LevelContent filter=lfs diff=lfs merge=lfs -text
+Content/Level/Loading.umap filter=lfs diff=lfs merge=lfs -text
+Content/Level/MainMenu.umap filter=lfs diff=lfs merge=lfs -text
+Content/Level/MiniGame.umap filter=lfs diff=lfs merge=lfs -text
+Content/Level/MiniGame_BuiltData.uasset filter=lfs diff=lfs merge=lfs -text
+Content/Level/Test.uasset filter=lfs diff=lfs merge=lfs -text
