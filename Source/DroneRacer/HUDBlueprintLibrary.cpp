@@ -2,17 +2,18 @@
 
 #include "DroneRacer.h"
 #include "HUDBlueprintLibrary.h"
+#include "WidgetLayoutLibrary.h"
 
 //Todo: https://forums.unrealengine.com/showthread.php?59398-Easy-Offscreen-Indicator-Blueprint-Node&p=489106&viewfull=1#post489106
 
 
-void UHUDBlueprintLibrary::FindScreenEdgeLocationForWorldLocation(UObject* WorldContextObject, const FVector& InLocation, const int PlayerID, const float EdgePercent, FVector2D& OutScreenPosition, float& OutRotationAngleDegrees, bool &bIsOnScreen)
+void UHUDBlueprintLibrary::FindScreenEdgeLocationForWorldLocation(UObject* WorldContextObject, const FVector& InLocation, const FVector2D& InViewportSize, const int PlayerID, const float EdgePercent, FVector2D& OutScreenPosition, float& OutRotationAngleDegrees, bool &bIsOnScreen)
 {
 	bIsOnScreen = false;
 	OutRotationAngleDegrees = 0.f;
 	FVector2D *ScreenPosition = new FVector2D();
 
-	const FVector2D ViewportSize = FVector2D(GEngine->GameViewport->Viewport->GetSizeXY());
+	const FVector2D ViewportSize = InViewportSize;// FVector2D(GEngine->GameViewport->Viewport->GetSizeXY());
 	const FVector2D  ViewportCenter = FVector2D(ViewportSize.X / 2, ViewportSize.Y / 2);
 
 	UWorld* World = GEngine->GetWorldFromContextObject(WorldContextObject);
@@ -49,7 +50,7 @@ void UHUDBlueprintLibrary::FindScreenEdgeLocationForWorldLocation(UObject* World
 		ScreenPosition->X = -ViewportCenter.X - ScreenPosition->X;
 	}
 
-	PlayerController->ProjectWorldLocationToScreen(InLocation, *ScreenPosition);
+	UWidgetLayoutLibrary::ProjectWorldLocationToWidgetPosition(PlayerController, InLocation, *ScreenPosition);
 
 	// Check to see if it's on screen. If it is, ProjectWorldLocationToScreen is all we need, return it.
 	if (ScreenPosition->X >= 0.f && ScreenPosition->X <= ViewportSize.X
