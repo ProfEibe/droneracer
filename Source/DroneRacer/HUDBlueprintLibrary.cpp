@@ -3,10 +3,10 @@
 #include "DroneRacer.h"
 #include "HUDBlueprintLibrary.h"
 
+//Todo: https://forums.unrealengine.com/showthread.php?59398-Easy-Offscreen-Indicator-Blueprint-Node&p=489106&viewfull=1#post489106
 
 
-
-void UHUDBlueprintLibrary::FindScreenEdgeLocationForWorldLocation(UObject* WorldContextObject, const FVector& InLocation, const float EdgePercent, FVector2D& OutScreenPosition, float& OutRotationAngleDegrees, bool &bIsOnScreen)
+void UHUDBlueprintLibrary::FindScreenEdgeLocationForWorldLocation(UObject* WorldContextObject, const FVector& InLocation, const int PlayerID, const float EdgePercent, FVector2D& OutScreenPosition, float& OutRotationAngleDegrees, bool &bIsOnScreen)
 {
 	bIsOnScreen = false;
 	OutRotationAngleDegrees = 0.f;
@@ -19,14 +19,14 @@ void UHUDBlueprintLibrary::FindScreenEdgeLocationForWorldLocation(UObject* World
 
 	if (!World) return;
 
-	APlayerController* PlayerController = (WorldContextObject ? UGameplayStatics::GetPlayerController(WorldContextObject, 0) : NULL);
+	APlayerController* PlayerController = (WorldContextObject ? UGameplayStatics::GetPlayerController(WorldContextObject, PlayerID) : NULL);
 	ACharacter *PlayerCharacter = static_cast<ACharacter *> (PlayerController->GetPawn());
 
 	if (!PlayerCharacter) return;
 
 
 	FVector Forward = PlayerCharacter->GetActorForwardVector();
-	FVector Offset = (InLocation - PlayerCharacter->GetActorLocation()).GetSafeNormal(); //.SafeNormal(); <- original depricated version
+	FVector Offset = (InLocation - PlayerCharacter->GetActorLocation()).GetSafeNormal();
 
 	float DotProduct = FVector::DotProduct(Forward, Offset);
 	bool bLocationIsBehindCamera = (DotProduct < 0);
