@@ -64,3 +64,12 @@ DerivedDataCache/*
 
 #editor settings per user
 Config/DefaultEditorPerProjectUserSettings.ini
+
+# Wwise
+*.akd
+*.prof
+*.wem
+*.validationcache
+droneracer_WwiseProject/.cache/
+droneracer_WwiseProject/SoundBanks/
+
