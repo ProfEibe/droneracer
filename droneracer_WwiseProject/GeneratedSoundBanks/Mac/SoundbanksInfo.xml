@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="11" SoundbankVersion="120">
+	<RootPaths>
+		<ProjectRoot>D:\simon\droneracer\droneracer_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>D:\simon\droneracer\droneracer_WwiseProject\.cache\Mac\</SourceFilesRoot>
+		<SoundBanksRoot>D:\simon\droneracer\droneracer_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>D:\simon\droneracer\droneracer_WwiseProject\GeneratedSoundBanks\Mac\</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="1831431028" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\TestSoundbank</ObjectPath>
+			<ShortName>TestSoundbank</ShortName>
+			<Path>TestSoundbank.bnk</Path>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>
