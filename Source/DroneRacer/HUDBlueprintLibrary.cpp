@@ -7,7 +7,7 @@
 //Todo: https://forums.unrealengine.com/showthread.php?59398-Easy-Offscreen-Indicator-Blueprint-Node&p=489106&viewfull=1#post489106
 
 
-void UHUDBlueprintLibrary::FindScreenEdgeLocationForWorldLocation(UObject* WorldContextObject, const FVector& InLocation, const FVector2D& InViewportSize, const int PlayerID, const float EdgePercent, FVector2D& OutScreenPosition, float& OutRotationAngleDegrees, bool &bIsOnScreen)
+void UHUDBlueprintLibrary::FindScreenEdgeLocationForWorldLocation(UObject* WorldContextObject, const FVector& InLocation, const FVector2D& InViewportSize, const FVector2D& InOffset, const int PlayerID, const float EdgePercent, FVector2D& OutScreenPosition, float& OutRotationAngleDegrees, bool &bIsOnScreen)
 {
 	bIsOnScreen = false;
 	OutRotationAngleDegrees = 0.f;
@@ -34,11 +34,14 @@ void UHUDBlueprintLibrary::FindScreenEdgeLocationForWorldLocation(UObject* World
 
 	//PlayerController->ProjectWorldLocationToScreen(InLocation, *m_ScreenPosition);
 
+	m_ScreenPosition += InOffset;
+
 	if (m_ScreenPosition.X == 0.0f)
 	{
 		FVector location = FMath::Lerp(InLocation, m_PlayerLocation, 10.0f);
 		UWidgetLayoutLibrary::ProjectWorldLocationToWidgetPosition(m_PlayerController, location, m_ScreenPosition);
 		//m_PlayerController->ProjectWorldLocationToScreen(location, m_ScreenPosition);
+		m_ScreenPosition += InOffset;
 		m_invert = -1.0f;
 		m_rotateInvert = 180.0f;
 	}
