@@ -11,7 +11,7 @@ void UHUDBlueprintLibrary::FindScreenEdgeLocationForWorldLocation(UObject* World
 {
 	bIsOnScreen = false;
 	OutRotationAngleDegrees = 0.f;
-	FVector2D m_ScreenPosition = FVector2D(); //Todo: Check if the new is necessary
+	FVector2D m_ScreenPosition = FVector2D();
 
 	const FVector2D m_ViewportSize = InViewportSize;// FVector2D(GEngine->GameViewport->Viewport->GetSizeXY());
 	const FVector2D  m_ViewportCenter = FVector2D(m_ViewportSize.X / 2, m_ViewportSize.Y / 2);
@@ -37,7 +37,8 @@ void UHUDBlueprintLibrary::FindScreenEdgeLocationForWorldLocation(UObject* World
 	if (m_ScreenPosition.X == 0.0f)
 	{
 		FVector location = FMath::Lerp(InLocation, m_PlayerLocation, 10.0f);
-		m_PlayerController->ProjectWorldLocationToScreen(location, m_ScreenPosition);
+		UWidgetLayoutLibrary::ProjectWorldLocationToWidgetPosition(m_PlayerController, location, m_ScreenPosition);
+		//m_PlayerController->ProjectWorldLocationToScreen(location, m_ScreenPosition);
 		m_invert = -1.0f;
 		m_rotateInvert = 180.0f;
 	}
@@ -59,8 +60,7 @@ void UHUDBlueprintLibrary::FindScreenEdgeLocationForWorldLocation(UObject* World
 	float m_AngleRadians = FMath::Atan2(m_ScreenPosition.Y, m_ScreenPosition.X);
 	m_AngleRadians -= FMath::DegreesToRadians(90.f);
 
-	OutRotationAngleDegrees = FMath::RadiansToDegrees(m_AngleRadians) + 180.f;
-	OutRotationAngleDegrees += m_rotateInvert;
+	OutRotationAngleDegrees = FMath::RadiansToDegrees(m_AngleRadians) + 180.f + m_rotateInvert;
 
 	float m_cos = cosf(m_AngleRadians);
 	float m_sin = -sinf(m_AngleRadians);
