@@ -1,6 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{0F4CDF52-A7A7-49AA-A882-4F3929457885}" SchemaVersion="75">
 	<Events>
-		<WorkUnit Name="Default Work Unit" ID="{0F4CDF52-A7A7-49AA-A882-4F3929457885}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{0F4CDF52-A7A7-49AA-A882-4F3929457885}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Test_Event" ID="{E68F2740-C64A-44F1-A73F-AF868082FC65}">
+					<ChildrenList>
+						<Action Name="Play" ID="{D4784CBB-0836-40BA-9440-39F392DC7BEF}" ShortID="190920758" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{D50421A3-DD9D-40BB-98CC-B02F9D0F91EF}" Global="false">
+									<ObjectRef Name="TestSound" ID="{EFD0B282-D1BB-4C99-A98D-FC51647E0DCA}" WorkUnitID="{B33FD0F6-CF51-4FF7-A492-F0EBF04F911E}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Ping_Event" ID="{14F1AA1B-CFAF-4653-A357-CEAA2B668B5C}">
+					<ChildrenList>
+						<Action Name="Play" ID="{BC6BBDB2-3188-4AFA-B001-0179070E894F}" ShortID="802125237" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{A59BEABF-7B1F-49AE-89F9-1335D2CA56A8}" Global="false">
+									<ObjectRef Name="TestSound2" ID="{474DC252-F01C-40DD-938B-836CD092BDB6}" WorkUnitID="{B33FD0F6-CF51-4FF7-A492-F0EBF04F911E}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>

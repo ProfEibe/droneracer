@@ -1,0 +1,8 @@
+Event	ID	Name			Wwise Object Path	Notes
+	444354436	Ping_Event			\Default Work Unit\Ping_Event	
+	4258653052	Test_Event			\Default Work Unit\Test_Event	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	243401893	TestSound	C:\Users\Simon\git\droneracer\droneracer_WwiseProject\.cache\Mac\SFX\126737__sbordage__greece-boat-piraeus_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\TestSound		12191164
+	455575005	TestSound2	C:\Users\Simon\git\droneracer\droneracer_WwiseProject\.cache\Mac\SFX\51702__bristolstories__ping_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\TestSound2		599104
+

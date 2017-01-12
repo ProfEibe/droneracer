@@ -1,0 +1,2 @@
+MySoundbank	"Test_Event"
+MySoundbank	"Ping_Event"

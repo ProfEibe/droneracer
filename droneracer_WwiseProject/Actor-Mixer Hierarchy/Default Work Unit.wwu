@@ -1,6 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{B33FD0F6-CF51-4FF7-A492-F0EBF04F911E}" SchemaVersion="75">
 	<AudioObjects>
-		<WorkUnit Name="Default Work Unit" ID="{B33FD0F6-CF51-4FF7-A492-F0EBF04F911E}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{B33FD0F6-CF51-4FF7-A492-F0EBF04F911E}" PersistMode="Standalone">
+			<ChildrenList>
+				<Sound Name="TestSound" ID="{EFD0B282-D1BB-4C99-A98D-FC51647E0DCA}" ShortID="289857629" Type="SoundFX">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{41DBD92B-210E-447B-B657-6FB8A3CA2457}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{52B2FD31-8DCF-446B-9FDA-6A26C766E440}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="126737__sbordage__greece-boat-piraeus" ID="{FAF1C5BF-406A-4550-9DD1-D6F48420FBAA}" ShortID="243401893">
+							<Language>SFX</Language>
+							<AudioFile>126737__sbordage__greece-boat-piraeus.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="126737__sbordage__greece-boat-piraeus" ID="{FAF1C5BF-406A-4550-9DD1-D6F48420FBAA}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="TestSound2" ID="{474DC252-F01C-40DD-938B-836CD092BDB6}" ShortID="1055655044" Type="SoundFX">
+					<PropertyList>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{E1110BD3-3A56-4275-B74E-4229E37B3EC6}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="101"/>
+											<Property Name="Min" Type="Real64" Value="-112"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-7</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{41DBD92B-210E-447B-B657-6FB8A3CA2457}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{52B2FD31-8DCF-446B-9FDA-6A26C766E440}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="51702__bristolstories__ping" ID="{55F2E8FB-9480-4D74-810C-8C1068B26832}" ShortID="455575005">
+							<Language>SFX</Language>
+							<AudioFile>51702__bristolstories__ping.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="51702__bristolstories__ping" ID="{55F2E8FB-9480-4D74-810C-8C1068B26832}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
 	</AudioObjects>
 </WwiseDocument>
