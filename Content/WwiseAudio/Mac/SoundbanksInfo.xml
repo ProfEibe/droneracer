@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="11" SoundbankVersion="120">
+	<RootPaths>
+		<ProjectRoot>D:\simon\droneracer\droneracer_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>D:\simon\droneracer\droneracer_WwiseProject\.cache\Mac\</SourceFilesRoot>
+		<SoundBanksRoot>D:\simon\droneracer\Content\WwiseAudio\Mac\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>D:\simon\droneracer\droneracer_WwiseProject\GeneratedSoundBanks\Mac\</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="1831431028" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\TestSoundbank</ObjectPath>
+			<ShortName>TestSoundbank</ShortName>
+			<Path>TestSoundbank.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="2175497913" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\EventAudiobank</ObjectPath>
+			<ShortName>EventAudiobank</ShortName>
+			<Path>EventAudiobank.bnk</Path>
+			<IncludedEvents>
+				<Event Id="4258653052" Name="Test_Event" ObjectPath="\Events\Default Work Unit\Test_Event"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="901782627" Language="SFX">
+					<ShortName>51702__bristolstories__ping.wav</ShortName>
+					<Path>SFX\51702__bristolstories__ping_9E69E797.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

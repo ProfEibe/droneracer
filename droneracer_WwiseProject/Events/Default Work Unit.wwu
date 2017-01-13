@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{0F4CDF52-A7A7-49AA-A882-4F3929457885}" SchemaVersion="75">
+<WwiseDocument Type="WorkUnit" ID="{FE9FA619-B4F3-44FE-AA5A-2133C79B14EB}" SchemaVersion="75">
 	<Events>
-		<WorkUnit Name="Default Work Unit" ID="{0F4CDF52-A7A7-49AA-A882-4F3929457885}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{FE9FA619-B4F3-44FE-AA5A-2133C79B14EB}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Test_Event" ID="{C3103138-0145-4CBE-A7C5-06DA691BA91A}">
+					<ChildrenList>
+						<Action Name="Play" ID="{2D484AF8-A593-4D43-8FF0-68D902590768}" ShortID="5704410" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{0021DF12-29FB-49F2-809E-21AD2674044A}" Global="false">
+									<ObjectRef Name="51702__bristolstories__ping" ID="{6340AF50-A3A7-4122-BCBD-B3F03B3987CF}" WorkUnitID="{3AA95F97-CDF6-4AA3-B1A6-707722341C4C}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>

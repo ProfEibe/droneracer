@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	4258653052	Test_Event			\Default Work Unit\Test_Event	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	901782627	51702__bristolstories__ping	D:\simon\droneracer\droneracer_WwiseProject\.cache\Windows\SFX\51702__bristolstories__ping_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\51702__bristolstories__ping		599104
+
