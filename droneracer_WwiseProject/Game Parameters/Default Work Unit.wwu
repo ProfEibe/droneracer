@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{AD9FD42C-1C58-4727-B5D4-ADC87B1F0477}" SchemaVersion="75">
 	<GameParameters>
-		<WorkUnit Name="Default Work Unit" ID="{AD9FD42C-1C58-4727-B5D4-ADC87B1F0477}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{AD9FD42C-1C58-4727-B5D4-ADC87B1F0477}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="TestRPC" ID="{C669CA87-2718-4906-8EB2-F8CCF7C460E0}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="1000"/>
+						<Property Name="Max" Type="Real64" Value="2000"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
 	</GameParameters>
 </WwiseDocument>

@@ -42,6 +42,135 @@
 						<ActiveSource Name="51702__bristolstories__ping" ID="{9A1E1AF8-7280-4191-BE49-CDCFE7BF6BB7}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<BlendContainer Name="TestBlend" ID="{1F85BA4A-02FE-43EC-A487-472781B6A452}" ShortID="133063672">
+					<PropertyList>
+						<Property Name="BlendBehavior" Type="int16" Value="1"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E3FC3A9A-A97B-4FEC-953B-2F0E612EA0C8}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{31155A21-00E1-45E7-99BD-596CF82742A7}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="helicopter-interior-no-rotor" ID="{6EF88774-1A07-438D-A559-334238CD87E8}" ShortID="995546843" Type="SoundFX">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{635CBD5A-9C65-480B-BF67-FC4B664EC23A}"/>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E3FC3A9A-A97B-4FEC-953B-2F0E612EA0C8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{31155A21-00E1-45E7-99BD-596CF82742A7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="helicopter-interior-no-rotor" ID="{65470ADA-AD58-41EF-9D6B-CED8D1A32940}" ShortID="241608803">
+									<Language>SFX</Language>
+									<AudioFile>helicopter-interior-no-rotor.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="helicopter-interior-no-rotor" ID="{65470ADA-AD58-41EF-9D6B-CED8D1A32940}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="greece-boat-piraeus" ID="{0A7BF82D-1D5A-4278-9C89-6B8ECA56D932}" ShortID="461945219" Type="SoundFX">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E3FC3A9A-A97B-4FEC-953B-2F0E612EA0C8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{31155A21-00E1-45E7-99BD-596CF82742A7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="greece-boat-piraeus" ID="{25387577-036E-43C6-9A76-36CC68E3BDF4}" ShortID="141459998">
+									<Language>SFX</Language>
+									<AudioFile>greece-boat-piraeus.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="greece-boat-piraeus" ID="{25387577-036E-43C6-9A76-36CC68E3BDF4}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="343690__elementrs2__helicopter2" ID="{0B686FA6-1D7E-48BF-BACB-ABE8BDE80AA0}" ShortID="603523431" Type="SoundFX">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E3FC3A9A-A97B-4FEC-953B-2F0E612EA0C8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{31155A21-00E1-45E7-99BD-596CF82742A7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="343690__elementrs2__helicopter2" ID="{DB63C1DB-14B1-4D0A-90FA-576C969711CF}" ShortID="1072481934">
+									<Language>SFX</Language>
+									<AudioFile>343690__elementrs2__helicopter2.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="343690__elementrs2__helicopter2" ID="{DB63C1DB-14B1-4D0A-90FA-576C969711CF}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+					<BlendTrackList>
+						<BlendTrack Name="New Blend Track" ID="{A0B1C57C-1AEF-4A76-90CD-C8FE55AEA53D}" ShortID="683314617">
+							<PropertyList>
+								<Property Name="EnableCrossFading" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="LayerCrossFadeControlInput">
+									<ObjectRef Name="TestRPC" ID="{C669CA87-2718-4906-8EB2-F8CCF7C460E0}" WorkUnitID="{AD9FD42C-1C58-4727-B5D4-ADC87B1F0477}"/>
+								</Reference>
+							</ReferenceList>
+							<BlendTrackAssocList>
+								<BlendTrackAssoc>
+									<ItemRef Name="greece-boat-piraeus" ID="{0A7BF82D-1D5A-4278-9C89-6B8ECA56D932}"/>
+									<CrossfadingInfo>
+										<LeftEdgePos>0</LeftEdgePos>
+										<LeftFadingMode>Automatic</LeftFadingMode>
+										<RightEdgePos>796.603152106466</RightEdgePos>
+										<RightFadingMode>Automatic</RightFadingMode>
+									</CrossfadingInfo>
+								</BlendTrackAssoc>
+								<BlendTrackAssoc>
+									<ItemRef Name="343690__elementrs2__helicopter2" ID="{0B686FA6-1D7E-48BF-BACB-ABE8BDE80AA0}"/>
+									<CrossfadingInfo>
+										<LeftEdgePos>0.0005</LeftEdgePos>
+										<LeftFadingMode>Automatic</LeftFadingMode>
+										<RightEdgePos>1246.11336995836</RightEdgePos>
+										<RightFadingMode>Automatic</RightFadingMode>
+									</CrossfadingInfo>
+								</BlendTrackAssoc>
+								<BlendTrackAssoc>
+									<ItemRef Name="helicopter-interior-no-rotor" ID="{6EF88774-1A07-438D-A559-334238CD87E8}"/>
+									<CrossfadingInfo>
+										<LeftEdgePos>1021.94637773514</LeftEdgePos>
+										<LeftFadingMode>Automatic</LeftFadingMode>
+										<RightEdgePos>2000</RightEdgePos>
+										<RightFadingMode>Automatic</RightFadingMode>
+									</CrossfadingInfo>
+								</BlendTrackAssoc>
+							</BlendTrackAssocList>
+						</BlendTrack>
+					</BlendTrackList>
+				</BlendContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

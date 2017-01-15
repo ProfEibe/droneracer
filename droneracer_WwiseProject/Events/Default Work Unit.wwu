@@ -14,6 +14,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Start_Helicopter" ID="{B520304E-0215-4C6F-847A-070833B8F89A}">
+					<ChildrenList>
+						<Action Name="Play" ID="{B92DF75C-1F33-458D-88BC-8C105A8C2802}" ShortID="773613663" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{8AB8A0C9-1282-45C7-86C5-133FFE358AEA}" Global="false">
+									<ObjectRef Name="TestBlend" ID="{1F85BA4A-02FE-43EC-A487-472781B6A452}" WorkUnitID="{3AA95F97-CDF6-4AA3-B1A6-707722341C4C}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
