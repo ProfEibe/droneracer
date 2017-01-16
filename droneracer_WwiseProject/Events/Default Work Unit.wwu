@@ -25,6 +25,7 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="aud_shot_rocket" ID="{C820F2C3-9271-40B3-A748-5FBFBCBE1FDB}"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

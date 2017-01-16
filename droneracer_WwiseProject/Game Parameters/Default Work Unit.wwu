@@ -9,6 +9,7 @@
 						<Property Name="Max" Type="Real64" Value="2000"/>
 					</PropertyList>
 				</GameParameter>
+				<GameParameter Name="test132" ID="{1D2C6D4A-67F4-404C-9B09-A66A0B27917A}"/>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>
