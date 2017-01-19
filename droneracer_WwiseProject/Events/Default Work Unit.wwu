@@ -98,6 +98,143 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Folder Name="drone" ID="{0F1E8D92-A3E6-499B-9D5C-02FF06EE72A6}" ShortID="543438209">
+					<ChildrenList>
+						<Event Name="drone_flight" ID="{ECE999C4-8F84-4EA9-AC6B-DE3A29D1C3F7}">
+							<ChildrenList>
+								<Action Name="Play" ID="{FF638A46-AB2D-47E8-BECE-64E9BDF309F2}" ShortID="34005427" Type="Play" Scope="One" Global="false"/>
+							</ChildrenList>
+						</Event>
+						<Event Name="drone_launch_wall" ID="{BEF03A6F-3113-4568-932B-7180A35CA654}">
+							<ChildrenList>
+								<Action Name="Play" ID="{1D5EBED4-66AF-4F1A-BEB6-77F9032410A4}" ShortID="729232649" Type="Play" Scope="One" Global="false"/>
+							</ChildrenList>
+						</Event>
+						<Event Name="drone_launch_rocket" ID="{41F8B691-ED1F-4AF7-8387-063F1795CDAD}">
+							<ChildrenList>
+								<Action Name="Play" ID="{57988EFF-3C39-4DF9-931F-24E88C70F950}" ShortID="1026998994" Type="Play" Scope="One" Global="false"/>
+							</ChildrenList>
+						</Event>
+						<Event Name="drone_launch_emp" ID="{E87E2756-8202-437F-A593-A225FE5F5BB0}">
+							<ChildrenList>
+								<Action Name="Play" ID="{4E38C830-71F7-4F76-B171-190D64220039}" ShortID="503778334" Type="Play" Scope="One" Global="false"/>
+							</ChildrenList>
+						</Event>
+						<Event Name="emp_finish" ID="{BC3DCF44-931E-4AC3-AA1B-33DB0C341CDC}">
+							<ChildrenList>
+								<Action Name="Play" ID="{852023D2-0A30-49A7-9DD4-7A289D99A540}" ShortID="598904370" Type="Play" Scope="One" Global="false"/>
+							</ChildrenList>
+						</Event>
+						<Event Name="drone_launch_glass" ID="{CBD7A0EC-DA4E-4857-895F-872F6ED2CA55}">
+							<ChildrenList>
+								<Action Name="Play" ID="{635D463A-349A-4493-9912-5AD7C4DA76E3}" ShortID="770821674" Type="Play" Scope="One" Global="false"/>
+							</ChildrenList>
+						</Event>
+						<Event Name="glass_break" ID="{3C1E8EBD-D741-48C3-B048-CD0E544CD4E4}">
+							<ChildrenList>
+								<Action Name="Play" ID="{8A5CFC4E-9A23-40BB-8CF1-7999EEFF7C62}" ShortID="220596732" Type="Play" Scope="One" Global="false"/>
+							</ChildrenList>
+						</Event>
+						<Event Name="wall_break" ID="{097F6B50-6960-4501-8ABC-28E90781BF3C}">
+							<ChildrenList>
+								<Action Name="Play" ID="{28516E6F-41DD-4F4F-8D8D-20657FD345FA}" ShortID="182527450" Type="Play" Scope="One" Global="false"/>
+							</ChildrenList>
+						</Event>
+						<Event Name="drone_launch_magnet" ID="{03B87FB2-C198-4485-BC6B-1E5E0CA0C65F}">
+							<ChildrenList>
+								<Action Name="Play" ID="{B2E33392-5668-4F47-9DC6-2B5CA3500D0E}" ShortID="846620435" Type="Play" Scope="One" Global="false"/>
+							</ChildrenList>
+						</Event>
+						<Event Name="magnet_finish" ID="{19C1F62B-6534-4324-BBE3-263D27EA2C7C}">
+							<ChildrenList>
+								<Action Name="Play" ID="{1DAC25B5-3219-4A2B-8EDB-DFB330BB1EAE}" ShortID="628049883" Type="Play" Scope="One" Global="false"/>
+							</ChildrenList>
+						</Event>
+						<Event Name="drone_launch_boost_refill" ID="{AD4854CF-C3CE-4208-A924-F264B493C8AD}">
+							<ChildrenList>
+								<Action Name="Play" ID="{A0B188AC-6A7C-4D77-BF60-B4A64F780741}" ShortID="492848974" Type="Play" Scope="One" Global="false"/>
+							</ChildrenList>
+						</Event>
+						<Event Name="drone_checkpoint_correct" ID="{3237543D-E38F-4ACA-85FE-864D8DF8E37A}">
+							<ChildrenList>
+								<Action Name="Play" ID="{761CFA9D-E4D4-4ABF-8A86-4F24320497C8}" ShortID="579734624" Type="Play" Scope="One" Global="false"/>
+							</ChildrenList>
+						</Event>
+						<Event Name="drone_checkpoint_wrong" ID="{F8365BC3-E170-4245-8042-6BF594465E44}">
+							<ChildrenList>
+								<Action Name="Play" ID="{E892CC42-2B0A-400E-8657-0D48FF12D0E5}" ShortID="173835769" Type="Play" Scope="One" Global="false"/>
+							</ChildrenList>
+						</Event>
+						<Event Name="rocket_explosion" ID="{402C78FC-0ED2-4C12-92F3-C13BE6384712}">
+							<ChildrenList>
+								<Action Name="Play" ID="{BA65BC13-9A29-4B58-A42F-D818240C5B0A}" ShortID="294714035" Type="Play" Scope="One" Global="false"/>
+							</ChildrenList>
+						</Event>
+						<Event Name="drone_crash" ID="{8E331221-4BCE-43DB-8008-3C78D4A19D67}">
+							<ChildrenList>
+								<Action Name="Play" ID="{1B3FC25A-338C-4F05-B6E0-495FB926DF7E}" ShortID="1067196553" Type="Play" Scope="One" Global="false"/>
+							</ChildrenList>
+						</Event>
+						<Event Name="speedtunnel_tunnel_sound" ID="{A10AB0D0-1CD7-4E82-BDFE-49A1F6F24305}">
+							<ChildrenList>
+								<Action Name="Play" ID="{6C7C0571-17D6-49EE-A03D-9E6B39E4E700}" ShortID="428849521" Type="Play" Scope="One" Global="false"/>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="ui" ID="{F4960B81-7C81-4853-9341-7D4705DDFC31}" ShortID="575443018">
+					<ChildrenList>
+						<Event Name="ui_menu_click" ID="{23530B83-2217-4142-9B2F-176158F7EAE5}">
+							<ChildrenList>
+								<Action Name="Play" ID="{C7B58A9E-F9E8-4B37-87AF-6715E35A9559}" ShortID="651187850" Type="Play" Scope="One" Global="false"/>
+							</ChildrenList>
+						</Event>
+						<Event Name="ui_menu_hover" ID="{5C842633-EBB3-4335-AD64-EA5033891E50}">
+							<ChildrenList>
+								<Action Name="Play" ID="{BE690D0B-26CE-434F-A6CC-E00A14245B71}" ShortID="7110683" Type="Play" Scope="One" Global="false"/>
+							</ChildrenList>
+						</Event>
+						<Event Name="ui_menu_start_game" ID="{F541F505-6317-4264-8989-0FE3AE17499F}">
+							<ChildrenList>
+								<Action Name="Play" ID="{31BFB4F7-C2F9-46BC-882C-9491658E31C6}" ShortID="429174691" Type="Play" Scope="One" Global="false"/>
+							</ChildrenList>
+						</Event>
+						<Event Name="ui_menu_start_race" ID="{58BC1572-C1AE-4124-9648-653CD17FE8CF}">
+							<ChildrenList>
+								<Action Name="Play" ID="{99C5185A-3F2B-489E-8542-704F41C7B223}" ShortID="826747648" Type="Play" Scope="One" Global="false"/>
+							</ChildrenList>
+						</Event>
+						<Event Name="ui_menu_finishline" ID="{A23B18E6-8480-4E75-8FEE-FF7F547E6CB6}">
+							<ChildrenList>
+								<Action Name="Play" ID="{CDBF4591-7678-453B-88CB-B9A648C5C671}" ShortID="942157215" Type="Play" Scope="One" Global="false"/>
+							</ChildrenList>
+						</Event>
+						<Event Name="ui_pickup_shuffle" ID="{22A0A8A0-D9A5-403D-BFCA-929014EC3FED}">
+							<ChildrenList>
+								<Action Name="Play" ID="{B96BC133-7AE4-4DB6-B66E-2BBB0610E963}" ShortID="974134029" Type="Play" Scope="One" Global="false"/>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="fireworks" ID="{E9B90E73-3B00-4ABC-9CD1-E26CBEB419CF}" ShortID="15811693">
+					<ChildrenList>
+						<Event Name="fireworks_launch_rocket" ID="{34D3CF68-34B9-4AF5-BD4A-112E0730677C}">
+							<ChildrenList>
+								<Action Name="Play" ID="{9D5A7D49-9EAA-40E5-9649-39A84C0CD112}" ShortID="266098426" Type="Play" Scope="One" Global="false"/>
+							</ChildrenList>
+						</Event>
+						<Event Name="fireworks_explode_level1" ID="{6D8FCB05-CDAF-4AC5-9490-08880FA259A6}">
+							<ChildrenList>
+								<Action Name="Play" ID="{60B08E89-F42A-4AC1-B890-90BE74E65229}" ShortID="177832933" Type="Play" Scope="One" Global="false"/>
+							</ChildrenList>
+						</Event>
+						<Event Name="fireworks_explode_level2" ID="{D1442E03-2F97-439B-81AD-74CAFAC3F0D5}">
+							<ChildrenList>
+								<Action Name="Play" ID="{61E8239F-B09E-4861-8687-798C35315BA3}" ShortID="53919420" Type="Play" Scope="One" Global="false"/>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
