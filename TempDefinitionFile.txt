@@ -1,1 +1,7 @@
 EventAudiobank	"Test_Event"
+EventAudiobank	"Start_Helicopter"
+EventAudiobank	"Play_aud_ambience_wind"
+EventAudiobank	"aud_shot_rocket"
+EventAudiobank	"Stop_aud_ambience_water"
+EventAudiobank	"Play_aud_ambience_water"
+EventAudiobank	"Play_aud_ambience_ruins"

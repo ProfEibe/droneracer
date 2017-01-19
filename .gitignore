@@ -73,3 +73,5 @@ Config/DefaultEditorPerProjectUserSettings.ini
 droneracer_WwiseProject/.cache/
 droneracer_WwiseProject/SoundBanks/
 
+Plugins/Wwise/Intermediate/
+Plugins/Wwise/Binaries/

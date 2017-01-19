@@ -1,6 +1,23 @@
 Event	ID	Name			Wwise Object Path	Notes
+	1503943207	Play_aud_ambience_water			\Default Work Unit\Play_aud_ambience_water	
+	1844586475	aud_shot_rocket			\Default Work Unit\aud_shot_rocket	
+	2304818536	Play_aud_ambience_wind			\Default Work Unit\Play_aud_ambience_wind	
+	2759331785	Start_Helicopter			\Default Work Unit\Start_Helicopter	
+	3158370847	Play_aud_ambience_ruins			\Default Work Unit\Play_aud_ambience_ruins	
+	3422266761	Stop_aud_ambience_water			\Default Work Unit\Stop_aud_ambience_water	
 	4258653052	Test_Event			\Default Work Unit\Test_Event	
 
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	988444921	DroneHeight_0			\Default Work Unit\DroneHeight_0	
+	1919215218	TestRPC			\Default Work Unit\TestRPC	
+
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	901782627	51702__bristolstories__ping	D:\simon\droneracer\droneracer_WwiseProject\.cache\Mac\SFX\51702__bristolstories__ping_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\51702__bristolstories__ping		599104
+	241608803	helicopter-interior-no-rotor	C:\Users\Simon\git\droneracer\droneracer_WwiseProject\.cache\Mac\SFX\helicopter-interior-no-rotor_4B8CC0C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\TestBlend\helicopter-interior-no-rotor		15344704
+	737805754	aud_shot_rocket	C:\Users\Simon\git\droneracer\droneracer_WwiseProject\.cache\Mac\SFX\aud_shot_rocket_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\aud_shot_rocket		3325032
+	764889624	aud_ambience_water	C:\Users\Simon\git\droneracer\droneracer_WwiseProject\.cache\Mac\SFX\aud_ambience_water_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\aud_ambience_water		41472064
+	901782627	51702__bristolstories__ping	C:\Users\Simon\git\droneracer\droneracer_WwiseProject\.cache\Mac\SFX\51702__bristolstories__ping_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\51702__bristolstories__ping		599104
+	1072481934	343690__elementrs2__helicopter2	C:\Users\Simon\git\droneracer\droneracer_WwiseProject\.cache\Mac\SFX\343690__elementrs2__helicopter2_4B8CC0C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\TestBlend\343690__elementrs2__helicopter2		4963264
+
+Streamed Audio	ID	Name	Audio source file	Generated audio file	Wwise Object Path	Notes
+	161448654	aud_ambience_wind	C:\Users\Simon\git\droneracer\droneracer_WwiseProject\.cache\Mac\SFX\aud_ambience_wind_4B8CC0C5.wem	161448654.wem	\Actor-Mixer Hierarchy\Default Work Unit\Ambience\aud_ambience_wind	
 

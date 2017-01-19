@@ -9,7 +9,30 @@
 						<Property Name="Max" Type="Real64" Value="2000"/>
 					</PropertyList>
 				</GameParameter>
-				<GameParameter Name="test132" ID="{1D2C6D4A-67F4-404C-9B09-A66A0B27917A}"/>
+				<GameParameter Name="DroneHeight_0" ID="{6175123E-E9AB-44ED-B46C-C875736B38DA}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="500"/>
+						<Property Name="Max" Type="Real64" Value="10000"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="DroneHeight_1" ID="{9BE11297-79A3-49EC-960B-5422956B6300}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="500"/>
+						<Property Name="Max" Type="Real64" Value="10000"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="DroneHeight_2" ID="{D8502682-9FAF-42EE-8471-48F92BBF8811}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="500"/>
+						<Property Name="Max" Type="Real64" Value="10000"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="DroneHeight_3" ID="{7969F679-908B-40B3-A74C-802244530DFD}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="500"/>
+						<Property Name="Max" Type="Real64" Value="10000"/>
+					</PropertyList>
+				</GameParameter>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>
