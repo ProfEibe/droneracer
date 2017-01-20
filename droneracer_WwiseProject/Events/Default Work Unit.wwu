@@ -81,7 +81,7 @@
 								<Action Name="Play" ID="{BA65BC13-9A29-4B58-A42F-D818240C5B0A}" ShortID="294714035" Type="Play" Scope="One" Global="false"/>
 							</ChildrenList>
 						</Event>
-						<Event Name="drone_crash" ID="{8E331221-4BCE-43DB-8008-3C78D4A19D67}">
+						<Event Name="drone_die_out_of_reach" ID="{8E331221-4BCE-43DB-8008-3C78D4A19D67}">
 							<ChildrenList>
 								<Action Name="Play" ID="{1B3FC25A-338C-4F05-B6E0-495FB926DF7E}" ShortID="1067196553" Type="Play" Scope="One" Global="false"/>
 							</ChildrenList>
@@ -89,6 +89,16 @@
 						<Event Name="speedtunnel_tunnel_sound" ID="{A10AB0D0-1CD7-4E82-BDFE-49A1F6F24305}">
 							<ChildrenList>
 								<Action Name="Play" ID="{6C7C0571-17D6-49EE-A03D-9E6B39E4E700}" ShortID="428849521" Type="Play" Scope="One" Global="false"/>
+							</ChildrenList>
+						</Event>
+						<Event Name="drone_die_water" ID="{12DE6471-7843-406E-8C99-E73FC812B685}">
+							<ChildrenList>
+								<Action Name="Play" ID="{646F299C-77C9-413E-8729-F0A1E81495F5}" ShortID="718519409" Type="Play" Scope="One" Global="false"/>
+							</ChildrenList>
+						</Event>
+						<Event Name="gamestate_out_of_reach" ID="{55FDA8C1-21A9-4A44-B761-E61F095F67A4}">
+							<ChildrenList>
+								<Action Name="Play" ID="{518B6259-C4E0-43FC-920B-9717D16859CD}" ShortID="278660632" Type="Play" Scope="One" Global="false"/>
 							</ChildrenList>
 						</Event>
 					</ChildrenList>
@@ -123,6 +133,16 @@
 						<Event Name="ui_pickup_shuffle" ID="{22A0A8A0-D9A5-403D-BFCA-929014EC3FED}">
 							<ChildrenList>
 								<Action Name="Play" ID="{B96BC133-7AE4-4DB6-B66E-2BBB0610E963}" ShortID="974134029" Type="Play" Scope="One" Global="false"/>
+							</ChildrenList>
+						</Event>
+						<Event Name="ui_pickup_already_equiped" ID="{160E8132-B8C0-4382-939D-FF593199BC17}">
+							<ChildrenList>
+								<Action Name="Play" ID="{2D2CD920-2F1B-4062-B7B7-031D96484A21}" ShortID="682397662" Type="Play" Scope="One" Global="false"/>
+							</ChildrenList>
+						</Event>
+						<Event Name="ui_game_lap_finished" ID="{7BCE5D47-9EB1-42E1-BD67-B5F4D34338E8}">
+							<ChildrenList>
+								<Action Name="Play" ID="{DB0DBA5F-5296-4411-BCA0-FD1D0D6577E2}" ShortID="50110023" Type="Play" Scope="One" Global="false"/>
 							</ChildrenList>
 						</Event>
 					</ChildrenList>

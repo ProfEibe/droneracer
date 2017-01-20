@@ -21,7 +21,7 @@
 				<Property Name="GenerateSoundBanks\x64_SelectedPlatforms" Type="string" Value="x9irEBMuxE6haOeh28QWgO+5jMAzy5tJnd1ZDICDN7Y="/>
 				<Property Name="GenerateSoundBanks\x64_SelectedSoundBanks" Type="string" Value=""/>
 				<Property Name="HardwareController\CurrentSession" Type="string" Value="{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}"/>
-				<Property Name="HardwareController\{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}\x64_ActiveGroups" Type="string" Value="d97AoMVEDUeeGOANrQr9qwGdqRn/////7HI6icqVDUePaAySuypdKwGdqRn/////"/>
+				<Property Name="HardwareController\{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}\x64_ActiveGroups" Type="string" Value="7HI6icqVDUePaAySuypdKwGk6xj/////d97AoMVEDUeeGOANrQr9qwGk6xj/////"/>
 				<Property Name="MeterView\LastObject1" Type="string" Value="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"/>
 				<Property Name="MeterView\MeterMode1" Type="int32" Value="1"/>
 				<Property Name="Mixing Desk\LastSession" Type="string" Value="{00000000-0000-0000-0000-000000000000}"/>
@@ -31,7 +31,7 @@
 				<Property Name="ProjectExplorer\FirstVisible_10_1" Type="string" Value="{4C96B38B-3DB4-40C7-91C9-665510E38993}"/>
 				<Property Name="ProjectExplorer\FirstVisible_11_1" Type="string" Value="{23EC2DE3-3ED8-4B82-AC99-92E25F2E4C6B}"/>
 				<Property Name="ProjectExplorer\FirstVisible_1_1" Type="string" Value="{2388DAEA-9775-46C6-A2ED-C5222A397756}"/>
-				<Property Name="ProjectExplorer\FirstVisible_3_1" Type="string" Value="{3C1E8EBD-D741-48C3-B048-CD0E544CD4E4}"/>
+				<Property Name="ProjectExplorer\FirstVisible_3_1" Type="string" Value="{CBD7A0EC-DA4E-4857-895F-872F6ED2CA55}"/>
 				<Property Name="ProjectExplorer\FirstVisible_4_1" Type="string" Value="{CB6175F1-6080-4A23-92EF-0807E304D0C1}"/>
 				<Property Name="ProjectExplorer\FirstVisible_6_1" Type="string" Value="{C98E673F-A24C-48A8-960F-10565FFE70A0}"/>
 				<Property Name="ProjectExplorer\FirstVisible_8_1" Type="string" Value="{41093F77-829F-4D88-8601-E8B25F3D4781}"/>
@@ -47,16 +47,19 @@
 				<Property Name="ProjectExplorer\x64_Expanded_19_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_1_1" Type="string" Value="IVoVMeEA50WZvVls+CdCpw=="/>
 				<Property Name="ProjectExplorer\x64_Expanded_20_1" Type="string" Value=""/>
-				<Property Name="ProjectExplorer\x64_Expanded_2_1" Type="string" Value="54j8QRHoP0GW6lqLBtCBrEq6hR/+AuxDpIdHJ4G2pFKXX6k69s2jSrGmcHciNBxM"/>
+				<Property Name="ProjectExplorer\x64_Expanded_2_1" Type="string" Value="54j8QRHoP0GW6lqLBtCBrJdfqTr2zaNKsaZwdyI0HEw="/>
 				<Property Name="ProjectExplorer\x64_Expanded_3_1" Type="string" Value="Gaaf/vO0/kSqWiEzx5sU64ELlvSBfFNIk0F9RwXd/DGSjR4P5qObSZ1cAv8G7nKmcw656QA7vEqc0eJsvrQZzw=="/>
 				<Property Name="ProjectExplorer\x64_Expanded_4_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_5_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_6_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_7_1" Type="string" Value="LNSfrVgcJ0e11K3Iex8Edw=="/>
 				<Property Name="ProjectExplorer\x64_Expanded_8_1" Type="string" Value=""/>
+				<Property Name="RTPC\GameParameterSimValue\{069185FD-50D8-457E-97E2-8D5393F5F273}" Type="Real64" Value="1000"/>
 				<Property Name="RTPC\GameParameterSimValue\{6175123E-E9AB-44ED-B46C-C875736B38DA}" Type="Real64" Value="3898"/>
 				<Property Name="RTPC\GameParameterSimValue\{7969F679-908B-40B3-A74C-802244530DFD}" Type="Real64" Value="500"/>
 				<Property Name="RTPC\GameParameterSimValue\{9BE11297-79A3-49EC-960B-5422956B6300}" Type="Real64" Value="500"/>
+				<Property Name="RTPC\GameParameterSimValue\{9D27E40B-3578-4310-8614-6C0846E47B12}" Type="Real64" Value="1000"/>
+				<Property Name="RTPC\GameParameterSimValue\{A2A80916-3CD4-4297-B8DD-0B97B17189E9}" Type="Real64" Value="1000"/>
 				<Property Name="RTPC\GameParameterSimValue\{C669CA87-2718-4906-8EB2-F8CCF7C460E0}" Type="Real64" Value="1461"/>
 				<Property Name="RTPC\GameParameterSimValue\{D8502682-9FAF-42EE-8471-48F92BBF8811}" Type="Real64" Value="500"/>
 				<Property Name="SoundBank Manager\x64_Expand States" Type="string" Value=""/>
