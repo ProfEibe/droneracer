@@ -55,8 +55,11 @@
 				<Property Name="ProjectExplorer\x64_Expanded_6_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_7_1" Type="string" Value="LNSfrVgcJ0e11K3Iex8Edw=="/>
 				<Property Name="ProjectExplorer\x64_Expanded_8_1" Type="string" Value=""/>
-				<Property Name="RTPC\GameParameterSimValue\{1D2C6D4A-67F4-404C-9B09-A66A0B27917A}" Type="Real64" Value="50"/>
+				<Property Name="RTPC\GameParameterSimValue\{6175123E-E9AB-44ED-B46C-C875736B38DA}" Type="Real64" Value="500"/>
+				<Property Name="RTPC\GameParameterSimValue\{7969F679-908B-40B3-A74C-802244530DFD}" Type="Real64" Value="500"/>
+				<Property Name="RTPC\GameParameterSimValue\{9BE11297-79A3-49EC-960B-5422956B6300}" Type="Real64" Value="500"/>
 				<Property Name="RTPC\GameParameterSimValue\{C669CA87-2718-4906-8EB2-F8CCF7C460E0}" Type="Real64" Value="788"/>
+				<Property Name="RTPC\GameParameterSimValue\{D8502682-9FAF-42EE-8471-48F92BBF8811}" Type="Real64" Value="500"/>
 				<Property Name="SoundBank Manager\x64_Expand States" Type="string" Value=""/>
 				<Property Name="SoundBankHeaderFilePath" Type="string" Value="GeneratedSoundBanks\"/>
 				<Property Name="SoundBankPaths" Type="string">

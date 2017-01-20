@@ -3,101 +3,6 @@
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{FE9FA619-B4F3-44FE-AA5A-2133C79B14EB}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="Test_Event" ID="{C3103138-0145-4CBE-A7C5-06DA691BA91A}">
-					<ChildrenList>
-						<Action Name="Play" ID="{2D484AF8-A593-4D43-8FF0-68D902590768}" ShortID="5704410" Type="Play" Scope="One" Global="false">
-							<ElementList>
-								<Element ID="{0021DF12-29FB-49F2-809E-21AD2674044A}" Global="false">
-									<ObjectRef Name="51702__bristolstories__ping" ID="{6340AF50-A3A7-4122-BCBD-B3F03B3987CF}" WorkUnitID="{3AA95F97-CDF6-4AA3-B1A6-707722341C4C}"/>
-								</Element>
-							</ElementList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Start_Helicopter" ID="{B520304E-0215-4C6F-847A-070833B8F89A}">
-					<ChildrenList>
-						<Action Name="Play" ID="{B92DF75C-1F33-458D-88BC-8C105A8C2802}" ShortID="773613663" Type="Play" Scope="One" Global="false">
-							<PropertyList>
-								<Property Name="Inclusion" Type="bool">
-									<ValueList>
-										<Value>False</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ElementList>
-								<Element ID="{8AB8A0C9-1282-45C7-86C5-133FFE358AEA}" Global="false">
-									<ObjectRef Name="TestBlend" ID="{1F85BA4A-02FE-43EC-A487-472781B6A452}" WorkUnitID="{3AA95F97-CDF6-4AA3-B1A6-707722341C4C}"/>
-								</Element>
-							</ElementList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="aud_shot_rocket" ID="{C820F2C3-9271-40B3-A748-5FBFBCBE1FDB}">
-					<ChildrenList>
-						<Action Name="Play" ID="{585DC3A4-87DA-4574-AADE-D6989F609B4A}" ShortID="628063539" Type="Play" Scope="One" Global="false">
-							<ElementList>
-								<Element ID="{5AC2F067-C2F4-4B5A-93DB-F5C4B95A4601}" Global="false">
-									<ObjectRef Name="aud_shot_rocket" ID="{88CADB20-3F74-493F-90DB-2AF603342DF3}" WorkUnitID="{3AA95F97-CDF6-4AA3-B1A6-707722341C4C}"/>
-								</Element>
-							</ElementList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_aud_ambience_wind" ID="{5DA422D5-352E-4A7C-BCDB-DA7E96577611}">
-					<ChildrenList>
-						<Action Name="Play" ID="{DBD7E109-3955-45B3-9D84-4E4BE7F34391}" ShortID="550300483" Type="Play" Scope="One" Global="false">
-							<ElementList>
-								<Element ID="{765A50B7-4212-4440-AA05-93701CBCF9B1}" Global="false">
-									<ObjectRef Name="aud_ambience_wind" ID="{732F8D68-EA78-46B9-AB35-5ED4E7B717E1}" WorkUnitID="{3AA95F97-CDF6-4AA3-B1A6-707722341C4C}"/>
-								</Element>
-							</ElementList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Stop_aud_ambience_water" ID="{69B00C75-944F-410F-848D-B5C561BB890C}">
-					<ChildrenList>
-						<Action Name="Stop" ID="{C1CE0817-8E52-4F68-B439-3F90BA3CE66F}" ShortID="591610036" Type="Stop" Scope="One" Global="true">
-							<ElementList>
-								<Element ID="{2DE8CB23-299A-4144-B535-FDCAC6279CF7}" Global="true">
-									<ObjectRef Name="aud_ambience_water" ID="{1608D6AD-FEDF-4FEC-8B25-CAB343EC1F36}" WorkUnitID="{3AA95F97-CDF6-4AA3-B1A6-707722341C4C}"/>
-								</Element>
-							</ElementList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_aud_ambience_water" ID="{8B758941-A53A-44A3-A435-CCEC6BB61262}">
-					<ChildrenList>
-						<Action Name="Play" ID="{1FAB1020-EA2F-4903-B23B-DBF3BE929009}" ShortID="434289714" Type="Play" Scope="One" Global="false">
-							<ElementList>
-								<Element ID="{37139700-97E1-4C58-8BE3-E176A74BD754}" Global="false">
-									<ObjectRef Name="aud_ambience_water" ID="{1608D6AD-FEDF-4FEC-8B25-CAB343EC1F36}" WorkUnitID="{3AA95F97-CDF6-4AA3-B1A6-707722341C4C}"/>
-								</Element>
-							</ElementList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_aud_ambience_ruins" ID="{E2D52415-5E2D-485F-9E10-5026921D0D0B}">
-					<ChildrenList>
-						<Action Name="Play" ID="{FDB1BDAB-C5CF-477E-A570-D5A1D7D815B3}" ShortID="610655214" Type="Play" Scope="One" Global="false">
-							<ElementList>
-								<Element ID="{C967DE40-239B-4C54-BF42-5E562A916DEB}" Global="false">
-									<ObjectRef Name="TestBlend" ID="{1F85BA4A-02FE-43EC-A487-472781B6A452}" WorkUnitID="{3AA95F97-CDF6-4AA3-B1A6-707722341C4C}"/>
-								</Element>
-							</ElementList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Stop_aud_ambience_ruins" ID="{E7FDE86E-163A-4077-AAF7-BCA8894DD5E0}">
-					<ChildrenList>
-						<Action Name="Stop" ID="{39B92891-9A86-4423-B99D-B1282F70C5A6}" ShortID="139418601" Type="Stop" Scope="One" Global="true">
-							<ElementList>
-								<Element ID="{082D9D8C-DA5E-4BF6-80BE-5EA00C883F62}" Global="true">
-									<ObjectRef Name="aud_ambience_ruins" ID="{551B75DD-08BE-466C-9AE8-EFCAE5FEC200}" WorkUnitID="{3AA95F97-CDF6-4AA3-B1A6-707722341C4C}"/>
-								</Element>
-							</ElementList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Folder Name="drone" ID="{0F1E8D92-A3E6-499B-9D5C-02FF06EE72A6}" ShortID="543438209">
 					<ChildrenList>
 						<Event Name="drone_flight" ID="{ECE999C4-8F84-4EA9-AC6B-DE3A29D1C3F7}">
@@ -231,6 +136,65 @@
 						<Event Name="fireworks_explode_level2" ID="{D1442E03-2F97-439B-81AD-74CAFAC3F0D5}">
 							<ChildrenList>
 								<Action Name="Play" ID="{61E8239F-B09E-4861-8687-798C35315BA3}" ShortID="53919420" Type="Play" Scope="One" Global="false"/>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="ambience" ID="{20E6EB34-275F-4F1B-8445-5C8C66FA0381}" ShortID="455060276">
+					<ChildrenList>
+						<Event Name="Stop_aud_ambience_water" ID="{69B00C75-944F-410F-848D-B5C561BB890C}">
+							<ChildrenList>
+								<Action Name="Stop" ID="{C1CE0817-8E52-4F68-B439-3F90BA3CE66F}" ShortID="591610036" Type="Stop" Scope="One" Global="true">
+									<ElementList>
+										<Element ID="{2DE8CB23-299A-4144-B535-FDCAC6279CF7}" Global="true">
+											<ObjectRef Name="aud_ambience_water" ID="{1608D6AD-FEDF-4FEC-8B25-CAB343EC1F36}" WorkUnitID="{3AA95F97-CDF6-4AA3-B1A6-707722341C4C}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_aud_ambience_ruins" ID="{E7FDE86E-163A-4077-AAF7-BCA8894DD5E0}">
+							<ChildrenList>
+								<Action Name="Stop" ID="{39B92891-9A86-4423-B99D-B1282F70C5A6}" ShortID="139418601" Type="Stop" Scope="One" Global="true">
+									<ElementList>
+										<Element ID="{082D9D8C-DA5E-4BF6-80BE-5EA00C883F62}" Global="true">
+											<ObjectRef Name="aud_ambience_ruins" ID="{551B75DD-08BE-466C-9AE8-EFCAE5FEC200}" WorkUnitID="{3AA95F97-CDF6-4AA3-B1A6-707722341C4C}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_aud_ambience_water" ID="{8B758941-A53A-44A3-A435-CCEC6BB61262}">
+							<ChildrenList>
+								<Action Name="Play" ID="{1FAB1020-EA2F-4903-B23B-DBF3BE929009}" ShortID="434289714" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{37139700-97E1-4C58-8BE3-E176A74BD754}" Global="false">
+											<ObjectRef Name="aud_ambience_water" ID="{1608D6AD-FEDF-4FEC-8B25-CAB343EC1F36}" WorkUnitID="{3AA95F97-CDF6-4AA3-B1A6-707722341C4C}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_aud_ambience_wind" ID="{5DA422D5-352E-4A7C-BCDB-DA7E96577611}">
+							<ChildrenList>
+								<Action Name="Play" ID="{DBD7E109-3955-45B3-9D84-4E4BE7F34391}" ShortID="550300483" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{765A50B7-4212-4440-AA05-93701CBCF9B1}" Global="false">
+											<ObjectRef Name="aud_ambience_wind" ID="{732F8D68-EA78-46B9-AB35-5ED4E7B717E1}" WorkUnitID="{3AA95F97-CDF6-4AA3-B1A6-707722341C4C}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_aud_ambience_ruins" ID="{E2D52415-5E2D-485F-9E10-5026921D0D0B}">
+							<ChildrenList>
+								<Action Name="Play" ID="{FDB1BDAB-C5CF-477E-A570-D5A1D7D815B3}" ShortID="610655214" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{C967DE40-239B-4C54-BF42-5E562A916DEB}" Global="false">
+											<ObjectRef Name="TestBlend" ID="{1F85BA4A-02FE-43EC-A487-472781B6A452}" WorkUnitID="{3AA95F97-CDF6-4AA3-B1A6-707722341C4C}"/>
+										</Element>
+									</ElementList>
+								</Action>
 							</ChildrenList>
 						</Event>
 					</ChildrenList>
