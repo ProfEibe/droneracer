@@ -3,7 +3,7 @@
 	<GameParameters>
 		<WorkUnit Name="Default Work Unit" ID="{AD9FD42C-1C58-4727-B5D4-ADC87B1F0477}" PersistMode="Standalone">
 			<ChildrenList>
-				<GameParameter Name="TestRPC" ID="{C669CA87-2718-4906-8EB2-F8CCF7C460E0}">
+				<GameParameter Name="DroneVelocity_0" ID="{C669CA87-2718-4906-8EB2-F8CCF7C460E0}">
 					<PropertyList>
 						<Property Name="InitialValue" Type="Real64" Value="1000"/>
 						<Property Name="Max" Type="Real64" Value="2000"/>
@@ -31,6 +31,24 @@
 					<PropertyList>
 						<Property Name="InitialValue" Type="Real64" Value="500"/>
 						<Property Name="Max" Type="Real64" Value="10000"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="DroneVelocity_1" ID="{A2A80916-3CD4-4297-B8DD-0B97B17189E9}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="1000"/>
+						<Property Name="Max" Type="Real64" Value="2000"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="DroneVelocity_2" ID="{069185FD-50D8-457E-97E2-8D5393F5F273}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="1000"/>
+						<Property Name="Max" Type="Real64" Value="2000"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="DroneVelocity_3" ID="{9D27E40B-3578-4310-8614-6C0846E47B12}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="1000"/>
+						<Property Name="Max" Type="Real64" Value="2000"/>
 					</PropertyList>
 				</GameParameter>
 			</ChildrenList>

@@ -3,7 +3,7 @@
 	<UserProjectSettingsInfo>
 		<UserProjectSettings Name="" ID="{7AE2EC8A-78F8-4018-A2D0-ECC09270AFDE}">
 			<PropertyList>
-				<Property Name="AudioFilesImporter\Path" Type="string" Value="C:\Users\Spin\Desktop"/>
+				<Property Name="AudioFilesImporter\Path" Type="string" Value="C:\GDrive\DroneRacer Audio\Motor Cut Session"/>
 				<Property Name="ExternalSourcesInputPath" Type="string">
 					<ValueList>
 						<Value Platform="Windows"></Value>
@@ -43,22 +43,25 @@
 				<Property Name="ProjectExplorer\x64_Expanded_14_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_15_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_16_1" Type="string" Value=""/>
-				<Property Name="ProjectExplorer\x64_Expanded_17_1" Type="string" Value=""/>
-				<Property Name="ProjectExplorer\x64_Expanded_18_1" Type="string" Value=""/>
+				<Property Name="ProjectExplorer\x64_Expanded_17_1" Type="string" Value="DIiy9uWF+kehJmRbXf2azJo6/ON7qexPlTsvDmEuoMg="/>
+				<Property Name="ProjectExplorer\x64_Expanded_18_1" Type="string" Value="abAXYzYbpkGIiCoDBUctlA=="/>
 				<Property Name="ProjectExplorer\x64_Expanded_19_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_1_1" Type="string" Value="2KQUFaYdKkGhfnXKDCFJ8yFaFTHhAOdFmb1ZbPgnQqc="/>
 				<Property Name="ProjectExplorer\x64_Expanded_20_1" Type="string" Value=""/>
-				<Property Name="ProjectExplorer\x64_Expanded_2_1" Type="string" Value="54j8QRHoP0GW6lqLBtCBrEq6hR/+AuxDpIdHJ4G2pFKXX6k69s2jSrGmcHciNBxM"/>
-				<Property Name="ProjectExplorer\x64_Expanded_3_1" Type="string" Value="Gaaf/vO0/kSqWiEzx5sU6w=="/>
+				<Property Name="ProjectExplorer\x64_Expanded_2_1" Type="string" Value="54j8QRHoP0GW6lqLBtCBrJdfqTr2zaNKsaZwdyI0HEx1dJP/RKZXT7LJSOKNrFdB"/>
+				<Property Name="ProjectExplorer\x64_Expanded_3_1" Type="string" Value="Gaaf/vO0/kSqWiEzx5sU65KNHg/mo5tJnVwC/wbucqY="/>
 				<Property Name="ProjectExplorer\x64_Expanded_4_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_5_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_6_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_7_1" Type="string" Value="LNSfrVgcJ0e11K3Iex8Edw=="/>
 				<Property Name="ProjectExplorer\x64_Expanded_8_1" Type="string" Value=""/>
-				<Property Name="RTPC\GameParameterSimValue\{6175123E-E9AB-44ED-B46C-C875736B38DA}" Type="Real64" Value="500"/>
+				<Property Name="RTPC\GameParameterSimValue\{069185FD-50D8-457E-97E2-8D5393F5F273}" Type="Real64" Value="1000"/>
+				<Property Name="RTPC\GameParameterSimValue\{6175123E-E9AB-44ED-B46C-C875736B38DA}" Type="Real64" Value="4714.28571428571"/>
 				<Property Name="RTPC\GameParameterSimValue\{7969F679-908B-40B3-A74C-802244530DFD}" Type="Real64" Value="500"/>
 				<Property Name="RTPC\GameParameterSimValue\{9BE11297-79A3-49EC-960B-5422956B6300}" Type="Real64" Value="500"/>
-				<Property Name="RTPC\GameParameterSimValue\{C669CA87-2718-4906-8EB2-F8CCF7C460E0}" Type="Real64" Value="788"/>
+				<Property Name="RTPC\GameParameterSimValue\{9D27E40B-3578-4310-8614-6C0846E47B12}" Type="Real64" Value="1000"/>
+				<Property Name="RTPC\GameParameterSimValue\{A2A80916-3CD4-4297-B8DD-0B97B17189E9}" Type="Real64" Value="1000"/>
+				<Property Name="RTPC\GameParameterSimValue\{C669CA87-2718-4906-8EB2-F8CCF7C460E0}" Type="Real64" Value="584"/>
 				<Property Name="RTPC\GameParameterSimValue\{D8502682-9FAF-42EE-8471-48F92BBF8811}" Type="Real64" Value="500"/>
 				<Property Name="SoundBank Manager\x64_Expand States" Type="string" Value=""/>
 				<Property Name="SoundBankHeaderFilePath" Type="string" Value="GeneratedSoundBanks\"/>
