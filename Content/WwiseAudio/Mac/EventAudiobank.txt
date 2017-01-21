@@ -1,23 +1,42 @@
 Event	ID	Name			Wwise Object Path	Notes
-	1503943207	Play_aud_ambience_water			\Default Work Unit\Play_aud_ambience_water	
-	1844586475	aud_shot_rocket			\Default Work Unit\aud_shot_rocket	
-	2304818536	Play_aud_ambience_wind			\Default Work Unit\Play_aud_ambience_wind	
-	2759331785	Start_Helicopter			\Default Work Unit\Start_Helicopter	
-	3158370847	Play_aud_ambience_ruins			\Default Work Unit\Play_aud_ambience_ruins	
-	3422266761	Stop_aud_ambience_water			\Default Work Unit\Stop_aud_ambience_water	
-	4258653052	Test_Event			\Default Work Unit\Test_Event	
+	11041865	wall_break			\Default Work Unit\drone\wall_break	
+	417446310	drone_launch_emp			\Default Work Unit\drone\drone_launch_emp	
+	447189498	drone_die_water			\Default Work Unit\drone\drone_die_water	
+	819908297	emp_finish			\Default Work Unit\drone\emp_finish	
+	987538065	drone_checkpoint_correct			\Default Work Unit\drone\drone_checkpoint_correct	
+	1027196084	fireworks_launch_rocket			\Default Work Unit\fireworks\fireworks_launch_rocket	
+	1063657005	ui_menu_finishline			\Default Work Unit\ui\ui_menu_finishline	
+	1087324449	gamestate_out_of_reach			\Default Work Unit\drone\gamestate_out_of_reach	
+	1452135744	drone_launch_boost_refill			\Default Work Unit\drone\drone_launch_boost_refill	
+	1529249135	ui_menu_start_game			\Default Work Unit\ui\ui_menu_start_game	
+	1915590551	ui_game_lap_finished			\Default Work Unit\ui\ui_game_lap_finished	
+	1951358637	drone_die_out_of_reach			\Default Work Unit\drone\drone_die_out_of_reach	
+	1979317945	speedtunnel_tunnel_sound			\Default Work Unit\drone\speedtunnel_tunnel_sound	
+	2011859341	rocket_explosion			\Default Work Unit\drone\rocket_explosion	
+	2163476404	ui_menu_hover			\Default Work Unit\ui\ui_menu_hover	
+	2178522860	drone_flight_3			\Default Work Unit\drone\drone_flight_3	
+	2178522861	drone_flight_2			\Default Work Unit\drone\drone_flight_2	
+	2178522862	drone_flight_1			\Default Work Unit\drone\drone_flight_1	
+	2178522863	drone_flight_0			\Default Work Unit\drone\drone_flight_0	
+	2320251260	drone_launch_wall			\Default Work Unit\drone\drone_launch_wall	
+	2387639648	drone_launch_rocket			\Default Work Unit\drone\drone_launch_rocket	
+	2435212104	drone_checkpoint_wrong			\Default Work Unit\drone\drone_checkpoint_wrong	
+	2640321903	magnet_finish			\Default Work Unit\drone\magnet_finish	
+	2690505134	ui_menu_click			\Default Work Unit\ui\ui_menu_click	
+	3421150781	fireworks_explode_level1			\Default Work Unit\fireworks\fireworks_explode_level1	
+	3421150782	fireworks_explode_level2			\Default Work Unit\fireworks\fireworks_explode_level2	
+	3466143422	ui_menu_start_race			\Default Work Unit\ui\ui_menu_start_race	
+	3558043840	ui_pickup_shuffle			\Default Work Unit\ui\ui_pickup_shuffle	
+	3890542148	drone_launch_glass			\Default Work Unit\drone\drone_launch_glass	
+	3952986577	ui_pickup_already_equiped			\Default Work Unit\ui\ui_pickup_already_equiped	
+	4041046886	drone_launch_magnet			\Default Work Unit\drone\drone_launch_magnet	
+	4072963231	glass_break			\Default Work Unit\drone\glass_break	
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
-	988444921	DroneHeight_0			\Default Work Unit\DroneHeight_0	
-	1919215218	TestRPC			\Default Work Unit\TestRPC	
+	2217975328	DroneVelocity_1			\Default Work Unit\DroneVelocity_1	
+	2217975329	DroneVelocity_0			\Default Work Unit\DroneVelocity_0	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	241608803	helicopter-interior-no-rotor	C:\Users\Simon\git\droneracer\droneracer_WwiseProject\.cache\Mac\SFX\helicopter-interior-no-rotor_4B8CC0C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\TestBlend\helicopter-interior-no-rotor		15344704
-	737805754	aud_shot_rocket	C:\Users\Simon\git\droneracer\droneracer_WwiseProject\.cache\Mac\SFX\aud_shot_rocket_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\aud_shot_rocket		3325032
-	764889624	aud_ambience_water	C:\Users\Simon\git\droneracer\droneracer_WwiseProject\.cache\Mac\SFX\aud_ambience_water_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\aud_ambience_water		41472064
-	901782627	51702__bristolstories__ping	C:\Users\Simon\git\droneracer\droneracer_WwiseProject\.cache\Mac\SFX\51702__bristolstories__ping_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\51702__bristolstories__ping		599104
-	1072481934	343690__elementrs2__helicopter2	C:\Users\Simon\git\droneracer\droneracer_WwiseProject\.cache\Mac\SFX\343690__elementrs2__helicopter2_4B8CC0C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\TestBlend\343690__elementrs2__helicopter2		4963264
-
-Streamed Audio	ID	Name	Audio source file	Generated audio file	Wwise Object Path	Notes
-	161448654	aud_ambience_wind	C:\Users\Simon\git\droneracer\droneracer_WwiseProject\.cache\Mac\SFX\aud_ambience_wind_4B8CC0C5.wem	161448654.wem	\Actor-Mixer Hierarchy\Default Work Unit\Ambience\aud_ambience_wind	
+	4470141	placeholder_loop	C:\Users\Simon\git\droneracer\droneracer_WwiseProject\.cache\Mac\SFX\261208__stereo-surgeon__insomniac-snyth-loop_76C00391.wem		\Actor-Mixer Hierarchy\Default Work Unit\placeholder_loop		1283700
+	858297084	placeholder	C:\Users\Simon\git\droneracer\droneracer_WwiseProject\.cache\Mac\SFX\51702__bristolstories__ping_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\placeholder		599104
 
