@@ -3,50 +3,1524 @@
 	<AudioObjects>
 		<WorkUnit Name="Default Work Unit" ID="{3AA95F97-CDF6-4AA3-B1A6-707722341C4C}" PersistMode="Standalone">
 			<ChildrenList>
-				<Sound Name="51702__bristolstories__ping" ID="{6340AF50-A3A7-4122-BCBD-B3F03B3987CF}" ShortID="840358214" Type="SoundFX">
+				<Folder Name="ambience" ID="{41FC88E7-E811-413F-96EA-5A8B06D081AC}" ShortID="205290602">
+					<ChildrenList>
+						<Sound Name="ambience_ruins" ID="{551B75DD-08BE-466C-9AE8-EFCAE5FEC200}" ShortID="248356908" Type="SoundFX">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="PositioningType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E3FC3A9A-A97B-4FEC-953B-2F0E612EA0C8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Ambience" ID="{1C025182-BBB1-4B2A-8578-62BA4CA9F664}" WorkUnitID="{31155A21-00E1-45E7-99BD-596CF82742A7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="aud_ambience_ruins" ID="{CF4B992D-AB27-484B-AC8B-D361DDB530A9}" ShortID="248985614">
+									<PropertyList>
+										<Property Name="CrossfadeDuration" Type="Real64" Value="250"/>
+										<Property Name="LoopBegin" Type="Real64" Value="0.671140939597315"/>
+										<Property Name="LoopEnd" Type="Real64" Value="63.4630872483221"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="VolumeOffset" Type="Real64">
+											<ValueList>
+												<Value>-9</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>aud_ambience_ruins.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="aud_ambience_ruins" ID="{CF4B992D-AB27-484B-AC8B-D361DDB530A9}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="ambience_water" ID="{1608D6AD-FEDF-4FEC-8B25-CAB343EC1F36}" ShortID="976307546" Type="SoundFX">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="PositioningType" Type="int16" Value="1"/>
+								<Property Name="Volume" Type="Real64">
+									<RTPCList>
+										<RTPC Name="" ID="{51C71B12-BC15-40A5-9C71-A18960F1E847}" ShortID="180514514">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="DroneHeight_0" ID="{6175123E-E9AB-44ED-B46C-C875736B38DA}" WorkUnitID="{AD9FD42C-1C58-4727-B5D4-ADC87B1F0477}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{2F54EF44-E604-42B8-AC90-F447ED7A7F52}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-0</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>2994.83649</XPos>
+														<YPos>-6.28935</YPos>
+														<Flags>0</Flags>
+														<SegmentShape>Log2</SegmentShape>
+													</Point>
+													<Point>
+														<XPos>10000</XPos>
+														<YPos>-23.20338</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E3FC3A9A-A97B-4FEC-953B-2F0E612EA0C8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Ambience" ID="{1C025182-BBB1-4B2A-8578-62BA4CA9F664}" WorkUnitID="{31155A21-00E1-45E7-99BD-596CF82742A7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="aud_ambience_water" ID="{C72ACA45-B8E1-4690-9A35-F4097E8E46FD}" ShortID="764889624">
+									<PropertyList>
+										<Property Name="CrossfadeDuration" Type="Real64" Value="250"/>
+										<Property Name="LoopBegin" Type="Real64" Value="0.181208053691275"/>
+										<Property Name="LoopEnd" Type="Real64" Value="71.3657718120805"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>aud_ambience_water.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<PositioningInfo>
+								<Panner Name="" ID="{26BC6F51-92A5-4CE9-BB71-C6317B548E61}">
+									<PropertyList>
+										<Property Name="PanX" Type="Real64" Value="-40.3258655804481"/>
+										<Property Name="PanY" Type="Real64" Value="-2.15982721382289"/>
+									</PropertyList>
+								</Panner>
+							</PositioningInfo>
+							<ActiveSourceList>
+								<ActiveSource Name="aud_ambience_water" ID="{C72ACA45-B8E1-4690-9A35-F4097E8E46FD}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="ambience_wind" ID="{732F8D68-EA78-46B9-AB35-5ED4E7B717E1}" ShortID="256237711" Type="SoundFX">
+							<PropertyList>
+								<Property Name="3DPositionSource" Type="int16" Value="0"/>
+								<Property Name="Highpass" Type="int16">
+									<RTPCList>
+										<RTPC Name="" ID="{AA1B01F6-BD87-4B64-ABC1-71E1E81B4703}" ShortID="270380987">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="DroneVelocity_0" ID="{C669CA87-2718-4906-8EB2-F8CCF7C460E0}" WorkUnitID="{AD9FD42C-1C58-4727-B5D4-ADC87B1F0477}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{53BEF1D9-2145-4D04-8F2B-57FFDE07CF57}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="65537"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>33</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>2000</XPos>
+														<YPos>0</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="IsStreamingEnabled" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Lowpass" Type="int16">
+									<RTPCList>
+										<RTPC Name="" ID="{2878D0B4-2542-4DC3-94A0-14437C443530}" ShortID="615691383">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="DroneVelocity_0" ID="{C669CA87-2718-4906-8EB2-F8CCF7C460E0}" WorkUnitID="{AD9FD42C-1C58-4727-B5D4-ADC87B1F0477}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{71D07A91-8919-4D5D-9758-0B3FC7CB129D}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="65537"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>58</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>2000</XPos>
+														<YPos>0</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+								<Property Name="PositioningType" Type="int16" Value="1"/>
+								<Property Name="Volume" Type="Real64">
+									<RTPCList>
+										<RTPC Name="" ID="{812BC22A-F373-42BC-9805-5538B7E6821A}" ShortID="122975520">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="DroneVelocity_0" ID="{C669CA87-2718-4906-8EB2-F8CCF7C460E0}" WorkUnitID="{AD9FD42C-1C58-4727-B5D4-ADC87B1F0477}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{EE58DC29-8A09-4976-BADE-F4D6BC471570}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-4.88505</YPos>
+														<Flags>5</Flags>
+														<SegmentShape>SCurve</SegmentShape>
+													</Point>
+													<Point>
+														<XPos>1300.57143</XPos>
+														<YPos>-1.06734</YPos>
+														<Flags>0</Flags>
+														<SegmentShape>Exp2</SegmentShape>
+													</Point>
+													<Point>
+														<XPos>2000</XPos>
+														<YPos>5.6874</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+										<RTPC Name="" ID="{F6278F93-F2BF-44AD-9243-943055001521}" ShortID="722068408">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="DroneHeight_0" ID="{6175123E-E9AB-44ED-B46C-C875736B38DA}" WorkUnitID="{AD9FD42C-1C58-4727-B5D4-ADC87B1F0477}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{C5367A98-0231-4570-8DB0-F588A6EC0EA9}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-15.24654</YPos>
+														<Flags>5</Flags>
+														<SegmentShape>Log2</SegmentShape>
+													</Point>
+													<Point>
+														<XPos>4991.39415</XPos>
+														<YPos>-2.39475</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>10000</XPos>
+														<YPos>-0.06614</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E3FC3A9A-A97B-4FEC-953B-2F0E612EA0C8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Ambience" ID="{1C025182-BBB1-4B2A-8578-62BA4CA9F664}" WorkUnitID="{31155A21-00E1-45E7-99BD-596CF82742A7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="aud_ambience_wind" ID="{05BD5531-73DB-4A2B-AD35-06D5B20C74AB}" ShortID="161448654">
+									<PropertyList>
+										<Property Name="CrossfadeDuration" Type="Real64" Value="250"/>
+										<Property Name="LoopBegin" Type="Real64" Value="0.368480704697987"/>
+										<Property Name="LoopEnd" Type="Real64" Value="109.116348678691"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>aud_ambience_wind.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<PositioningInfo>
+								<Position Name="" ID="{F3FF8BC2-136B-4097-93C2-1691879C2963}">
+									<PropertyList>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+										<Property Name="PlayMechanismTransitionTime" Type="Real64" Value="4.5"/>
+									</PropertyList>
+									<ChildrenList>
+										<Path2D Name="aud_ambience_wind_Path" ID="{38649EF7-EB55-4EB9-9925-BEBF9EEE1B5E}">
+											<PointList>
+												<Point>
+													<XPos>-6.18557</XPos>
+													<YPos>16.16702</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+									</ChildrenList>
+								</Position>
+							</PositioningInfo>
+							<ActiveSourceList>
+								<ActiveSource Name="aud_ambience_wind" ID="{05BD5531-73DB-4A2B-AD35-06D5B20C74AB}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="drone" ID="{FF937475-A644-4F57-B2C9-48E28DAC5741}" ShortID="13480471">
+					<ChildrenList>
+						<Sound Name="drone_launch_rocket" ID="{88CADB20-3F74-493F-90DB-2AF603342DF3}" ShortID="1053052190" Type="SoundFX">
+							<PropertyList>
+								<Property Name="Highpass" Type="int16">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{80F675A0-DF0D-4FDF-B90C-2874A82DA685}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="16"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Lowpass" Type="int16">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{CB29DF77-ACA7-4136-B937-641F737DB98C}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="13"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{5EDF8768-5EC2-40DF-937C-70E1AE0A729A}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="253"/>
+													<Property Name="Min" Type="Real64" Value="-51"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="PositioningType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="rocket_attenuation" ID="{70FB6A5D-60AF-46C4-BF33-C9CE97B2440C}" WorkUnitID="{0BDB9504-2A00-4A76-9583-7F102422CEC8}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E3FC3A9A-A97B-4FEC-953B-2F0E612EA0C8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Shots" ID="{6B2557DB-1872-4F2F-8A59-A855BF51357F}" WorkUnitID="{31155A21-00E1-45E7-99BD-596CF82742A7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="aud_shot_rocket" ID="{33D3135D-BA81-4679-890C-4EC7E4AD96EF}" ShortID="737805754">
+									<Language>SFX</Language>
+									<AudioFile>aud_shot_rocket.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="aud_shot_rocket" ID="{33D3135D-BA81-4679-890C-4EC7E4AD96EF}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="drone_motor_00" ID="{C2C2A858-B18E-4FDB-B62C-7E449F77A721}" ShortID="622201987" Type="SoundFX">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Pitch" Type="int32">
+									<RTPCList>
+										<RTPC Name="" ID="{317611B5-68E1-4972-A682-1053493D3D72}" ShortID="1040714047">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="DroneVelocity_0" ID="{C669CA87-2718-4906-8EB2-F8CCF7C460E0}" WorkUnitID="{AD9FD42C-1C58-4727-B5D4-ADC87B1F0477}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{A173444A-C0D4-4C5D-AB58-285D95593C65}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="65537"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-500</YPos>
+														<Flags>5</Flags>
+														<SegmentShape>Log2</SegmentShape>
+													</Point>
+													<Point>
+														<XPos>404.307</XPos>
+														<YPos>-247</YPos>
+														<Flags>0</Flags>
+														<SegmentShape>Exp2</SegmentShape>
+													</Point>
+													<Point>
+														<XPos>800</XPos>
+														<YPos>-106</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>1320</XPos>
+														<YPos>0</YPos>
+														<Flags>0</Flags>
+														<SegmentShape>Exp2</SegmentShape>
+													</Point>
+													<Point>
+														<XPos>2000</XPos>
+														<YPos>400</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<RTPCList>
+										<RTPC Name="" ID="{D89F5343-B983-458E-89A1-F490189162A8}" ShortID="46032666">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<Custom CreatedFrom="{FEB46892-100B-4A2A-B1E9-F3C437A3ED98}">
+														<ModulatorLfo Name="drone_motor_rumble (Custom)" ID="{341D9A0A-020C-4218-89A1-31E07D33B0E7}" ShortID="72448512">
+															<PropertyList>
+																<Property Name="LfoDepth" Type="Real64" Value="86.3">
+																	<RTPCList>
+																		<RTPC Name="" ID="{48CB2595-6E11-4914-8AA4-7AE18EFBFFCB}" ShortID="849292459">
+																			<ReferenceList>
+																				<Reference Name="ControlInput">
+																					<ObjectRef Name="DroneVelocity_0" ID="{C669CA87-2718-4906-8EB2-F8CCF7C460E0}" WorkUnitID="{AD9FD42C-1C58-4727-B5D4-ADC87B1F0477}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<Curve Name="" ID="{5C3B14D7-6601-4238-91CA-6B9E7C296483}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="1"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>79.25311</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>350</XPos>
+																						<YPos>0</YPos>
+																						<Flags>0</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>2000</XPos>
+																						<YPos>0</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</RTPC>
+																	</RTPCList>
+																</Property>
+																<Property Name="LfoFrequency" Type="Real64" Value="1.181">
+																	<RTPCList>
+																		<RTPC Name="" ID="{75583236-3734-4267-813D-0B920ED52289}" ShortID="731688387">
+																			<ReferenceList>
+																				<Reference Name="ControlInput">
+																					<ObjectRef Name="DroneVelocity_0" ID="{C669CA87-2718-4906-8EB2-F8CCF7C460E0}" WorkUnitID="{AD9FD42C-1C58-4727-B5D4-ADC87B1F0477}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<Curve Name="" ID="{9BBE2759-E4F2-443D-A18C-C2E613EE6CF3}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="5"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>30</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>364.412</XPos>
+																						<YPos>35</YPos>
+																						<Flags>0</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>2000</XPos>
+																						<YPos>260</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</RTPC>
+																	</RTPCList>
+																</Property>
+																<Property Name="LfoPWM" Type="Real64">
+																	<RTPCList>
+																		<RTPC Name="" ID="{DF967604-2BD4-4B3F-A78C-233957B4FB99}" ShortID="706220158">
+																			<ReferenceList>
+																				<Reference Name="ControlInput">
+																					<ObjectRef Name="DroneVelocity_0" ID="{C669CA87-2718-4906-8EB2-F8CCF7C460E0}" WorkUnitID="{AD9FD42C-1C58-4727-B5D4-ADC87B1F0477}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<Curve Name="" ID="{BD5843E2-8142-4B08-9EE7-1FC2D7A892C4}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="1"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>0</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>792.27053</XPos>
+																						<YPos>25</YPos>
+																						<Flags>0</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>1314.00966</XPos>
+																						<YPos>50</YPos>
+																						<Flags>0</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>2000</XPos>
+																						<YPos>75</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</RTPC>
+																	</RTPCList>
+																</Property>
+																<Property Name="LfoSmoothing" Type="Real64">
+																	<RTPCList>
+																		<RTPC Name="" ID="{60E4C417-4154-48A2-9745-92D51E18900D}" ShortID="883381298">
+																			<ReferenceList>
+																				<Reference Name="ControlInput">
+																					<ObjectRef Name="DroneVelocity_0" ID="{C669CA87-2718-4906-8EB2-F8CCF7C460E0}" WorkUnitID="{AD9FD42C-1C58-4727-B5D4-ADC87B1F0477}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<Curve Name="" ID="{1B971382-EC2C-4980-898C-78FC478C033B}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="1"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>0</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>2000</XPos>
+																						<YPos>100</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</RTPC>
+																	</RTPCList>
+																</Property>
+															</PropertyList>
+														</ModulatorLfo>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{885EBA6F-7F64-4599-8DC1-4C1101F1D15B}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-7.32724</YPos>
+														<Flags>21</Flags>
+													</Point>
+													<Point>
+														<XPos>1</XPos>
+														<YPos>-0.00001</YPos>
+														<Flags>53</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+										<RTPC Name="" ID="{F08A43DA-2F87-4321-843F-4E1E671475F2}" ShortID="653460914">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="DroneVelocity_0" ID="{C669CA87-2718-4906-8EB2-F8CCF7C460E0}" WorkUnitID="{AD9FD42C-1C58-4727-B5D4-ADC87B1F0477}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{9C628E16-9D57-4F6A-8CDC-05E296DDE1F2}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-6</YPos>
+														<Flags>5</Flags>
+														<SegmentShape>Log1</SegmentShape>
+													</Point>
+													<Point>
+														<XPos>505.722</XPos>
+														<YPos>0</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>1523.91546162403</XPos>
+														<YPos>2.18686452724882E-02</YPos>
+														<Flags>0</Flags>
+														<SegmentShape>Exp2</SegmentShape>
+													</Point>
+													<Point>
+														<XPos>2000</XPos>
+														<YPos>2.32265</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E3FC3A9A-A97B-4FEC-953B-2F0E612EA0C8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="drone_flight" ID="{0E816DF1-2201-453E-AE83-6279D586AF2D}" WorkUnitID="{31155A21-00E1-45E7-99BD-596CF82742A7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Motor Sound" ID="{069310D2-C704-4AF6-AD29-F9CF134E3DF5}" ShortID="81410780">
+									<PropertyList>
+										<Property Name="CrossfadeDuration" Type="Real64" Value="250"/>
+										<Property Name="LoopBegin" Type="Real64" Value="0.241191275167785"/>
+										<Property Name="LoopEnd" Type="Real64" Value="24.8427013422819"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Motor Sound.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Motor Sound" ID="{069310D2-C704-4AF6-AD29-F9CF134E3DF5}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="drone_motor_01" ID="{7B103A8C-EAF2-47DE-A8F4-F209B10C1A7A}" ShortID="454779158" Type="SoundFX">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Pitch" Type="int32">
+									<RTPCList>
+										<RTPC Name="" ID="{92C988FE-6588-42B3-B4BF-B20CEA401A5C}" ShortID="87928162">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="DroneVelocity_1" ID="{A2A80916-3CD4-4297-B8DD-0B97B17189E9}" WorkUnitID="{AD9FD42C-1C58-4727-B5D4-ADC87B1F0477}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{A351478A-8FFD-4558-97F5-FDC5B869688E}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="65537"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-500</YPos>
+														<Flags>5</Flags>
+														<SegmentShape>Log2</SegmentShape>
+													</Point>
+													<Point>
+														<XPos>404.307</XPos>
+														<YPos>-247</YPos>
+														<Flags>0</Flags>
+														<SegmentShape>Exp2</SegmentShape>
+													</Point>
+													<Point>
+														<XPos>800</XPos>
+														<YPos>-106</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>1320</XPos>
+														<YPos>0</YPos>
+														<Flags>0</Flags>
+														<SegmentShape>Exp2</SegmentShape>
+													</Point>
+													<Point>
+														<XPos>2000</XPos>
+														<YPos>400</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<RTPCList>
+										<RTPC Name="" ID="{53EB0C97-D2F8-4FC1-B8B1-FC338D9D76FC}" ShortID="647401452">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<Custom CreatedFrom="{FEB46892-100B-4A2A-B1E9-F3C437A3ED98}">
+														<ModulatorLfo Name="drone_motor_rumble (Custom)" ID="{D3F16918-FD59-4F6E-92C3-9A1B47900E94}" ShortID="956469086">
+															<PropertyList>
+																<Property Name="LfoDepth" Type="Real64" Value="86.3">
+																	<RTPCList>
+																		<RTPC Name="" ID="{49F8C678-DED8-407C-B59E-38936DCE9DCF}" ShortID="488447205">
+																			<ReferenceList>
+																				<Reference Name="ControlInput">
+																					<ObjectRef Name="DroneVelocity_0" ID="{C669CA87-2718-4906-8EB2-F8CCF7C460E0}" WorkUnitID="{AD9FD42C-1C58-4727-B5D4-ADC87B1F0477}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<Curve Name="" ID="{5A98A5EF-12B1-46FD-A63D-1B4EFDFE0813}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="1"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>79.25311</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>350</XPos>
+																						<YPos>0</YPos>
+																						<Flags>0</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>2000</XPos>
+																						<YPos>0</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</RTPC>
+																	</RTPCList>
+																</Property>
+																<Property Name="LfoFrequency" Type="Real64" Value="1.181">
+																	<RTPCList>
+																		<RTPC Name="" ID="{4930C528-9B3B-4DD7-B0EC-C6751C7B4C30}" ShortID="484255664">
+																			<ReferenceList>
+																				<Reference Name="ControlInput">
+																					<ObjectRef Name="DroneVelocity_0" ID="{C669CA87-2718-4906-8EB2-F8CCF7C460E0}" WorkUnitID="{AD9FD42C-1C58-4727-B5D4-ADC87B1F0477}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<Curve Name="" ID="{E728FF5E-E0AB-446D-BA57-8974B1872361}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="5"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>30</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>364.412</XPos>
+																						<YPos>35</YPos>
+																						<Flags>0</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>2000</XPos>
+																						<YPos>260</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</RTPC>
+																	</RTPCList>
+																</Property>
+																<Property Name="LfoPWM" Type="Real64">
+																	<RTPCList>
+																		<RTPC Name="" ID="{1801203F-FE94-407F-A291-2FED08FEB36A}" ShortID="545251619">
+																			<ReferenceList>
+																				<Reference Name="ControlInput">
+																					<ObjectRef Name="DroneVelocity_0" ID="{C669CA87-2718-4906-8EB2-F8CCF7C460E0}" WorkUnitID="{AD9FD42C-1C58-4727-B5D4-ADC87B1F0477}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<Curve Name="" ID="{3BB69469-6578-48BD-B557-45E98248199F}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="1"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>0</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>792.27053</XPos>
+																						<YPos>25</YPos>
+																						<Flags>0</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>1314.00966</XPos>
+																						<YPos>50</YPos>
+																						<Flags>0</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>2000</XPos>
+																						<YPos>75</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</RTPC>
+																	</RTPCList>
+																</Property>
+																<Property Name="LfoSmoothing" Type="Real64">
+																	<RTPCList>
+																		<RTPC Name="" ID="{27B6061F-07F0-4551-9FB5-01AAC947A51F}" ShortID="551519093">
+																			<ReferenceList>
+																				<Reference Name="ControlInput">
+																					<ObjectRef Name="DroneVelocity_0" ID="{C669CA87-2718-4906-8EB2-F8CCF7C460E0}" WorkUnitID="{AD9FD42C-1C58-4727-B5D4-ADC87B1F0477}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<Curve Name="" ID="{62B35AE4-BC75-4C34-BAF5-BE3A4F5D38F3}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="1"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>0</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>2000</XPos>
+																						<YPos>100</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</RTPC>
+																	</RTPCList>
+																</Property>
+															</PropertyList>
+														</ModulatorLfo>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{FE786900-14D9-454B-892E-F70BDE017B72}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-7.32724</YPos>
+														<Flags>21</Flags>
+													</Point>
+													<Point>
+														<XPos>1</XPos>
+														<YPos>-0.00001</YPos>
+														<Flags>53</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+										<RTPC Name="" ID="{D2442DD0-2629-47A5-AA49-099C15AA4627}" ShortID="448826009">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="DroneVelocity_1" ID="{A2A80916-3CD4-4297-B8DD-0B97B17189E9}" WorkUnitID="{AD9FD42C-1C58-4727-B5D4-ADC87B1F0477}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{DF160EE9-EEF7-44B9-9275-E5D3EA1C0F96}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-6</YPos>
+														<Flags>5</Flags>
+														<SegmentShape>Log1</SegmentShape>
+													</Point>
+													<Point>
+														<XPos>505.722</XPos>
+														<YPos>0</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>1523.91546162403</XPos>
+														<YPos>2.18686452724882E-02</YPos>
+														<Flags>0</Flags>
+														<SegmentShape>Exp2</SegmentShape>
+													</Point>
+													<Point>
+														<XPos>2000</XPos>
+														<YPos>2.32265</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E3FC3A9A-A97B-4FEC-953B-2F0E612EA0C8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="drone_flight" ID="{0E816DF1-2201-453E-AE83-6279D586AF2D}" WorkUnitID="{31155A21-00E1-45E7-99BD-596CF82742A7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Motor Sound" ID="{72A95FE4-7D4A-418A-94EF-C8CDAB77439B}" ShortID="144159055">
+									<PropertyList>
+										<Property Name="CrossfadeDuration" Type="Real64" Value="250"/>
+										<Property Name="LoopBegin" Type="Real64" Value="2.10780201342284"/>
+										<Property Name="LoopEnd" Type="Real64" Value="24.7692953020134"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Motor Sound.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Motor Sound" ID="{72A95FE4-7D4A-418A-94EF-C8CDAB77439B}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="drone_motor_02" ID="{C2CFFC92-4F58-4590-A3EC-50CF393F74CB}" ShortID="987800918" Type="SoundFX">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Pitch" Type="int32">
+									<RTPCList>
+										<RTPC Name="" ID="{549C5D71-654B-4CBB-A77F-9B5C1EBA2FF5}" ShortID="302483313">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="DroneVelocity_2" ID="{069185FD-50D8-457E-97E2-8D5393F5F273}" WorkUnitID="{AD9FD42C-1C58-4727-B5D4-ADC87B1F0477}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{20AFD32C-7DC0-4CA4-B3A9-885628517DE5}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="65537"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-500</YPos>
+														<Flags>5</Flags>
+														<SegmentShape>Log2</SegmentShape>
+													</Point>
+													<Point>
+														<XPos>404.307</XPos>
+														<YPos>-247</YPos>
+														<Flags>0</Flags>
+														<SegmentShape>Exp2</SegmentShape>
+													</Point>
+													<Point>
+														<XPos>800</XPos>
+														<YPos>-106</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>1320</XPos>
+														<YPos>0</YPos>
+														<Flags>0</Flags>
+														<SegmentShape>Exp2</SegmentShape>
+													</Point>
+													<Point>
+														<XPos>2000</XPos>
+														<YPos>400</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<RTPCList>
+										<RTPC Name="" ID="{035AE701-1141-44B7-8222-F76F8BA36DB3}" ShortID="695065594">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="DroneVelocity_2" ID="{069185FD-50D8-457E-97E2-8D5393F5F273}" WorkUnitID="{AD9FD42C-1C58-4727-B5D4-ADC87B1F0477}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{41C7A8E1-458A-4CAF-83F2-309D86DB550E}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-6</YPos>
+														<Flags>5</Flags>
+														<SegmentShape>Log1</SegmentShape>
+													</Point>
+													<Point>
+														<XPos>505.722</XPos>
+														<YPos>0</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>1523.91546162403</XPos>
+														<YPos>2.18686452724882E-02</YPos>
+														<Flags>0</Flags>
+														<SegmentShape>Exp2</SegmentShape>
+													</Point>
+													<Point>
+														<XPos>2000</XPos>
+														<YPos>2.32265</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+										<RTPC Name="" ID="{476F8460-761D-4466-AC80-40FE7ED546F7}" ShortID="823903168">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<Custom CreatedFrom="{FEB46892-100B-4A2A-B1E9-F3C437A3ED98}">
+														<ModulatorLfo Name="drone_motor_rumble (Custom)" ID="{C178E210-FD1E-4845-8118-DD1586184653}" ShortID="29162587">
+															<PropertyList>
+																<Property Name="LfoDepth" Type="Real64" Value="86.3">
+																	<RTPCList>
+																		<RTPC Name="" ID="{1CBEFE8F-1340-47BF-AD4F-33278F46D1BB}" ShortID="16619993">
+																			<ReferenceList>
+																				<Reference Name="ControlInput">
+																					<ObjectRef Name="DroneVelocity_0" ID="{C669CA87-2718-4906-8EB2-F8CCF7C460E0}" WorkUnitID="{AD9FD42C-1C58-4727-B5D4-ADC87B1F0477}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<Curve Name="" ID="{5FC7A9EB-2310-47CA-AE9F-C3CCF01E84D7}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="1"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>79.25311</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>350</XPos>
+																						<YPos>0</YPos>
+																						<Flags>0</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>2000</XPos>
+																						<YPos>0</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</RTPC>
+																	</RTPCList>
+																</Property>
+																<Property Name="LfoFrequency" Type="Real64" Value="1.181">
+																	<RTPCList>
+																		<RTPC Name="" ID="{D23608D0-76FD-4414-BB69-73470B5CDD74}" ShortID="479286971">
+																			<ReferenceList>
+																				<Reference Name="ControlInput">
+																					<ObjectRef Name="DroneVelocity_0" ID="{C669CA87-2718-4906-8EB2-F8CCF7C460E0}" WorkUnitID="{AD9FD42C-1C58-4727-B5D4-ADC87B1F0477}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<Curve Name="" ID="{97815A60-616D-4F6B-A9CB-F687561162F6}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="5"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>30</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>364.412</XPos>
+																						<YPos>35</YPos>
+																						<Flags>0</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>2000</XPos>
+																						<YPos>260</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</RTPC>
+																	</RTPCList>
+																</Property>
+																<Property Name="LfoPWM" Type="Real64">
+																	<RTPCList>
+																		<RTPC Name="" ID="{B27CA303-38D2-418B-BD17-71531ACA190F}" ShortID="29871928">
+																			<ReferenceList>
+																				<Reference Name="ControlInput">
+																					<ObjectRef Name="DroneVelocity_0" ID="{C669CA87-2718-4906-8EB2-F8CCF7C460E0}" WorkUnitID="{AD9FD42C-1C58-4727-B5D4-ADC87B1F0477}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<Curve Name="" ID="{38117FE0-9A2D-4ED3-ADF0-F70000B625A5}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="1"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>0</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>792.27053</XPos>
+																						<YPos>25</YPos>
+																						<Flags>0</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>1314.00966</XPos>
+																						<YPos>50</YPos>
+																						<Flags>0</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>2000</XPos>
+																						<YPos>75</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</RTPC>
+																	</RTPCList>
+																</Property>
+																<Property Name="LfoSmoothing" Type="Real64">
+																	<RTPCList>
+																		<RTPC Name="" ID="{D8CA41F8-12E7-402B-866C-27E8BDC3EF88}" ShortID="494600265">
+																			<ReferenceList>
+																				<Reference Name="ControlInput">
+																					<ObjectRef Name="DroneVelocity_0" ID="{C669CA87-2718-4906-8EB2-F8CCF7C460E0}" WorkUnitID="{AD9FD42C-1C58-4727-B5D4-ADC87B1F0477}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<Curve Name="" ID="{781AACD0-0804-4D30-B850-B91CF8D02755}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="1"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>0</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>2000</XPos>
+																						<YPos>100</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</RTPC>
+																	</RTPCList>
+																</Property>
+															</PropertyList>
+														</ModulatorLfo>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{235D1C37-1FDD-41F5-937D-3AD6706680CA}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-7.32724</YPos>
+														<Flags>21</Flags>
+													</Point>
+													<Point>
+														<XPos>1</XPos>
+														<YPos>-0.00001</YPos>
+														<Flags>53</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E3FC3A9A-A97B-4FEC-953B-2F0E612EA0C8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="drone_flight" ID="{0E816DF1-2201-453E-AE83-6279D586AF2D}" WorkUnitID="{31155A21-00E1-45E7-99BD-596CF82742A7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Motor Sound" ID="{C29E38CE-B030-4FBC-A8D6-297172F42600}" ShortID="1506212">
+									<PropertyList>
+										<Property Name="CrossfadeDuration" Type="Real64" Value="250"/>
+										<Property Name="LoopBegin" Type="Real64" Value="4.24706375838928"/>
+										<Property Name="LoopEnd" Type="Real64" Value="24.2869127516779"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Motor Sound.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Motor Sound" ID="{C29E38CE-B030-4FBC-A8D6-297172F42600}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="drone_motor_03" ID="{C628EF7C-F7E1-466F-A4EB-75DCDC0EE487}" ShortID="951339257" Type="SoundFX">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Pitch" Type="int32">
+									<RTPCList>
+										<RTPC Name="" ID="{B0371CA8-40EC-4EA0-8EEC-5F6A916CCCBE}" ShortID="587319403">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="DroneVelocity_3" ID="{9D27E40B-3578-4310-8614-6C0846E47B12}" WorkUnitID="{AD9FD42C-1C58-4727-B5D4-ADC87B1F0477}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{FAB8857C-3351-49EB-94B7-B95EB41B6F22}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="65537"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-500</YPos>
+														<Flags>5</Flags>
+														<SegmentShape>Log2</SegmentShape>
+													</Point>
+													<Point>
+														<XPos>404.307</XPos>
+														<YPos>-247</YPos>
+														<Flags>0</Flags>
+														<SegmentShape>Exp2</SegmentShape>
+													</Point>
+													<Point>
+														<XPos>800</XPos>
+														<YPos>-106</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>1320</XPos>
+														<YPos>0</YPos>
+														<Flags>0</Flags>
+														<SegmentShape>Exp2</SegmentShape>
+													</Point>
+													<Point>
+														<XPos>2000</XPos>
+														<YPos>400</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<RTPCList>
+										<RTPC Name="" ID="{D98CCF6B-C110-4FA9-8F5F-A06E8A699E2C}" ShortID="236543159">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="DroneVelocity_3" ID="{9D27E40B-3578-4310-8614-6C0846E47B12}" WorkUnitID="{AD9FD42C-1C58-4727-B5D4-ADC87B1F0477}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{E732CB8F-991F-4D4B-81AE-58DAEB8F7772}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-6</YPos>
+														<Flags>5</Flags>
+														<SegmentShape>Log1</SegmentShape>
+													</Point>
+													<Point>
+														<XPos>505.722</XPos>
+														<YPos>0</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>1523.91546162403</XPos>
+														<YPos>2.18686452724882E-02</YPos>
+														<Flags>0</Flags>
+														<SegmentShape>Exp2</SegmentShape>
+													</Point>
+													<Point>
+														<XPos>2000</XPos>
+														<YPos>2.32265</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+										<RTPC Name="" ID="{4F4726AE-9591-4AF7-9201-D0B797231E47}" ShortID="856445530">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<Custom CreatedFrom="{FEB46892-100B-4A2A-B1E9-F3C437A3ED98}">
+														<ModulatorLfo Name="drone_motor_rumble (Custom)" ID="{31C8D30C-B70F-4994-B9C6-2A48E586F088}" ShortID="503322398">
+															<PropertyList>
+																<Property Name="LfoDepth" Type="Real64" Value="86.3">
+																	<RTPCList>
+																		<RTPC Name="" ID="{2D4EDB52-5E09-4818-B73F-7EA766BF9A29}" ShortID="188059433">
+																			<ReferenceList>
+																				<Reference Name="ControlInput">
+																					<ObjectRef Name="DroneVelocity_0" ID="{C669CA87-2718-4906-8EB2-F8CCF7C460E0}" WorkUnitID="{AD9FD42C-1C58-4727-B5D4-ADC87B1F0477}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<Curve Name="" ID="{3B69F6B2-D7BB-423E-A7DB-9E79E0B2CD9A}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="1"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>79.25311</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>350</XPos>
+																						<YPos>0</YPos>
+																						<Flags>0</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>2000</XPos>
+																						<YPos>0</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</RTPC>
+																	</RTPCList>
+																</Property>
+																<Property Name="LfoFrequency" Type="Real64" Value="1.181">
+																	<RTPCList>
+																		<RTPC Name="" ID="{295A23C2-E24F-4CBD-824F-F6A8129FE4F1}" ShortID="751891707">
+																			<ReferenceList>
+																				<Reference Name="ControlInput">
+																					<ObjectRef Name="DroneVelocity_0" ID="{C669CA87-2718-4906-8EB2-F8CCF7C460E0}" WorkUnitID="{AD9FD42C-1C58-4727-B5D4-ADC87B1F0477}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<Curve Name="" ID="{8A797AB2-BACA-4DFF-BEF2-434F9B0EDF79}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="5"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>30</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>364.412</XPos>
+																						<YPos>35</YPos>
+																						<Flags>0</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>2000</XPos>
+																						<YPos>260</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</RTPC>
+																	</RTPCList>
+																</Property>
+																<Property Name="LfoPWM" Type="Real64">
+																	<RTPCList>
+																		<RTPC Name="" ID="{066F7978-30EA-48DA-8EB2-047AA5087D66}" ShortID="770466219">
+																			<ReferenceList>
+																				<Reference Name="ControlInput">
+																					<ObjectRef Name="DroneVelocity_0" ID="{C669CA87-2718-4906-8EB2-F8CCF7C460E0}" WorkUnitID="{AD9FD42C-1C58-4727-B5D4-ADC87B1F0477}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<Curve Name="" ID="{7168F8A7-1EB6-4F11-B467-2CED4AE6D904}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="1"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>0</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>792.27053</XPos>
+																						<YPos>25</YPos>
+																						<Flags>0</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>1314.00966</XPos>
+																						<YPos>50</YPos>
+																						<Flags>0</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>2000</XPos>
+																						<YPos>75</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</RTPC>
+																	</RTPCList>
+																</Property>
+																<Property Name="LfoSmoothing" Type="Real64">
+																	<RTPCList>
+																		<RTPC Name="" ID="{0339B660-3614-48E3-AA53-9250773B929C}" ShortID="668052248">
+																			<ReferenceList>
+																				<Reference Name="ControlInput">
+																					<ObjectRef Name="DroneVelocity_0" ID="{C669CA87-2718-4906-8EB2-F8CCF7C460E0}" WorkUnitID="{AD9FD42C-1C58-4727-B5D4-ADC87B1F0477}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<Curve Name="" ID="{B0B4305C-F9AF-4407-B632-9DB17910D9F7}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="1"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>0</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>2000</XPos>
+																						<YPos>100</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</RTPC>
+																	</RTPCList>
+																</Property>
+															</PropertyList>
+														</ModulatorLfo>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{F200B627-C5E6-40E9-ACD5-BB743F98188E}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-7.32724</YPos>
+														<Flags>21</Flags>
+													</Point>
+													<Point>
+														<XPos>1</XPos>
+														<YPos>-0.00001</YPos>
+														<Flags>53</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E3FC3A9A-A97B-4FEC-953B-2F0E612EA0C8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="drone_flight" ID="{0E816DF1-2201-453E-AE83-6279D586AF2D}" WorkUnitID="{31155A21-00E1-45E7-99BD-596CF82742A7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Motor Sound" ID="{D138A078-EB8A-4F72-BDBA-5AEB3F0075B7}" ShortID="758366697">
+									<PropertyList>
+										<Property Name="CrossfadeDuration" Type="Real64" Value="250"/>
+										<Property Name="LoopBegin" Type="Real64" Value="6.04026845637584"/>
+										<Property Name="LoopEnd" Type="Real64" Value="24.6539429530202"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Motor Sound.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Motor Sound" ID="{D138A078-EB8A-4F72-BDBA-5AEB3F0075B7}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="fireworks" ID="{F2837614-44FB-49FD-A400-8B6A13EE30B6}" ShortID="692350095"/>
+				<Folder Name="ui" ID="{1809C4DD-6E33-4823-83A4-CCB887E977DD}" ShortID="332496542">
+					<ChildrenList>
+						<Sound Name="ui_menu_click" ID="{184DD605-5108-424E-8AD1-90D22B89DBB2}" ShortID="873940482" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E3FC3A9A-A97B-4FEC-953B-2F0E612EA0C8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{31155A21-00E1-45E7-99BD-596CF82742A7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="ui_menu_click" ID="{5D0DF232-EB05-40F0-BA16-3DC47AD959C1}" ShortID="949512734">
+									<Language>SFX</Language>
+									<AudioFile>ui_menu_click.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="ui_menu_click" ID="{5D0DF232-EB05-40F0-BA16-3DC47AD959C1}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="ui_menu_hover" ID="{2490FA1C-D3F3-4CCB-A26E-EDD568C09A5A}" ShortID="721578514" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E3FC3A9A-A97B-4FEC-953B-2F0E612EA0C8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{31155A21-00E1-45E7-99BD-596CF82742A7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="ui_menu_hover" ID="{39621BED-1BD0-4F6F-A25D-1A157F94B583}" ShortID="122000679">
+									<Language>SFX</Language>
+									<AudioFile>ui_menu_hover.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="ui_menu_hover" ID="{39621BED-1BD0-4F6F-A25D-1A157F94B583}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="ui_menu_startgame" ID="{C0B6036F-259D-4157-8B0A-8DFADA190746}" ShortID="936854437" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E3FC3A9A-A97B-4FEC-953B-2F0E612EA0C8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{31155A21-00E1-45E7-99BD-596CF82742A7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="ui_menu_startgame" ID="{1B198FB8-514F-4193-81D7-5ED34C5EEA9F}" ShortID="1034396854">
+									<Language>SFX</Language>
+									<AudioFile>ui_menu_startgame.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="ui_menu_startgame" ID="{1B198FB8-514F-4193-81D7-5ED34C5EEA9F}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
+				<Sound Name="placeholder" ID="{9E14927C-B7F4-4294-BE51-AAD97BADE07C}" ShortID="533291012" Type="SoundFX">
 					<PropertyList>
 						<Property Name="Pitch" Type="int32">
-							<ModifierList>
-								<ModifierInfo>
-									<Modifier Name="" ID="{89626618-B939-4E53-A696-0CD1F80239EA}">
-										<PropertyList>
-											<Property Name="Enabled" Type="bool" Value="True"/>
-											<Property Name="Max" Type="Real64" Value="300"/>
-											<Property Name="Min" Type="Real64" Value="-300"/>
-										</PropertyList>
-									</Modifier>
-								</ModifierInfo>
-							</ModifierList>
-							<RTPCList>
-								<RTPC Name="" ID="{7FDA764D-956E-4564-943C-DB62BFF6A13F}" ShortID="337007730">
-									<ReferenceList>
-										<Reference Name="ControlInput">
-											<ObjectRef Name="test132" ID="{1D2C6D4A-67F4-404C-9B09-A66A0B27917A}" WorkUnitID="{AD9FD42C-1C58-4727-B5D4-ADC87B1F0477}"/>
-										</Reference>
-									</ReferenceList>
-									<Curve Name="" ID="{A35113BB-9399-4539-91EA-03980460AA8C}">
-										<PropertyList>
-											<Property Name="Flags" Type="int32" Value="65537"/>
-										</PropertyList>
-										<PointList>
-											<Point>
-												<XPos>0</XPos>
-												<YPos>-4800</YPos>
-												<Flags>5</Flags>
-											</Point>
-											<Point>
-												<XPos>100</XPos>
-												<YPos>4800</YPos>
-												<Flags>37</Flags>
-											</Point>
-										</PointList>
-									</Curve>
-								</RTPC>
-							</RTPCList>
-						</Property>
-						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-12</Value>
+								<Value>-555</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -59,18 +1533,61 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<AudioFileSource Name="51702__bristolstories__ping" ID="{9A1E1AF8-7280-4191-BE49-CDCFE7BF6BB7}" ShortID="901782627">
+						<AudioFileSource Name="51702__bristolstories__ping" ID="{C572DCBE-E439-4625-A3F6-BFF2DCC6BC32}" ShortID="858297084">
+							<PropertyList>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+							</PropertyList>
 							<Language>SFX</Language>
 							<AudioFile>51702__bristolstories__ping.wav</AudioFile>
 						</AudioFileSource>
 					</ChildrenList>
 					<ActiveSourceList>
-						<ActiveSource Name="51702__bristolstories__ping" ID="{9A1E1AF8-7280-4191-BE49-CDCFE7BF6BB7}" Platform="Linked"/>
+						<ActiveSource Name="51702__bristolstories__ping" ID="{C572DCBE-E439-4625-A3F6-BFF2DCC6BC32}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
-				<BlendContainer Name="TestBlend" ID="{1F85BA4A-02FE-43EC-A487-472781B6A452}" ShortID="133063672">
+				<Sound Name="placeholder_loop" ID="{F4B29338-B029-4C00-9D95-0419E02C2BA0}" ShortID="686999265" Type="SoundFX">
 					<PropertyList>
-						<Property Name="BlendBehavior" Type="int16" Value="1"/>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{2F6504F3-910C-4330-8C5E-E78C51C3CF4D}">
+										<PropertyList>
+											<Property Name="Max" Type="Real64" Value="0.22"/>
+											<Property Name="Min" Type="Real64" Value="-0.22"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<RTPCList>
+								<RTPC Name="" ID="{AB72B689-52FA-4363-ABF1-2B054DCF2A4C}" ShortID="707690227">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="DroneVelocity_0" ID="{C669CA87-2718-4906-8EB2-F8CCF7C460E0}" WorkUnitID="{AD9FD42C-1C58-4727-B5D4-ADC87B1F0477}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{679799E5-EDE7-45A4-B343-D42EA47F78AB}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="3"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>-200</YPos>
+												<Flags>5</Flags>
+											</Point>
+											<Point>
+												<XPos>2000</XPos>
+												<YPos>0</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -81,13 +1598,145 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<Sound Name="helicopter-interior-no-rotor" ID="{6EF88774-1A07-438D-A559-334238CD87E8}" ShortID="995546843" Type="SoundFX">
+						<AudioFileSource Name="261208__stereo-surgeon__insomniac-snyth-loop" ID="{8FB8071C-6429-4EA4-B902-FE4B9ADEF08A}" ShortID="4470141">
 							<PropertyList>
-								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+								<Property Name="TrimBegin" Type="Real64" Value="1.01505601746872"/>
+								<Property Name="TrimEnd" Type="Real64" Value="8.29191030486269"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>261208__stereo-surgeon__insomniac-snyth-loop.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="261208__stereo-surgeon__insomniac-snyth-loop" ID="{8FB8071C-6429-4EA4-B902-FE4B9ADEF08A}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="placeholder_loop_01" ID="{E50211ED-65B2-4A0A-8561-18678C0BE265}" ShortID="119291763" Type="SoundFX">
+					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<RTPCList>
+								<RTPC Name="" ID="{759FAD6C-6EF4-409A-B98E-D3D05453AF0E}" ShortID="310053940">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="DroneVelocity_1" ID="{A2A80916-3CD4-4297-B8DD-0B97B17189E9}" WorkUnitID="{AD9FD42C-1C58-4727-B5D4-ADC87B1F0477}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{536F55CF-0FEB-4EA5-B016-0E8104263057}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="3"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>-200</YPos>
+												<Flags>5</Flags>
+											</Point>
+											<Point>
+												<XPos>2000</XPos>
+												<YPos>0</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E3FC3A9A-A97B-4FEC-953B-2F0E612EA0C8}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{31155A21-00E1-45E7-99BD-596CF82742A7}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="261208__stereo-surgeon__insomniac-snyth-loop" ID="{AB1D0AAF-779D-48C6-A36F-4EF2A51A8CC9}" ShortID="66977357">
+							<PropertyList>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+								<Property Name="TrimBegin" Type="Real64" Value="1.01505601746872"/>
+								<Property Name="TrimEnd" Type="Real64" Value="8.29191030486269"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>261208__stereo-surgeon__insomniac-snyth-loop.wav</AudioFile>
+							<ConvertedFileIDList>
+								<File ID="4470141"/>
+							</ConvertedFileIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="261208__stereo-surgeon__insomniac-snyth-loop" ID="{AB1D0AAF-779D-48C6-A36F-4EF2A51A8CC9}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Folder Name="drone_launch" ID="{4A7CE78E-5C6A-4472-AFB0-50810B9AC00E}" ShortID="357840410">
+					<Comment>abilities drones can use
+</Comment>
+					<ChildrenList>
+						<RandomSequenceContainer Name="EMP" ID="{88F04591-8A6C-41DF-8D92-1BC4A446C548}" ShortID="795630198">
+							<PropertyList>
+								<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E3FC3A9A-A97B-4FEC-953B-2F0E612EA0C8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="drone_launch" ID="{C0B88A11-5DEC-4D9A-8610-D53D0D102127}" WorkUnitID="{31155A21-00E1-45E7-99BD-596CF82742A7}"/>
+								</Reference>
+							</ReferenceList>
+						</RandomSequenceContainer>
+						<Sound Name="EMP_impact" ID="{A48A55B2-D940-42A0-9769-D61E83CD8367}" ShortID="993948427" Type="SoundFX">
+							<PropertyList>
 								<Property Name="Pitch" Type="int32">
 									<ModifierList>
 										<ModifierInfo>
-											<Modifier Name="" ID="{635CBD5A-9C65-480B-BF67-FC4B664EC23A}"/>
+											<Modifier Name="" ID="{B9856C67-184D-462E-8747-38FAE5E09908}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="152"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-3</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E3FC3A9A-A97B-4FEC-953B-2F0E612EA0C8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="drone_launch" ID="{C0B88A11-5DEC-4D9A-8610-D53D0D102127}" WorkUnitID="{31155A21-00E1-45E7-99BD-596CF82742A7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="EMP_impact" ID="{4F8CF662-6BC3-4CC5-9966-CE9645A1227E}" ShortID="233327244">
+									<Language>SFX</Language>
+									<AudioFile>EMP_impact.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="EMP_impact" ID="{4F8CF662-6BC3-4CC5-9966-CE9645A1227E}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<RandomSequenceContainer Name="EMP_electro" ID="{28DAEF99-7801-4378-A690-FE7ADAAF4137}" ShortID="112280407">
+							<PropertyList>
+								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{76DC75F3-C4D7-4DFC-8A9D-C77E4DDAD853}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="101"/>
+												</PropertyList>
+											</Modifier>
 										</ModifierInfo>
 									</ModifierList>
 								</Property>
@@ -97,192 +1746,225 @@
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E3FC3A9A-A97B-4FEC-953B-2F0E612EA0C8}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{31155A21-00E1-45E7-99BD-596CF82742A7}"/>
+									<ObjectRef Name="drone_launch" ID="{C0B88A11-5DEC-4D9A-8610-D53D0D102127}" WorkUnitID="{31155A21-00E1-45E7-99BD-596CF82742A7}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="helicopter-interior-no-rotor" ID="{65470ADA-AD58-41EF-9D6B-CED8D1A32940}" ShortID="241608803">
-									<Language>SFX</Language>
-									<AudioFile>helicopter-interior-no-rotor.wav</AudioFile>
-								</AudioFileSource>
+								<Sound Name="EMP_electro_3" ID="{A8792465-B1A5-4892-BE0B-F6205ABB9064}" ShortID="469558786" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E3FC3A9A-A97B-4FEC-953B-2F0E612EA0C8}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{31155A21-00E1-45E7-99BD-596CF82742A7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="EMP_electro_3" ID="{45705481-BDF6-4B07-89E8-A36AF6297926}" ShortID="864025603">
+											<Language>SFX</Language>
+											<AudioFile>EMP_electro_3.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="EMP_electro_3" ID="{45705481-BDF6-4B07-89E8-A36AF6297926}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="EMP_electro_1" ID="{FE0B361E-0181-491F-A120-F87E411818FE}" ShortID="295020143" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E3FC3A9A-A97B-4FEC-953B-2F0E612EA0C8}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{31155A21-00E1-45E7-99BD-596CF82742A7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="EMP_electro_1" ID="{E185AA2D-168F-41AD-B28F-2AEF853B8956}" ShortID="626020497">
+											<Language>SFX</Language>
+											<AudioFile>EMP_electro_1.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="EMP_electro_1" ID="{E185AA2D-168F-41AD-B28F-2AEF853B8956}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="EMP_electro_2" ID="{5634AA02-765A-427D-A814-3C9D935AA2FC}" ShortID="402889222" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E3FC3A9A-A97B-4FEC-953B-2F0E612EA0C8}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{31155A21-00E1-45E7-99BD-596CF82742A7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="EMP_electro_2" ID="{1FFF053B-82BC-47AE-BC01-FE51CBAD4F4F}" ShortID="711981811">
+											<Language>SFX</Language>
+											<AudioFile>EMP_electro_2.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="EMP_electro_2" ID="{1FFF053B-82BC-47AE-BC01-FE51CBAD4F4F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
 							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="helicopter-interior-no-rotor" ID="{65470ADA-AD58-41EF-9D6B-CED8D1A32940}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="greece-boat-piraeus" ID="{0A7BF82D-1D5A-4278-9C89-6B8ECA56D932}" ShortID="461945219" Type="SoundFX">
-							<PropertyList>
-								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E3FC3A9A-A97B-4FEC-953B-2F0E612EA0C8}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{31155A21-00E1-45E7-99BD-596CF82742A7}"/>
-								</Reference>
-							</ReferenceList>
+						</RandomSequenceContainer>
+						<Folder Name="magnet" ID="{C3EB7918-7991-43AC-A5B2-74C48B122ABE}" ShortID="164557771">
 							<ChildrenList>
-								<AudioFileSource Name="greece-boat-piraeus" ID="{25387577-036E-43C6-9A76-36CC68E3BDF4}" ShortID="141459998">
-									<Language>SFX</Language>
-									<AudioFile>greece-boat-piraeus.wav</AudioFile>
-								</AudioFileSource>
+								<RandomSequenceContainer Name="magnet_impact" ID="{FE33532E-C757-4C4A-87F1-EE0D17A012D0}" ShortID="281590603">
+									<PropertyList>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E3FC3A9A-A97B-4FEC-953B-2F0E612EA0C8}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="drone_launch" ID="{C0B88A11-5DEC-4D9A-8610-D53D0D102127}" WorkUnitID="{31155A21-00E1-45E7-99BD-596CF82742A7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="magnet_impact_1" ID="{BD3B2DFD-DF3C-431B-A7F4-AACAB98DE5BF}" ShortID="1002521620" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E3FC3A9A-A97B-4FEC-953B-2F0E612EA0C8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{31155A21-00E1-45E7-99BD-596CF82742A7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="magnet_impact_1" ID="{0CA10B47-73BC-41D9-85A7-E7099E159D1B}" ShortID="436537272">
+													<Language>SFX</Language>
+													<AudioFile>magnet_impact_1.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="magnet_impact_1" ID="{0CA10B47-73BC-41D9-85A7-E7099E159D1B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="magnet_impact_2" ID="{31CDED91-A383-4139-A540-434F6A8DD66A}" ShortID="485108445" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E3FC3A9A-A97B-4FEC-953B-2F0E612EA0C8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{31155A21-00E1-45E7-99BD-596CF82742A7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="magnet_impact_2" ID="{C73D4723-4A7F-45D2-BA90-0D0C04AB82F2}" ShortID="969457314">
+													<Language>SFX</Language>
+													<AudioFile>magnet_impact_2.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="magnet_impact_2" ID="{C73D4723-4A7F-45D2-BA90-0D0C04AB82F2}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="magnet_impact_3" ID="{A85A42F0-F694-49D9-80D3-E16C4965E588}" ShortID="186090369" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E3FC3A9A-A97B-4FEC-953B-2F0E612EA0C8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{31155A21-00E1-45E7-99BD-596CF82742A7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="magnet_impact_3" ID="{8A63B1FC-F923-468C-953A-8DF3B7CDB81E}" ShortID="8979759">
+													<Language>SFX</Language>
+													<AudioFile>magnet_impact_3.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="magnet_impact_3" ID="{8A63B1FC-F923-468C-953A-8DF3B7CDB81E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="magnet_impact_4" ID="{D386961D-B216-44ED-840A-7268BD0D6AF1}" ShortID="726085691" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E3FC3A9A-A97B-4FEC-953B-2F0E612EA0C8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{31155A21-00E1-45E7-99BD-596CF82742A7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="magnet_impact_4" ID="{6A53FD33-42EE-44C3-B2E5-AEE7ECAC7DE7}" ShortID="349849822">
+													<Language>SFX</Language>
+													<AudioFile>magnet_impact_4.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="magnet_impact_4" ID="{6A53FD33-42EE-44C3-B2E5-AEE7ECAC7DE7}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<Sound Name="magnet_electro" ID="{87FE04F7-969F-4C54-B36A-5E276E78C3DE}" ShortID="34740726" Type="SoundFX">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E3FC3A9A-A97B-4FEC-953B-2F0E612EA0C8}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="drone_launch" ID="{C0B88A11-5DEC-4D9A-8610-D53D0D102127}" WorkUnitID="{31155A21-00E1-45E7-99BD-596CF82742A7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="magnet_electro" ID="{EC908CA3-BCC8-40FB-A2FE-2A85560EEBBF}" ShortID="359864765">
+											<PropertyList>
+												<Property Name="CrossfadeDuration" Type="Real64" Value="250"/>
+												<Property Name="LoopBegin" Type="Real64" Value="0.135688924426734"/>
+												<Property Name="LoopEnd" Type="Real64" Value="9.00586775552293"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>magnet_electro.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="magnet_electro" ID="{EC908CA3-BCC8-40FB-A2FE-2A85560EEBBF}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="magnet_humm" ID="{4AF2FB17-E946-4BE2-8D4A-E65659F69117}" ShortID="1007965409" Type="SoundFX">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-1</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E3FC3A9A-A97B-4FEC-953B-2F0E612EA0C8}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="drone_launch" ID="{C0B88A11-5DEC-4D9A-8610-D53D0D102127}" WorkUnitID="{31155A21-00E1-45E7-99BD-596CF82742A7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="magnet_humm" ID="{3B02B97E-02B3-4D33-97F4-19E8C6D64487}" ShortID="419968181">
+											<PropertyList>
+												<Property Name="CrossfadeDuration" Type="Real64" Value="250"/>
+												<Property Name="LoopBegin" Type="Real64" Value="0.349298972315436"/>
+												<Property Name="LoopEnd" Type="Real64" Value="8.94593479096756"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>magnet_humm.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="magnet_humm" ID="{3B02B97E-02B3-4D33-97F4-19E8C6D64487}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
 							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="greece-boat-piraeus" ID="{25387577-036E-43C6-9A76-36CC68E3BDF4}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="343690__elementrs2__helicopter2" ID="{0B686FA6-1D7E-48BF-BACB-ABE8BDE80AA0}" ShortID="603523431" Type="SoundFX">
-							<PropertyList>
-								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E3FC3A9A-A97B-4FEC-953B-2F0E612EA0C8}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{31155A21-00E1-45E7-99BD-596CF82742A7}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="343690__elementrs2__helicopter2" ID="{DB63C1DB-14B1-4D0A-90FA-576C969711CF}" ShortID="1072481934">
-									<Language>SFX</Language>
-									<AudioFile>343690__elementrs2__helicopter2.wav</AudioFile>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="343690__elementrs2__helicopter2" ID="{DB63C1DB-14B1-4D0A-90FA-576C969711CF}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-					</ChildrenList>
-					<BlendTrackList>
-						<BlendTrack Name="New Blend Track" ID="{A0B1C57C-1AEF-4A76-90CD-C8FE55AEA53D}" ShortID="683314617">
-							<PropertyList>
-								<Property Name="EnableCrossFading" Type="bool" Value="True"/>
-								<Property Name="Pitch" Type="int32">
-									<RTPCList>
-										<RTPC Name="" ID="{AB519AE7-76C0-4F72-8A54-D6743DCC745F}" ShortID="322146640"/>
-									</RTPCList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="LayerCrossFadeControlInput">
-									<ObjectRef Name="TestRPC" ID="{C669CA87-2718-4906-8EB2-F8CCF7C460E0}" WorkUnitID="{AD9FD42C-1C58-4727-B5D4-ADC87B1F0477}"/>
-								</Reference>
-							</ReferenceList>
-							<BlendTrackAssocList>
-								<BlendTrackAssoc>
-									<ItemRef Name="greece-boat-piraeus" ID="{0A7BF82D-1D5A-4278-9C89-6B8ECA56D932}"/>
-									<CrossfadingInfo>
-										<LeftEdgePos>0</LeftEdgePos>
-										<LeftFadingMode>Automatic</LeftFadingMode>
-										<RightEdgePos>796.603152106466</RightEdgePos>
-										<RightFadingMode>Automatic</RightFadingMode>
-									</CrossfadingInfo>
-								</BlendTrackAssoc>
-								<BlendTrackAssoc>
-									<ItemRef Name="343690__elementrs2__helicopter2" ID="{0B686FA6-1D7E-48BF-BACB-ABE8BDE80AA0}"/>
-									<CrossfadingInfo>
-										<LeftEdgePos>0.0005</LeftEdgePos>
-										<LeftFadingMode>Automatic</LeftFadingMode>
-										<RightEdgePos>1246.11336995836</RightEdgePos>
-										<RightFadingMode>Automatic</RightFadingMode>
-									</CrossfadingInfo>
-								</BlendTrackAssoc>
-								<BlendTrackAssoc>
-									<ItemRef Name="helicopter-interior-no-rotor" ID="{6EF88774-1A07-438D-A559-334238CD87E8}"/>
-									<CrossfadingInfo>
-										<LeftEdgePos>1021.94637773514</LeftEdgePos>
-										<LeftFadingMode>Automatic</LeftFadingMode>
-										<RightEdgePos>2000</RightEdgePos>
-										<RightFadingMode>Automatic</RightFadingMode>
-									</CrossfadingInfo>
-								</BlendTrackAssoc>
-							</BlendTrackAssocList>
-						</BlendTrack>
-					</BlendTrackList>
-				</BlendContainer>
-				<Sound Name="aud_shot_rocket" ID="{88CADB20-3F74-493F-90DB-2AF603342DF3}" ShortID="1053052190" Type="SoundFX">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E3FC3A9A-A97B-4FEC-953B-2F0E612EA0C8}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Shots" ID="{6B2557DB-1872-4F2F-8A59-A855BF51357F}" WorkUnitID="{31155A21-00E1-45E7-99BD-596CF82742A7}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="aud_shot_rocket" ID="{33D3135D-BA81-4679-890C-4EC7E4AD96EF}" ShortID="737805754">
-							<Language>SFX</Language>
-							<AudioFile>aud_shot_rocket.wav</AudioFile>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="aud_shot_rocket" ID="{33D3135D-BA81-4679-890C-4EC7E4AD96EF}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Folder Name="Ambience" ID="{41FC88E7-E811-413F-96EA-5A8B06D081AC}" ShortID="205290602">
-					<ChildrenList>
-						<Sound Name="aud_ambience_ruins" ID="{551B75DD-08BE-466C-9AE8-EFCAE5FEC200}" ShortID="248356908" Type="SoundFX">
-							<PropertyList>
-								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E3FC3A9A-A97B-4FEC-953B-2F0E612EA0C8}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Ambience" ID="{1C025182-BBB1-4B2A-8578-62BA4CA9F664}" WorkUnitID="{31155A21-00E1-45E7-99BD-596CF82742A7}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="aud_ambience_ruins" ID="{CF4B992D-AB27-484B-AC8B-D361DDB530A9}" ShortID="248985614">
-									<Language>SFX</Language>
-									<AudioFile>aud_ambience_ruins.wav</AudioFile>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="aud_ambience_ruins" ID="{CF4B992D-AB27-484B-AC8B-D361DDB530A9}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="aud_ambience_water" ID="{1608D6AD-FEDF-4FEC-8B25-CAB343EC1F36}" ShortID="976307546" Type="SoundFX">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E3FC3A9A-A97B-4FEC-953B-2F0E612EA0C8}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Ambience" ID="{1C025182-BBB1-4B2A-8578-62BA4CA9F664}" WorkUnitID="{31155A21-00E1-45E7-99BD-596CF82742A7}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="aud_ambience_water" ID="{C72ACA45-B8E1-4690-9A35-F4097E8E46FD}" ShortID="764889624">
-									<Language>SFX</Language>
-									<AudioFile>aud_ambience_water.wav</AudioFile>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="aud_ambience_water" ID="{C72ACA45-B8E1-4690-9A35-F4097E8E46FD}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="aud_ambience_wind" ID="{732F8D68-EA78-46B9-AB35-5ED4E7B717E1}" ShortID="256237711" Type="SoundFX">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E3FC3A9A-A97B-4FEC-953B-2F0E612EA0C8}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Ambience" ID="{1C025182-BBB1-4B2A-8578-62BA4CA9F664}" WorkUnitID="{31155A21-00E1-45E7-99BD-596CF82742A7}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="aud_ambience_wind" ID="{05BD5531-73DB-4A2B-AD35-06D5B20C74AB}" ShortID="161448654">
-									<Language>SFX</Language>
-									<AudioFile>aud_ambience_wind.wav</AudioFile>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="aud_ambience_wind" ID="{05BD5531-73DB-4A2B-AD35-06D5B20C74AB}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

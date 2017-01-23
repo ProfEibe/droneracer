@@ -10,6 +10,16 @@
 						<Bus Name="Drone Sounds" ID="{6CA13B2F-26F4-4FA9-A18C-128FB7CCBCE8}"/>
 						<Bus Name="Music" ID="{1E605B17-4FB5-4597-805E-41566AE918AC}"/>
 						<Bus Name="UI" ID="{45E82E5A-A29A-4B26-B626-DCB3169E2C73}"/>
+						<Bus Name="drone_flight" ID="{0E816DF1-2201-453E-AE83-6279D586AF2D}">
+							<PropertyList>
+								<Property Name="BusVolume" Type="Real64">
+									<ValueList>
+										<Value>-5</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+						</Bus>
+						<Bus Name="drone_launch" ID="{C0B88A11-5DEC-4D9A-8610-D53D0D102127}"/>
 					</ChildrenList>
 				</Bus>
 				<Bus Name="Master Secondary Bus" ID="{D2E0BC7E-7B3F-4FFE-A670-FAE02761B631}"/>

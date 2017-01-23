@@ -1,35 +1,95 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="11" SoundbankVersion="120">
 	<RootPaths>
-		<ProjectRoot>D:\simon\droneracer\droneracer_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>D:\simon\droneracer\droneracer_WwiseProject\.cache\Mac\</SourceFilesRoot>
-		<SoundBanksRoot>D:\simon\droneracer\Content\WwiseAudio\Mac\</SoundBanksRoot>
+		<ProjectRoot>C:\Users\Simon\git\droneracer\droneracer_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\Simon\git\droneracer\droneracer_WwiseProject\.cache\Mac\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\Simon\git\droneracer\Content\WwiseAudio\Mac\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>D:\simon\droneracer\droneracer_WwiseProject\GeneratedSoundBanks\Mac\</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>C:\Users\Simon\git\droneracer\droneracer_WwiseProject\GeneratedSoundBanks\Mac\</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
-	<StreamedFiles/>
+	<StreamedFiles>
+		<File Id="161448654" Language="SFX">
+			<ShortName>aud_ambience_wind.wav</ShortName>
+			<Path>SFX\aud_ambience_wind_000D5B9B.wem</Path>
+		</File>
+	</StreamedFiles>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
+		<SoundBank Id="50650468" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\AmbienceSoundbank</ObjectPath>
+			<ShortName>AmbienceSoundbank</ShortName>
+			<Path>AmbienceSoundbank.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3158370847" Name="Play_aud_ambience_ruins" ObjectPath="\Events\Default Work Unit\ambience\Play_aud_ambience_ruins"/>
+				<Event Id="1503943207" Name="Play_aud_ambience_water" ObjectPath="\Events\Default Work Unit\ambience\Play_aud_ambience_water"/>
+				<Event Id="2304818536" Name="Play_aud_ambience_wind" ObjectPath="\Events\Default Work Unit\ambience\Play_aud_ambience_wind"/>
+				<Event Id="1587344101" Name="Stop_aud_ambience_ruins" ObjectPath="\Events\Default Work Unit\ambience\Stop_aud_ambience_ruins"/>
+				<Event Id="3422266761" Name="Stop_aud_ambience_water" ObjectPath="\Events\Default Work Unit\ambience\Stop_aud_ambience_water"/>
+			</IncludedEvents>
+			<ReferencedStreamedFiles>
+				<File Id="161448654"/>
+			</ReferencedStreamedFiles>
+			<IncludedMemoryFiles>
+				<File Id="4470141" Language="SFX">
+					<ShortName>261208__stereo-surgeon__insomniac-snyth-loop.wav</ShortName>
+					<Path>SFX\261208__stereo-surgeon__insomniac-snyth-loop_76C00391.wem</Path>
+				</File>
+				<File Id="764889624" Language="SFX">
+					<ShortName>aud_ambience_water.wav</ShortName>
+					<Path>SFX\aud_ambience_water_9E69E797.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
 		<SoundBank Id="1355168291" Language="SFX">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
-		</SoundBank>
-		<SoundBank Id="1831431028" Language="SFX">
-			<ObjectPath>\SoundBanks\Default Work Unit\TestSoundbank</ObjectPath>
-			<ShortName>TestSoundbank</ShortName>
-			<Path>TestSoundbank.bnk</Path>
 		</SoundBank>
 		<SoundBank Id="2175497913" Language="SFX">
 			<ObjectPath>\SoundBanks\Default Work Unit\EventAudiobank</ObjectPath>
 			<ShortName>EventAudiobank</ShortName>
 			<Path>EventAudiobank.bnk</Path>
 			<IncludedEvents>
-				<Event Id="4258653052" Name="Test_Event" ObjectPath="\Events\Default Work Unit\Test_Event"/>
+				<Event Id="987538065" Name="drone_checkpoint_correct" ObjectPath="\Events\Default Work Unit\drone\drone_checkpoint_correct"/>
+				<Event Id="2435212104" Name="drone_checkpoint_wrong" ObjectPath="\Events\Default Work Unit\drone\drone_checkpoint_wrong"/>
+				<Event Id="1951358637" Name="drone_die_out_of_reach" ObjectPath="\Events\Default Work Unit\drone\drone_die_out_of_reach"/>
+				<Event Id="447189498" Name="drone_die_water" ObjectPath="\Events\Default Work Unit\drone\drone_die_water"/>
+				<Event Id="2178522863" Name="drone_flight_0" ObjectPath="\Events\Default Work Unit\drone\drone_flight_0"/>
+				<Event Id="2178522862" Name="drone_flight_1" ObjectPath="\Events\Default Work Unit\drone\drone_flight_1"/>
+				<Event Id="2178522861" Name="drone_flight_2" ObjectPath="\Events\Default Work Unit\drone\drone_flight_2"/>
+				<Event Id="2178522860" Name="drone_flight_3" ObjectPath="\Events\Default Work Unit\drone\drone_flight_3"/>
+				<Event Id="1452135744" Name="drone_launch_boost_refill" ObjectPath="\Events\Default Work Unit\drone\drone_launch_boost_refill"/>
+				<Event Id="417446310" Name="drone_launch_emp" ObjectPath="\Events\Default Work Unit\drone\drone_launch_emp"/>
+				<Event Id="3890542148" Name="drone_launch_glass" ObjectPath="\Events\Default Work Unit\drone\drone_launch_glass"/>
+				<Event Id="4041046886" Name="drone_launch_magnet" ObjectPath="\Events\Default Work Unit\drone\drone_launch_magnet"/>
+				<Event Id="2387639648" Name="drone_launch_rocket" ObjectPath="\Events\Default Work Unit\drone\drone_launch_rocket"/>
+				<Event Id="2320251260" Name="drone_launch_wall" ObjectPath="\Events\Default Work Unit\drone\drone_launch_wall"/>
+				<Event Id="819908297" Name="emp_finish" ObjectPath="\Events\Default Work Unit\drone\emp_finish"/>
+				<Event Id="3421150781" Name="fireworks_explode_level1" ObjectPath="\Events\Default Work Unit\fireworks\fireworks_explode_level1"/>
+				<Event Id="3421150782" Name="fireworks_explode_level2" ObjectPath="\Events\Default Work Unit\fireworks\fireworks_explode_level2"/>
+				<Event Id="1027196084" Name="fireworks_launch_rocket" ObjectPath="\Events\Default Work Unit\fireworks\fireworks_launch_rocket"/>
+				<Event Id="1087324449" Name="gamestate_out_of_reach" ObjectPath="\Events\Default Work Unit\drone\gamestate_out_of_reach"/>
+				<Event Id="4072963231" Name="glass_break" ObjectPath="\Events\Default Work Unit\drone\glass_break"/>
+				<Event Id="2640321903" Name="magnet_finish" ObjectPath="\Events\Default Work Unit\drone\magnet_finish"/>
+				<Event Id="2011859341" Name="rocket_explosion" ObjectPath="\Events\Default Work Unit\drone\rocket_explosion"/>
+				<Event Id="1979317945" Name="speedtunnel_tunnel_sound" ObjectPath="\Events\Default Work Unit\drone\speedtunnel_tunnel_sound"/>
+				<Event Id="1915590551" Name="ui_game_lap_finished" ObjectPath="\Events\Default Work Unit\ui\ui_game_lap_finished"/>
+				<Event Id="2690505134" Name="ui_menu_click" ObjectPath="\Events\Default Work Unit\ui\ui_menu_click"/>
+				<Event Id="1063657005" Name="ui_menu_finishline" ObjectPath="\Events\Default Work Unit\ui\ui_menu_finishline"/>
+				<Event Id="2163476404" Name="ui_menu_hover" ObjectPath="\Events\Default Work Unit\ui\ui_menu_hover"/>
+				<Event Id="1529249135" Name="ui_menu_start_game" ObjectPath="\Events\Default Work Unit\ui\ui_menu_start_game"/>
+				<Event Id="3466143422" Name="ui_menu_start_race" ObjectPath="\Events\Default Work Unit\ui\ui_menu_start_race"/>
+				<Event Id="3952986577" Name="ui_pickup_already_equiped" ObjectPath="\Events\Default Work Unit\ui\ui_pickup_already_equiped"/>
+				<Event Id="3558043840" Name="ui_pickup_shuffle" ObjectPath="\Events\Default Work Unit\ui\ui_pickup_shuffle"/>
+				<Event Id="11041865" Name="wall_break" ObjectPath="\Events\Default Work Unit\drone\wall_break"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
-				<File Id="901782627" Language="SFX">
+				<File Id="4470141" Language="SFX">
+					<ShortName>261208__stereo-surgeon__insomniac-snyth-loop.wav</ShortName>
+					<Path>SFX\261208__stereo-surgeon__insomniac-snyth-loop_76C00391.wem</Path>
+				</File>
+				<File Id="858297084" Language="SFX">
 					<ShortName>51702__bristolstories__ping.wav</ShortName>
 					<Path>SFX\51702__bristolstories__ping_9E69E797.wem</Path>
 				</File>
