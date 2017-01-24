@@ -32,7 +32,14 @@
 								<Action Name="Play" ID="{1B3FC25A-338C-4F05-B6E0-495FB926DF7E}" ShortID="1067196553" Type="Play" Scope="One" Global="false">
 									<ElementList>
 										<Element ID="{B2568028-104C-4036-88AB-BFA8398CC8AE}" Global="false">
-											<ObjectRef Name="drone_motor_00" ID="{C2C2A858-B18E-4FDB-B62C-7E449F77A721}" WorkUnitID="{3AA95F97-CDF6-4AA3-B1A6-707722341C4C}"/>
+											<ObjectRef Name="out_of_range_cracking" ID="{3F8EF633-C39F-41D3-AB83-700EB0AEC33F}" WorkUnitID="{3AA95F97-CDF6-4AA3-B1A6-707722341C4C}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Play" ID="{73581AFC-00E0-494D-9607-97356AEA2C01}" ShortID="895250720" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{CDA8EDB4-A3E3-4EB5-8F44-751AE2F50EC0}" Global="false">
+											<ObjectRef Name="out_of_range_humm" ID="{60D09777-D4BC-47EC-A28E-86CD77D92AAC}" WorkUnitID="{3AA95F97-CDF6-4AA3-B1A6-707722341C4C}"/>
 										</Element>
 									</ElementList>
 								</Action>
