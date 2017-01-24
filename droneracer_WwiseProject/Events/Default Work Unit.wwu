@@ -72,7 +72,7 @@
 								<Action Name="Play" ID="{518B6259-C4E0-43FC-920B-9717D16859CD}" ShortID="278660632" Type="Play" Scope="One" Global="false">
 									<ElementList>
 										<Element ID="{879410EB-56BE-4FC6-89A6-463C3C930882}" Global="false">
-											<ObjectRef Name="placeholder" ID="{9E14927C-B7F4-4294-BE51-AAD97BADE07C}" WorkUnitID="{3AA95F97-CDF6-4AA3-B1A6-707722341C4C}"/>
+											<ObjectRef Name="placeholder_loop_02" ID="{1389804C-9F7F-4704-996C-30C68B94787E}" WorkUnitID="{3AA95F97-CDF6-4AA3-B1A6-707722341C4C}"/>
 										</Element>
 									</ElementList>
 								</Action>
@@ -332,6 +332,17 @@
 								</Event>
 							</ChildrenList>
 						</Folder>
+						<Event Name="gamestate_out_of_reach_stop" ID="{55D0FCA3-81FE-4C94-8480-49D4A8AF24A7}">
+							<ChildrenList>
+								<Action Name="Stop" ID="{1940AEB5-065F-4B84-AF2A-7D709CAE36B5}" ShortID="736687650" Type="Stop" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{2BC5F09C-5B3C-43A6-AEC9-F6E34A57E8D7}" Global="false">
+											<ObjectRef Name="placeholder_loop_02" ID="{1389804C-9F7F-4704-996C-30C68B94787E}" WorkUnitID="{3AA95F97-CDF6-4AA3-B1A6-707722341C4C}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="ui" ID="{F4960B81-7C81-4853-9341-7D4705DDFC31}" ShortID="575443018">
