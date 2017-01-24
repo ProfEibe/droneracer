@@ -15,3 +15,4 @@ Content/Level/Test.uasset filter=lfs diff=lfs merge=lfs -text
 *.bnk filter=lfs diff=lfs merge=lfs -text
 *.a filter=lfs diff=lfs merge=lfs -text
 *.lib filter=lfs diff=lfs merge=lfs -text
+Content/Textures/UI/Tutorial/** filter=lfs diff=lfs merge=lfs -text
