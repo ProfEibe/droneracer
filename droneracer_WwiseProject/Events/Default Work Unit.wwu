@@ -5,50 +5,6 @@
 			<ChildrenList>
 				<Folder Name="drone" ID="{0F1E8D92-A3E6-499B-9D5C-02FF06EE72A6}" ShortID="543438209">
 					<ChildrenList>
-						<Event Name="emp_finish" ID="{BC3DCF44-931E-4AC3-AA1B-33DB0C341CDC}">
-							<ChildrenList>
-								<Action Name="Play" ID="{852023D2-0A30-49A7-9DD4-7A289D99A540}" ShortID="598904370" Type="Play" Scope="One" Global="false">
-									<ElementList>
-										<Element ID="{032062BB-CD7D-4A20-8660-C0ED253CD1C5}" Global="false">
-											<ObjectRef Name="placeholder" ID="{9E14927C-B7F4-4294-BE51-AAD97BADE07C}" WorkUnitID="{3AA95F97-CDF6-4AA3-B1A6-707722341C4C}"/>
-										</Element>
-									</ElementList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="glass_break" ID="{3C1E8EBD-D741-48C3-B048-CD0E544CD4E4}">
-							<ChildrenList>
-								<Action Name="Play" ID="{8A5CFC4E-9A23-40BB-8CF1-7999EEFF7C62}" ShortID="220596732" Type="Play" Scope="One" Global="false">
-									<ElementList>
-										<Element ID="{DDB97CF7-A86B-4672-BB03-3DEF36FC9ECC}" Global="false">
-											<ObjectRef Name="placeholder" ID="{9E14927C-B7F4-4294-BE51-AAD97BADE07C}" WorkUnitID="{3AA95F97-CDF6-4AA3-B1A6-707722341C4C}"/>
-										</Element>
-									</ElementList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="wall_break" ID="{097F6B50-6960-4501-8ABC-28E90781BF3C}">
-							<ChildrenList>
-								<Action Name="Play" ID="{28516E6F-41DD-4F4F-8D8D-20657FD345FA}" ShortID="182527450" Type="Play" Scope="One" Global="false">
-									<ElementList>
-										<Element ID="{3A8F3F88-C377-4DD3-8934-3EBC6DEB7755}" Global="false">
-											<ObjectRef Name="placeholder" ID="{9E14927C-B7F4-4294-BE51-AAD97BADE07C}" WorkUnitID="{3AA95F97-CDF6-4AA3-B1A6-707722341C4C}"/>
-										</Element>
-									</ElementList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="magnet_finish" ID="{19C1F62B-6534-4324-BBE3-263D27EA2C7C}">
-							<ChildrenList>
-								<Action Name="Play" ID="{1DAC25B5-3219-4A2B-8EDB-DFB330BB1EAE}" ShortID="628049883" Type="Play" Scope="One" Global="false">
-									<ElementList>
-										<Element ID="{0BF59980-65C6-4683-97B0-5725A74EEF77}" Global="false">
-											<ObjectRef Name="placeholder" ID="{9E14927C-B7F4-4294-BE51-AAD97BADE07C}" WorkUnitID="{3AA95F97-CDF6-4AA3-B1A6-707722341C4C}"/>
-										</Element>
-									</ElementList>
-								</Action>
-							</ChildrenList>
-						</Event>
 						<Event Name="drone_checkpoint_correct" ID="{3237543D-E38F-4ACA-85FE-864D8DF8E37A}">
 							<ChildrenList>
 								<Action Name="Play" ID="{761CFA9D-E4D4-4ABF-8A86-4F24320497C8}" ShortID="579734624" Type="Play" Scope="One" Global="false">
@@ -65,17 +21,6 @@
 								<Action Name="Play" ID="{E892CC42-2B0A-400E-8657-0D48FF12D0E5}" ShortID="173835769" Type="Play" Scope="One" Global="false">
 									<ElementList>
 										<Element ID="{144EAF1E-3226-4D69-A364-897FED486804}" Global="false">
-											<ObjectRef Name="placeholder" ID="{9E14927C-B7F4-4294-BE51-AAD97BADE07C}" WorkUnitID="{3AA95F97-CDF6-4AA3-B1A6-707722341C4C}"/>
-										</Element>
-									</ElementList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="rocket_explosion" ID="{402C78FC-0ED2-4C12-92F3-C13BE6384712}">
-							<ChildrenList>
-								<Action Name="Play" ID="{BA65BC13-9A29-4B58-A42F-D818240C5B0A}" ShortID="294714035" Type="Play" Scope="One" Global="false">
-									<ElementList>
-										<Element ID="{0E1F9695-BEC8-45CA-A138-5A1E3744CEF1}" Global="false">
 											<ObjectRef Name="placeholder" ID="{9E14927C-B7F4-4294-BE51-AAD97BADE07C}" WorkUnitID="{3AA95F97-CDF6-4AA3-B1A6-707722341C4C}"/>
 										</Element>
 									</ElementList>
@@ -245,8 +190,8 @@
 									<ChildrenList>
 										<Action Name="Play" ID="{1D5EBED4-66AF-4F1A-BEB6-77F9032410A4}" ShortID="729232649" Type="Play" Scope="One" Global="false">
 											<ElementList>
-												<Element ID="{6876A132-951D-4032-B8C0-CF1BFECFECA7}" Global="false">
-													<ObjectRef Name="placeholder" ID="{9E14927C-B7F4-4294-BE51-AAD97BADE07C}" WorkUnitID="{3AA95F97-CDF6-4AA3-B1A6-707722341C4C}"/>
+												<Element ID="{F35F3321-0845-4751-9159-326C93FB5F32}" Global="false">
+													<ObjectRef Name="rock_spawn" ID="{ACB1FE1C-066D-4B99-B439-E8054549974F}" WorkUnitID="{3AA95F97-CDF6-4AA3-B1A6-707722341C4C}"/>
 												</Element>
 											</ElementList>
 										</Action>
@@ -258,6 +203,121 @@
 											<ElementList>
 												<Element ID="{5C4CD0D9-D849-41F9-869C-2C0584E117AD}" Global="false">
 													<ObjectRef Name="placeholder" ID="{9E14927C-B7F4-4294-BE51-AAD97BADE07C}" WorkUnitID="{3AA95F97-CDF6-4AA3-B1A6-707722341C4C}"/>
+												</Element>
+											</ElementList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="finish" ID="{312411EB-AA92-4899-843A-6BA2FF2C325D}" ShortID="993334712">
+							<ChildrenList>
+								<Event Name="emp_finish" ID="{BC3DCF44-931E-4AC3-AA1B-33DB0C341CDC}">
+									<ChildrenList>
+										<Action Name="Play" ID="{852023D2-0A30-49A7-9DD4-7A289D99A540}" ShortID="598904370" Type="Play" Scope="One" Global="false">
+											<ElementList>
+												<Element ID="{032062BB-CD7D-4A20-8660-C0ED253CD1C5}" Global="false">
+													<ObjectRef Name="EMP_finish" ID="{92CD9924-66B8-436E-B529-84C53C6ECB48}" WorkUnitID="{3AA95F97-CDF6-4AA3-B1A6-707722341C4C}"/>
+												</Element>
+											</ElementList>
+										</Action>
+										<Action Name="Play" ID="{C3781DBA-CC5A-4B3C-96E1-1AD43379DB1B}" ShortID="1072217551" Type="Play" Scope="One" Global="false">
+											<ElementList>
+												<Element ID="{6EE1EF0E-BF8C-4E5B-B44B-E625CF09836E}" Global="false">
+													<ObjectRef Name="EMP_electro_finish" ID="{EE22AB91-36D3-491C-916F-0CB2FF06A4B5}" WorkUnitID="{3AA95F97-CDF6-4AA3-B1A6-707722341C4C}"/>
+												</Element>
+											</ElementList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="glass_break" ID="{3C1E8EBD-D741-48C3-B048-CD0E544CD4E4}">
+									<ChildrenList>
+										<Action Name="Play" ID="{8A5CFC4E-9A23-40BB-8CF1-7999EEFF7C62}" ShortID="220596732" Type="Play" Scope="One" Global="false">
+											<ElementList>
+												<Element ID="{DDB97CF7-A86B-4672-BB03-3DEF36FC9ECC}" Global="false">
+													<ObjectRef Name="break" ID="{80C217BD-B83D-465A-93FE-0862CCD335E4}" WorkUnitID="{3AA95F97-CDF6-4AA3-B1A6-707722341C4C}"/>
+												</Element>
+											</ElementList>
+										</Action>
+										<Action Name="Play" ID="{9F8002F7-CA93-471D-BEC8-5D7C842EE195}" ShortID="242204369" Type="Play" Scope="One" Global="false">
+											<ElementList>
+												<Element ID="{86F3C5EF-A2AA-4E75-A149-22181F4231C9}" Global="false">
+													<ObjectRef Name="shimmer" ID="{C50F575F-5321-48F0-BA3C-EBB3FB619B58}" WorkUnitID="{3AA95F97-CDF6-4AA3-B1A6-707722341C4C}"/>
+												</Element>
+											</ElementList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="wall_break" ID="{097F6B50-6960-4501-8ABC-28E90781BF3C}">
+									<ChildrenList>
+										<Action Name="Play" ID="{28516E6F-41DD-4F4F-8D8D-20657FD345FA}" ShortID="182527450" Type="Play" Scope="One" Global="false">
+											<ElementList>
+												<Element ID="{3A8F3F88-C377-4DD3-8934-3EBC6DEB7755}" Global="false">
+													<ObjectRef Name="rock_despawn" ID="{0FBFFC58-6D51-4E9B-BA90-A71B31E60921}" WorkUnitID="{3AA95F97-CDF6-4AA3-B1A6-707722341C4C}"/>
+												</Element>
+											</ElementList>
+										</Action>
+										<Action Name="Play" ID="{90C54735-8BAE-4971-BEDF-4D3E4D17C711}" ShortID="216258040" Type="Play" Scope="One" Global="false">
+											<ElementList>
+												<Element ID="{4A41EF48-24BD-4F4A-AF86-BB221E4F57AB}" Global="false">
+													<ObjectRef Name="debris" ID="{D9373FC6-FAD8-4E45-AA2F-A3118162B651}" WorkUnitID="{3AA95F97-CDF6-4AA3-B1A6-707722341C4C}"/>
+												</Element>
+											</ElementList>
+										</Action>
+										<Action Name="Play" ID="{C3FEBBA9-6C10-43A0-AD0C-54A222961662}" ShortID="549459765" Type="Play" Scope="One" Global="false">
+											<ElementList>
+												<Element ID="{07B1BC6F-237E-41EC-8DAA-D9AC898F8A53}" Global="false">
+													<ObjectRef Name="sand" ID="{582E98DA-E7EC-45E1-9D52-94BD7CF041A4}" WorkUnitID="{3AA95F97-CDF6-4AA3-B1A6-707722341C4C}"/>
+												</Element>
+											</ElementList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="magnet_finish" ID="{19C1F62B-6534-4324-BBE3-263D27EA2C7C}">
+									<ChildrenList>
+										<Action Name="Play" ID="{1DAC25B5-3219-4A2B-8EDB-DFB330BB1EAE}" ShortID="628049883" Type="Play" Scope="One" Global="false">
+											<ElementList>
+												<Element ID="{0BF59980-65C6-4683-97B0-5725A74EEF77}" Global="false">
+													<ObjectRef Name="magnet_finish" ID="{8C30C7A9-B6FE-4E0C-BD06-E5D9D6F9CC54}" WorkUnitID="{3AA95F97-CDF6-4AA3-B1A6-707722341C4C}"/>
+												</Element>
+											</ElementList>
+										</Action>
+										<Action Name="Play" ID="{FE919697-E563-4BC5-AFB2-CA960768F9E4}" ShortID="29197734" Type="Play" Scope="One" Global="false">
+											<ElementList>
+												<Element ID="{A7EEBC8C-9F7C-4507-8CB6-99107D0AD4E7}" Global="false">
+													<ObjectRef Name="magnet_humm_finish" ID="{E6D3BE1A-8187-4EC0-B4ED-586B8A273E00}" WorkUnitID="{3AA95F97-CDF6-4AA3-B1A6-707722341C4C}"/>
+												</Element>
+											</ElementList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="rocket_explosion" ID="{402C78FC-0ED2-4C12-92F3-C13BE6384712}">
+									<ChildrenList>
+										<Action Name="Play" ID="{BA65BC13-9A29-4B58-A42F-D818240C5B0A}" ShortID="294714035" Type="Play" Scope="One" Global="false">
+											<ElementList>
+												<Element ID="{0E1F9695-BEC8-45CA-A138-5A1E3744CEF1}" Global="false">
+													<ObjectRef Name="explosion" ID="{15868B0F-3B1B-45C3-876B-C6FF327959BD}" WorkUnitID="{3AA95F97-CDF6-4AA3-B1A6-707722341C4C}"/>
+												</Element>
+											</ElementList>
+										</Action>
+										<Action Name="Play" ID="{586E6E4E-9A93-4491-B53B-3BD9AAD95BE0}" ShortID="336536505" Type="Play" Scope="One" Global="false">
+											<ElementList>
+												<Element ID="{B09022BF-939F-4B5A-AFD9-122A144534F8}" Global="false">
+													<ObjectRef Name="woom" ID="{DF428922-4BA9-45B4-B01F-8628D8BBDE4E}" WorkUnitID="{3AA95F97-CDF6-4AA3-B1A6-707722341C4C}"/>
+												</Element>
+											</ElementList>
+										</Action>
+										<Action Name="Play" ID="{8A45AC17-4A17-44E4-9702-64D632B6E49E}" ShortID="987562914" Type="Play" Scope="One" Global="false">
+											<ElementList>
+												<Element ID="{718AFE95-529A-4FC5-8BA8-DC90D33B8AFB}" Global="false">
+													<ObjectRef Name="rocket_finish_synth" ID="{53EC8D60-7047-4310-9FD2-82025DE050FF}" WorkUnitID="{3AA95F97-CDF6-4AA3-B1A6-707722341C4C}"/>
+												</Element>
+											</ElementList>
+										</Action>
+										<Action Name="Play" ID="{B3877A00-DE0B-4465-BA29-403072A0580B}" ShortID="169278056" Type="Play" Scope="One" Global="false">
+											<ElementList>
+												<Element ID="{2BDA40C7-DB86-4412-9CDE-0AEBE7893362}" Global="false">
+													<ObjectRef Name="rocket_finish_flame" ID="{47AB5103-DF9E-4AF4-8AD8-752E0F97E5E2}" WorkUnitID="{3AA95F97-CDF6-4AA3-B1A6-707722341C4C}"/>
 												</Element>
 											</ElementList>
 										</Action>
