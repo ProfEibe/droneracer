@@ -294,6 +294,9 @@
 							<PropertyList>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>100</Value>
+									</ValueList>
 									<RTPCList>
 										<RTPC Name="" ID="{317611B5-68E1-4972-A682-1053493D3D72}" ShortID="1040714047">
 											<ReferenceList>
@@ -569,6 +572,9 @@
 							<PropertyList>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>100</Value>
+									</ValueList>
 									<RTPCList>
 										<RTPC Name="" ID="{92C988FE-6588-42B3-B4BF-B20CEA401A5C}" ShortID="87928162">
 											<ReferenceList>
@@ -844,6 +850,9 @@
 							<PropertyList>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>100</Value>
+									</ValueList>
 									<RTPCList>
 										<RTPC Name="" ID="{549C5D71-654B-4CBB-A77F-9B5C1EBA2FF5}" ShortID="302483313">
 											<ReferenceList>
@@ -1119,6 +1128,9 @@
 							<PropertyList>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>100</Value>
+									</ValueList>
 									<RTPCList>
 										<RTPC Name="" ID="{B0371CA8-40EC-4EA0-8EEC-5F6A916CCCBE}" ShortID="587319403">
 											<ReferenceList>
@@ -1388,6 +1400,36 @@
 							</ChildrenList>
 							<ActiveSourceList>
 								<ActiveSource Name="Motor Sound" ID="{D138A078-EB8A-4F72-BDBA-5AEB3F0075B7}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="drone_turbo" ID="{74349C66-042B-45A1-BBC2-1EF20DA2A82F}" ShortID="234410202" Type="SoundFX">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E3FC3A9A-A97B-4FEC-953B-2F0E612EA0C8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{31155A21-00E1-45E7-99BD-596CF82742A7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="drone_turbo" ID="{B2789054-456E-412F-A6BE-25F71AF15DDC}" ShortID="261214767">
+									<PropertyList>
+										<Property Name="CrossfadeDuration" Type="Real64" Value="250"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="2.86804739932879E-02"/>
+										<Property Name="LoopBegin" Type="Real64" Value="0.219200765520134"/>
+										<Property Name="LoopEnd" Type="Real64" Value="2.4829096057047"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimEnd" Type="Real64" Value="2.78405458263423"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>drone_turbo.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="drone_turbo" ID="{B2789054-456E-412F-A6BE-25F71AF15DDC}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
@@ -3333,7 +3375,7 @@
 								</RandomSequenceContainer>
 							</ChildrenList>
 						</Folder>
-						<Folder Name="glass_break" ID="{4A4B2F06-F917-4F51-B638-FE964A3CB01F}" ShortID="471429093">
+						<Folder Name="glass" ID="{4A4B2F06-F917-4F51-B638-FE964A3CB01F}" ShortID="471429093">
 							<ChildrenList>
 								<RandomSequenceContainer Name="break" ID="{80C217BD-B83D-465A-93FE-0862CCD335E4}" ShortID="1067503945">
 									<PropertyList>
@@ -3501,11 +3543,106 @@
 										</Sound>
 									</ChildrenList>
 								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="glass_spawn_shimmer" ID="{9B0AB766-3454-43B2-AB47-44C1F11C540B}" ShortID="645662978">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{C64A0B5B-2A89-4DF3-84C1-68F7D7EA6564}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="202"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E3FC3A9A-A97B-4FEC-953B-2F0E612EA0C8}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{31155A21-00E1-45E7-99BD-596CF82742A7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="glass_spawn_shimmer_3" ID="{805AEC3D-5089-44AA-B941-F395E8726C0E}" ShortID="1005156213" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E3FC3A9A-A97B-4FEC-953B-2F0E612EA0C8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{31155A21-00E1-45E7-99BD-596CF82742A7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="glass_spawn_shimmer_3" ID="{BF4553EA-CFA1-4DF2-8812-E0F5C6C26389}" ShortID="451841455">
+													<Language>SFX</Language>
+													<AudioFile>glass_spawn_shimmer_3.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="glass_spawn_shimmer_3" ID="{BF4553EA-CFA1-4DF2-8812-E0F5C6C26389}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="glass_spawn_shimmer_2" ID="{C0BAE735-155D-45F6-BFBD-E35F3FADEB8B}" ShortID="1046837670" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E3FC3A9A-A97B-4FEC-953B-2F0E612EA0C8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{31155A21-00E1-45E7-99BD-596CF82742A7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="glass_spawn_shimmer_2" ID="{6A56AA85-C6B4-4CAB-B80B-AF0BD48170BA}" ShortID="656002455">
+													<Language>SFX</Language>
+													<AudioFile>glass_spawn_shimmer_2.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="glass_spawn_shimmer_2" ID="{6A56AA85-C6B4-4CAB-B80B-AF0BD48170BA}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="glass_spawn_shimmer_1" ID="{E4F768F5-844E-4FC7-BFEB-C97CE434FF36}" ShortID="925952749" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E3FC3A9A-A97B-4FEC-953B-2F0E612EA0C8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{31155A21-00E1-45E7-99BD-596CF82742A7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="glass_spawn_shimmer_1" ID="{2A575901-EFDB-4591-973D-32B4A624F294}" ShortID="843655898">
+													<Language>SFX</Language>
+													<AudioFile>glass_spawn_shimmer_1.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="glass_spawn_shimmer_1" ID="{2A575901-EFDB-4591-973D-32B4A624F294}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
 							</ChildrenList>
 						</Folder>
 					</ChildrenList>
 				</Folder>
 				<Sound Name="ui_startgame_beep_1" ID="{7EA22A51-F48C-45C4-BA8C-BD4CBBC12B1B}" ShortID="377144079" Type="SoundFX">
+					<PropertyList>
+						<Property Name="Pitch" Type="int32">
+							<ValueList>
+								<Value>50</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-10</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E3FC3A9A-A97B-4FEC-953B-2F0E612EA0C8}"/>
@@ -3525,6 +3662,18 @@
 					</ActiveSourceList>
 				</Sound>
 				<Sound Name="ui_startgame_beep_2" ID="{7AF9348A-CEA2-48BB-963E-936E484ACFCE}" ShortID="280160664" Type="SoundFX">
+					<PropertyList>
+						<Property Name="Pitch" Type="int32">
+							<ValueList>
+								<Value>50</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-10</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E3FC3A9A-A97B-4FEC-953B-2F0E612EA0C8}"/>
@@ -3563,6 +3712,13 @@
 					</ActiveSourceList>
 				</Sound>
 				<Sound Name="ui_startgame_tick_2" ID="{0EE199EC-A37B-40C3-9436-22EB50B0376E}" ShortID="467591157" Type="SoundFX">
+					<PropertyList>
+						<Property Name="Pitch" Type="int32">
+							<ValueList>
+								<Value>8</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E3FC3A9A-A97B-4FEC-953B-2F0E612EA0C8}"/>
@@ -3675,6 +3831,117 @@
 					</ChildrenList>
 					<ActiveSourceList>
 						<ActiveSource Name="261208__stereo-surgeon__insomniac-snyth-loop" ID="{D63942C3-5445-4056-9783-120F2154BFA1}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="speedtunnel_tunnel_sound" ID="{284C838C-DB30-4705-9EAA-7B1B758A34DF}" ShortID="82524642" Type="SoundFX">
+					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E3FC3A9A-A97B-4FEC-953B-2F0E612EA0C8}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Ambience" ID="{1C025182-BBB1-4B2A-8578-62BA4CA9F664}" WorkUnitID="{31155A21-00E1-45E7-99BD-596CF82742A7}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="speedtunnel_tunnel_sound" ID="{635D5E6E-A562-4487-9096-2E6FCA11095E}" ShortID="1032091849">
+							<PropertyList>
+								<Property Name="CrossfadeDuration" Type="Real64" Value="250"/>
+								<Property Name="LoopBegin" Type="Real64" Value="0.166032412262304"/>
+								<Property Name="LoopEnd" Type="Real64" Value="8.21330550020974"/>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>speedtunnel_tunnel_sound.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="speedtunnel_tunnel_sound" ID="{635D5E6E-A562-4487-9096-2E6FCA11095E}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="die_out_of_reach" ID="{25B1E4D9-DFCA-45FA-A6CF-A3F0576D9F75}" ShortID="963778008" Type="SoundFX">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-20</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E3FC3A9A-A97B-4FEC-953B-2F0E612EA0C8}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="UI" ID="{45E82E5A-A29A-4B26-B626-DCB3169E2C73}" WorkUnitID="{31155A21-00E1-45E7-99BD-596CF82742A7}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="die_out_of_reach" ID="{5897607E-1027-4952-93EB-68FBE52E2066}" ShortID="868143377">
+							<PropertyList>
+								<Property Name="FadeInDuration" Type="Real64" Value="6.00071308724832E-02"/>
+								<Property Name="FadeOutDuration" Type="Real64" Value="0.145017232941836"/>
+								<Property Name="TrimEnd" Type="Real64" Value="2.11775166037472"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>die_out_of_reach.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="die_out_of_reach" ID="{5897607E-1027-4952-93EB-68FBE52E2066}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="drone_checkpoint_correct" ID="{7072EDBA-8118-458A-A257-704F69289343}" ShortID="984715602" Type="SoundFX">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-22</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E3FC3A9A-A97B-4FEC-953B-2F0E612EA0C8}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{31155A21-00E1-45E7-99BD-596CF82742A7}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="drone_checkpoint_correct" ID="{8798F60C-A01C-4D97-A9EB-725AC0571B63}" ShortID="800216312">
+							<Language>SFX</Language>
+							<AudioFile>drone_checkpoint_correct.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="drone_checkpoint_correct" ID="{8798F60C-A01C-4D97-A9EB-725AC0571B63}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="drone_checkpoint_wrong" ID="{19753E82-485E-496D-93CC-2660D97BFF01}" ShortID="323116906" Type="SoundFX">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-16</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E3FC3A9A-A97B-4FEC-953B-2F0E612EA0C8}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{31155A21-00E1-45E7-99BD-596CF82742A7}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="drone_checkpoint_wrong" ID="{001BA270-0727-4D06-ABF5-DBB4684065A8}" ShortID="689032154">
+							<Language>SFX</Language>
+							<AudioFile>drone_checkpoint_wrong.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="drone_checkpoint_wrong" ID="{001BA270-0727-4D06-ABF5-DBB4684065A8}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
 			</ChildrenList>

@@ -10,7 +10,7 @@
 								<Action Name="Play" ID="{761CFA9D-E4D4-4ABF-8A86-4F24320497C8}" ShortID="579734624" Type="Play" Scope="One" Global="false">
 									<ElementList>
 										<Element ID="{1BB75BCC-4FB0-4644-B775-57A7CE30EB3B}" Global="false">
-											<ObjectRef Name="placeholder" ID="{9E14927C-B7F4-4294-BE51-AAD97BADE07C}" WorkUnitID="{3AA95F97-CDF6-4AA3-B1A6-707722341C4C}"/>
+											<ObjectRef Name="drone_checkpoint_correct" ID="{7072EDBA-8118-458A-A257-704F69289343}" WorkUnitID="{3AA95F97-CDF6-4AA3-B1A6-707722341C4C}"/>
 										</Element>
 									</ElementList>
 								</Action>
@@ -21,7 +21,7 @@
 								<Action Name="Play" ID="{E892CC42-2B0A-400E-8657-0D48FF12D0E5}" ShortID="173835769" Type="Play" Scope="One" Global="false">
 									<ElementList>
 										<Element ID="{144EAF1E-3226-4D69-A364-897FED486804}" Global="false">
-											<ObjectRef Name="placeholder" ID="{9E14927C-B7F4-4294-BE51-AAD97BADE07C}" WorkUnitID="{3AA95F97-CDF6-4AA3-B1A6-707722341C4C}"/>
+											<ObjectRef Name="drone_checkpoint_wrong" ID="{19753E82-485E-496D-93CC-2660D97BFF01}" WorkUnitID="{3AA95F97-CDF6-4AA3-B1A6-707722341C4C}"/>
 										</Element>
 									</ElementList>
 								</Action>
@@ -32,14 +32,7 @@
 								<Action Name="Play" ID="{1B3FC25A-338C-4F05-B6E0-495FB926DF7E}" ShortID="1067196553" Type="Play" Scope="One" Global="false">
 									<ElementList>
 										<Element ID="{B2568028-104C-4036-88AB-BFA8398CC8AE}" Global="false">
-											<ObjectRef Name="out_of_range_cracking" ID="{3F8EF633-C39F-41D3-AB83-700EB0AEC33F}" WorkUnitID="{3AA95F97-CDF6-4AA3-B1A6-707722341C4C}"/>
-										</Element>
-									</ElementList>
-								</Action>
-								<Action Name="Play" ID="{73581AFC-00E0-494D-9607-97356AEA2C01}" ShortID="895250720" Type="Play" Scope="One" Global="false">
-									<ElementList>
-										<Element ID="{CDA8EDB4-A3E3-4EB5-8F44-751AE2F50EC0}" Global="false">
-											<ObjectRef Name="out_of_range_humm" ID="{60D09777-D4BC-47EC-A28E-86CD77D92AAC}" WorkUnitID="{3AA95F97-CDF6-4AA3-B1A6-707722341C4C}"/>
+											<ObjectRef Name="die_out_of_reach" ID="{25B1E4D9-DFCA-45FA-A6CF-A3F0576D9F75}" WorkUnitID="{3AA95F97-CDF6-4AA3-B1A6-707722341C4C}"/>
 										</Element>
 									</ElementList>
 								</Action>
@@ -50,7 +43,7 @@
 								<Action Name="Play" ID="{6C7C0571-17D6-49EE-A03D-9E6B39E4E700}" ShortID="428849521" Type="Play" Scope="One" Global="false">
 									<ElementList>
 										<Element ID="{1C839147-93D4-4978-B625-8C2E8D8A4874}" Global="false">
-											<ObjectRef Name="placeholder" ID="{9E14927C-B7F4-4294-BE51-AAD97BADE07C}" WorkUnitID="{3AA95F97-CDF6-4AA3-B1A6-707722341C4C}"/>
+											<ObjectRef Name="speedtunnel_tunnel_sound" ID="{284C838C-DB30-4705-9EAA-7B1B758A34DF}" WorkUnitID="{3AA95F97-CDF6-4AA3-B1A6-707722341C4C}"/>
 										</Element>
 									</ElementList>
 								</Action>
@@ -72,7 +65,14 @@
 								<Action Name="Play" ID="{518B6259-C4E0-43FC-920B-9717D16859CD}" ShortID="278660632" Type="Play" Scope="One" Global="false">
 									<ElementList>
 										<Element ID="{879410EB-56BE-4FC6-89A6-463C3C930882}" Global="false">
-											<ObjectRef Name="placeholder_loop_02" ID="{1389804C-9F7F-4704-996C-30C68B94787E}" WorkUnitID="{3AA95F97-CDF6-4AA3-B1A6-707722341C4C}"/>
+											<ObjectRef Name="out_of_range_cracking" ID="{3F8EF633-C39F-41D3-AB83-700EB0AEC33F}" WorkUnitID="{3AA95F97-CDF6-4AA3-B1A6-707722341C4C}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Play" ID="{C1671D8D-2F2E-4B14-93C6-73588D9E7F50}" ShortID="820662581" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{9CE8EF3F-C9ED-4D34-8EB4-9B96B9E1C6B9}" Global="false">
+											<ObjectRef Name="out_of_range_humm" ID="{60D09777-D4BC-47EC-A28E-86CD77D92AAC}" WorkUnitID="{3AA95F97-CDF6-4AA3-B1A6-707722341C4C}"/>
 										</Element>
 									</ElementList>
 								</Action>
@@ -119,6 +119,28 @@
 											<ElementList>
 												<Element ID="{5EDC58BD-CFDD-4B7E-A8B3-F7BE62A683DA}" Global="false">
 													<ObjectRef Name="drone_motor_00" ID="{C2C2A858-B18E-4FDB-B62C-7E449F77A721}" WorkUnitID="{3AA95F97-CDF6-4AA3-B1A6-707722341C4C}"/>
+												</Element>
+											</ElementList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="drone_boost_activate" ID="{9C52CEBF-46E2-465D-98B2-00BC1D6B98BF}">
+									<ChildrenList>
+										<Action Name="Play" ID="{1B54B96C-BF94-482A-B1B7-A5F278173748}" ShortID="910374483" Type="Play" Scope="One" Global="false">
+											<ElementList>
+												<Element ID="{0F667F33-02A9-43BC-8AFC-E50BFE839773}" Global="false">
+													<ObjectRef Name="drone_turbo" ID="{74349C66-042B-45A1-BBC2-1EF20DA2A82F}" WorkUnitID="{3AA95F97-CDF6-4AA3-B1A6-707722341C4C}"/>
+												</Element>
+											</ElementList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="drone_boost_stop" ID="{B6B12DB0-A7E0-4648-B091-36074D865374}">
+									<ChildrenList>
+										<Action Name="Stop" ID="{B937E96A-7C8A-46A7-AB5C-4B4F7F199B17}" ShortID="241851813" Type="Stop" Scope="One" Global="false">
+											<ElementList>
+												<Element ID="{C9CE2478-D308-4B4E-8A90-7F691D3E5580}" Global="false">
+													<ObjectRef Name="drone_turbo" ID="{74349C66-042B-45A1-BBC2-1EF20DA2A82F}" WorkUnitID="{3AA95F97-CDF6-4AA3-B1A6-707722341C4C}"/>
 												</Element>
 											</ElementList>
 										</Action>
@@ -184,10 +206,10 @@
 								</Event>
 								<Event Name="drone_launch_glass" ID="{CBD7A0EC-DA4E-4857-895F-872F6ED2CA55}">
 									<ChildrenList>
-										<Action Name="Play" ID="{635D463A-349A-4493-9912-5AD7C4DA76E3}" ShortID="770821674" Type="Play" Scope="One" Global="false">
+										<Action Name="Play" ID="{C500B00C-D6B0-4154-8E66-9734E65786BB}" ShortID="860298640" Type="Play" Scope="One" Global="false">
 											<ElementList>
-												<Element ID="{F8B29CB9-1878-4547-8BBD-B09B76A29842}" Global="false">
-													<ObjectRef Name="placeholder" ID="{9E14927C-B7F4-4294-BE51-AAD97BADE07C}" WorkUnitID="{3AA95F97-CDF6-4AA3-B1A6-707722341C4C}"/>
+												<Element ID="{70E344C1-8ABC-45AB-981A-BA34C78FF695}" Global="false">
+													<ObjectRef Name="glass_spawn_shimmer" ID="{9B0AB766-3454-43B2-AB47-44C1F11C540B}" WorkUnitID="{3AA95F97-CDF6-4AA3-B1A6-707722341C4C}"/>
 												</Element>
 											</ElementList>
 										</Action>
@@ -334,10 +356,17 @@
 						</Folder>
 						<Event Name="gamestate_out_of_reach_stop" ID="{55D0FCA3-81FE-4C94-8480-49D4A8AF24A7}">
 							<ChildrenList>
-								<Action Name="Stop" ID="{1940AEB5-065F-4B84-AF2A-7D709CAE36B5}" ShortID="736687650" Type="Stop" Scope="One" Global="false">
+								<Action Name="Stop" ID="{A3E3092B-4C37-48BC-8D34-B36ABAB9C0ED}" ShortID="310333424" Type="Stop" Scope="One" Global="false">
 									<ElementList>
-										<Element ID="{2BC5F09C-5B3C-43A6-AEC9-F6E34A57E8D7}" Global="false">
-											<ObjectRef Name="placeholder_loop_02" ID="{1389804C-9F7F-4704-996C-30C68B94787E}" WorkUnitID="{3AA95F97-CDF6-4AA3-B1A6-707722341C4C}"/>
+										<Element ID="{E54C5B61-2472-4C61-B781-0ED3A203EB78}" Global="false">
+											<ObjectRef Name="out_of_range_cracking" ID="{3F8EF633-C39F-41D3-AB83-700EB0AEC33F}" WorkUnitID="{3AA95F97-CDF6-4AA3-B1A6-707722341C4C}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Stop" ID="{80A40C0E-EBEF-4A3D-A0C3-5BA2D5646887}" ShortID="385366233" Type="Stop" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{61C09A5E-FF49-41CC-85A0-D4EAF042F3E5}" Global="false">
+											<ObjectRef Name="out_of_range_humm" ID="{60D09777-D4BC-47EC-A28E-86CD77D92AAC}" WorkUnitID="{3AA95F97-CDF6-4AA3-B1A6-707722341C4C}"/>
 										</Element>
 									</ElementList>
 								</Action>
@@ -380,12 +409,19 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="ui_menu_start_race" ID="{58BC1572-C1AE-4124-9648-653CD17FE8CF}">
+						<Event Name="ui_countdown_1" ID="{58BC1572-C1AE-4124-9648-653CD17FE8CF}">
 							<ChildrenList>
 								<Action Name="Play" ID="{99C5185A-3F2B-489E-8542-704F41C7B223}" ShortID="826747648" Type="Play" Scope="One" Global="false">
 									<ElementList>
 										<Element ID="{B9A7131C-DAE1-434A-B9B1-CAFE5742DCE9}" Global="false">
-											<ObjectRef Name="placeholder" ID="{9E14927C-B7F4-4294-BE51-AAD97BADE07C}" WorkUnitID="{3AA95F97-CDF6-4AA3-B1A6-707722341C4C}"/>
+											<ObjectRef Name="ui_startgame_beep_1" ID="{7EA22A51-F48C-45C4-BA8C-BD4CBBC12B1B}" WorkUnitID="{3AA95F97-CDF6-4AA3-B1A6-707722341C4C}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Play" ID="{079D8D50-3CEA-44A5-8164-3920E856E731}" ShortID="351890135" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{FCD52C7B-E80E-4989-92F8-31577F57349B}" Global="false">
+											<ObjectRef Name="ui_startgame_tick_1" ID="{D0FF711A-D176-4C73-B919-76E76C531D0F}" WorkUnitID="{3AA95F97-CDF6-4AA3-B1A6-707722341C4C}"/>
 										</Element>
 									</ElementList>
 								</Action>
@@ -430,6 +466,24 @@
 									<ElementList>
 										<Element ID="{8D7AF13F-DB0E-4985-9BE0-83BDA6231EA7}" Global="false">
 											<ObjectRef Name="placeholder" ID="{9E14927C-B7F4-4294-BE51-AAD97BADE07C}" WorkUnitID="{3AA95F97-CDF6-4AA3-B1A6-707722341C4C}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="ui_countdown_2" ID="{7CB738DE-54B1-4D70-93FA-DAF5759D667A}">
+							<ChildrenList>
+								<Action Name="Play" ID="{D2392F64-93EE-4812-8588-CB3E222A35C7}" ShortID="23605291" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{A7BC64AF-7C7C-47EB-8C0B-40B6008AB3CD}" Global="false">
+											<ObjectRef Name="ui_startgame_beep_2" ID="{7AF9348A-CEA2-48BB-963E-936E484ACFCE}" WorkUnitID="{3AA95F97-CDF6-4AA3-B1A6-707722341C4C}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Play" ID="{C0B3D3AD-7E55-4B6B-8418-1C6934B8C822}" ShortID="397703688" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{3023D4F5-BD4C-4E5D-82F6-6D7BFDB6AE6E}" Global="false">
+											<ObjectRef Name="ui_startgame_tick_2" ID="{0EE199EC-A37B-40C3-9436-22EB50B0376E}" WorkUnitID="{3AA95F97-CDF6-4AA3-B1A6-707722341C4C}"/>
 										</Element>
 									</ElementList>
 								</Action>

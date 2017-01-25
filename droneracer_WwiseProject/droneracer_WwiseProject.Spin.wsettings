@@ -31,8 +31,8 @@
 				<Property Name="MonitoringManager\WatchMgr\x64_Watches" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\FirstVisible_10_1" Type="string" Value="{4C96B38B-3DB4-40C7-91C9-665510E38993}"/>
 				<Property Name="ProjectExplorer\FirstVisible_11_1" Type="string" Value="{23EC2DE3-3ED8-4B82-AC99-92E25F2E4C6B}"/>
-				<Property Name="ProjectExplorer\FirstVisible_1_1" Type="string" Value="{31155A21-00E1-45E7-99BD-596CF82742A7}"/>
-				<Property Name="ProjectExplorer\FirstVisible_3_1" Type="string" Value="{823A46D8-B2CF-4FEA-8D05-337C12976548}"/>
+				<Property Name="ProjectExplorer\FirstVisible_1_1" Type="string" Value="{2388DAEA-9775-46C6-A2ED-C5222A397756}"/>
+				<Property Name="ProjectExplorer\FirstVisible_3_1" Type="string" Value="{A69BF0FC-D84A-487C-ABDD-56F71CB2A126}"/>
 				<Property Name="ProjectExplorer\FirstVisible_4_1" Type="string" Value="{CB6175F1-6080-4A23-92EF-0807E304D0C1}"/>
 				<Property Name="ProjectExplorer\FirstVisible_6_1" Type="string" Value="{C98E673F-A24C-48A8-960F-10565FFE70A0}"/>
 				<Property Name="ProjectExplorer\FirstVisible_8_1" Type="string" Value="{41093F77-829F-4D88-8601-E8B25F3D4781}"/>
@@ -48,8 +48,8 @@
 				<Property Name="ProjectExplorer\x64_Expanded_19_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_1_1" Type="string" Value="2KQUFaYdKkGhfnXKDCFJ8yFaFTHhAOdFmb1ZbPgnQqc="/>
 				<Property Name="ProjectExplorer\x64_Expanded_20_1" Type="string" Value=""/>
-				<Property Name="ProjectExplorer\x64_Expanded_2_1" Type="string" Value="GHnrw5F5rEOlsnTEixIqvo7nfEpqXHJEr7BQgQuawA7dxAkYM24jSIOkzLiH6Xfdl1+pOvbNo0qxpnB3IjQcTKnHMIz+tgxOvQbl2db5zFR1dJP/RKZXT7LJSOKNrFdB"/>
-				<Property Name="ProjectExplorer\x64_Expanded_3_1" Type="string" Value="Gaaf/vO0/kSqWiEzx5sU64ELlvSBfFNIk0F9RwXd/DHrESQxkqqZSIQ6a6L/LDJdko0eD+ajm0mdXAL/Bu5ypnMOuekAO7xKnNHibL60Gc8Rs/nk0y5TTJqa5zFVg3IaNOvmIF8nG0+ERVyMZvoDgQ=="/>
+				<Property Name="ProjectExplorer\x64_Expanded_2_1" Type="string" Value="l1+pOvbNo0qxpnB3IjQcTHV0k/9EpldPsslI4o2sV0E="/>
+				<Property Name="ProjectExplorer\x64_Expanded_3_1" Type="string" Value="trVf5HptCEOIvmfneO5Krxmmn/7ztP5EqlohM8ebFOvrESQxkqqZSIQ6a6L/LDJdko0eD+ajm0mdXAL/Bu5yphGz+eTTLlNMmprnMVWDcho="/>
 				<Property Name="ProjectExplorer\x64_Expanded_4_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_5_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_6_1" Type="string" Value=""/>
