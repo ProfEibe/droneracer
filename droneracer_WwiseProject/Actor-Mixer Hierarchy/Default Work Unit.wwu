@@ -1503,6 +1503,11 @@
 								<Value>-555</Value>
 							</ValueList>
 						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-21</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -1541,6 +1546,9 @@
 							</ModifierList>
 						</Property>
 						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-23</Value>
+							</ValueList>
 							<RTPCList>
 								<RTPC Name="" ID="{AB72B689-52FA-4363-ABF1-2B054DCF2A4C}" ShortID="707690227">
 									<ReferenceList>
@@ -1596,6 +1604,9 @@
 					<PropertyList>
 						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-23</Value>
+							</ValueList>
 							<RTPCList>
 								<RTPC Name="" ID="{759FAD6C-6EF4-409A-B98E-D3D05453AF0E}" ShortID="310053940">
 									<ReferenceList>
@@ -1659,8 +1670,12 @@
 								<RandomSequenceContainer Name="magnet_impact" ID="{FE33532E-C757-4C4A-87F1-EE0D17A012D0}" ShortID="281590603">
 									<PropertyList>
 										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+										<Property Name="PositioningType" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="rocket_attenuation" ID="{70FB6A5D-60AF-46C4-BF33-C9CE97B2440C}" WorkUnitID="{0BDB9504-2A00-4A76-9583-7F102422CEC8}"/>
+										</Reference>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E3FC3A9A-A97B-4FEC-953B-2F0E612EA0C8}"/>
 										</Reference>
@@ -1750,8 +1765,12 @@
 								<Sound Name="magnet_electro" ID="{87FE04F7-969F-4C54-B36A-5E276E78C3DE}" ShortID="34740726" Type="SoundFX">
 									<PropertyList>
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="PositioningType" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="rocket_attenuation" ID="{70FB6A5D-60AF-46C4-BF33-C9CE97B2440C}" WorkUnitID="{0BDB9504-2A00-4A76-9583-7F102422CEC8}"/>
+										</Reference>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E3FC3A9A-A97B-4FEC-953B-2F0E612EA0C8}"/>
 										</Reference>
@@ -1778,6 +1797,7 @@
 								<Sound Name="magnet_humm" ID="{4AF2FB17-E946-4BE2-8D4A-E65659F69117}" ShortID="1007965409" Type="SoundFX">
 									<PropertyList>
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="PositioningType" Type="int16" Value="1"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
 												<Value>-1</Value>
@@ -1785,6 +1805,9 @@
 										</Property>
 									</PropertyList>
 									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="rocket_attenuation" ID="{70FB6A5D-60AF-46C4-BF33-C9CE97B2440C}" WorkUnitID="{0BDB9504-2A00-4A76-9583-7F102422CEC8}"/>
+										</Reference>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E3FC3A9A-A97B-4FEC-953B-2F0E612EA0C8}"/>
 										</Reference>
@@ -1846,8 +1869,12 @@
 												<Value>-300</Value>
 											</ValueList>
 										</Property>
+										<Property Name="PositioningType" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="rocket_attenuation" ID="{70FB6A5D-60AF-46C4-BF33-C9CE97B2440C}" WorkUnitID="{0BDB9504-2A00-4A76-9583-7F102422CEC8}"/>
+										</Reference>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E3FC3A9A-A97B-4FEC-953B-2F0E612EA0C8}"/>
 										</Reference>
@@ -1962,6 +1989,7 @@
 												<Value>-230</Value>
 											</ValueList>
 										</Property>
+										<Property Name="PositioningType" Type="int16" Value="1"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
 												<Value>-1</Value>
@@ -1969,6 +1997,9 @@
 										</Property>
 									</PropertyList>
 									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="rocket_attenuation" ID="{70FB6A5D-60AF-46C4-BF33-C9CE97B2440C}" WorkUnitID="{0BDB9504-2A00-4A76-9583-7F102422CEC8}"/>
+										</Reference>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E3FC3A9A-A97B-4FEC-953B-2F0E612EA0C8}"/>
 										</Reference>
@@ -2012,6 +2043,7 @@
 												</ModifierInfo>
 											</ModifierList>
 										</Property>
+										<Property Name="PositioningType" Type="int16" Value="1"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
 												<Value>-3</Value>
@@ -2019,6 +2051,9 @@
 										</Property>
 									</PropertyList>
 									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="rocket_attenuation" ID="{70FB6A5D-60AF-46C4-BF33-C9CE97B2440C}" WorkUnitID="{0BDB9504-2A00-4A76-9583-7F102422CEC8}"/>
+										</Reference>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E3FC3A9A-A97B-4FEC-953B-2F0E612EA0C8}"/>
 										</Reference>
@@ -2051,8 +2086,12 @@
 												</ModifierInfo>
 											</ModifierList>
 										</Property>
+										<Property Name="PositioningType" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="rocket_attenuation" ID="{70FB6A5D-60AF-46C4-BF33-C9CE97B2440C}" WorkUnitID="{0BDB9504-2A00-4A76-9583-7F102422CEC8}"/>
+										</Reference>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E3FC3A9A-A97B-4FEC-953B-2F0E612EA0C8}"/>
 										</Reference>
@@ -2134,6 +2173,7 @@
 												</ModifierInfo>
 											</ModifierList>
 										</Property>
+										<Property Name="PositioningType" Type="int16" Value="1"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
 												<Value>-11</Value>
@@ -2141,6 +2181,9 @@
 										</Property>
 									</PropertyList>
 									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="rocket_attenuation" ID="{70FB6A5D-60AF-46C4-BF33-C9CE97B2440C}" WorkUnitID="{0BDB9504-2A00-4A76-9583-7F102422CEC8}"/>
+										</Reference>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E3FC3A9A-A97B-4FEC-953B-2F0E612EA0C8}"/>
 										</Reference>
@@ -2173,8 +2216,12 @@
 												</ModifierInfo>
 											</ModifierList>
 										</Property>
+										<Property Name="PositioningType" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="rocket_attenuation" ID="{70FB6A5D-60AF-46C4-BF33-C9CE97B2440C}" WorkUnitID="{0BDB9504-2A00-4A76-9583-7F102422CEC8}"/>
+										</Reference>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E3FC3A9A-A97B-4FEC-953B-2F0E612EA0C8}"/>
 										</Reference>
@@ -2285,9 +2332,13 @@
 								<RandomSequenceContainer Name="debris" ID="{D9373FC6-FAD8-4E45-AA2F-A3118162B651}" ShortID="711789367">
 									<PropertyList>
 										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+										<Property Name="PositioningType" Type="int16" Value="1"/>
 										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
 									</PropertyList>
 									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="rocket_attenuation" ID="{70FB6A5D-60AF-46C4-BF33-C9CE97B2440C}" WorkUnitID="{0BDB9504-2A00-4A76-9583-7F102422CEC8}"/>
+										</Reference>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E3FC3A9A-A97B-4FEC-953B-2F0E612EA0C8}"/>
 										</Reference>
@@ -2466,9 +2517,13 @@
 								<RandomSequenceContainer Name="rock_despawn" ID="{0FBFFC58-6D51-4E9B-BA90-A71B31E60921}" ShortID="964064746">
 									<PropertyList>
 										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+										<Property Name="PositioningType" Type="int16" Value="1"/>
 										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
 									</PropertyList>
 									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="rocket_attenuation" ID="{70FB6A5D-60AF-46C4-BF33-C9CE97B2440C}" WorkUnitID="{0BDB9504-2A00-4A76-9583-7F102422CEC8}"/>
+										</Reference>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E3FC3A9A-A97B-4FEC-953B-2F0E612EA0C8}"/>
 										</Reference>
@@ -2680,9 +2735,13 @@
 								<RandomSequenceContainer Name="rock_spawn" ID="{ACB1FE1C-066D-4B99-B439-E8054549974F}" ShortID="718261688">
 									<PropertyList>
 										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+										<Property Name="PositioningType" Type="int16" Value="1"/>
 										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
 									</PropertyList>
 									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="rocket_attenuation" ID="{70FB6A5D-60AF-46C4-BF33-C9CE97B2440C}" WorkUnitID="{0BDB9504-2A00-4A76-9583-7F102422CEC8}"/>
+										</Reference>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E3FC3A9A-A97B-4FEC-953B-2F0E612EA0C8}"/>
 										</Reference>
@@ -2931,6 +2990,7 @@
 												</ModifierInfo>
 											</ModifierList>
 										</Property>
+										<Property Name="PositioningType" Type="int16" Value="1"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
 												<Value>-6</Value>
@@ -2938,6 +2998,9 @@
 										</Property>
 									</PropertyList>
 									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="rocket_attenuation" ID="{70FB6A5D-60AF-46C4-BF33-C9CE97B2440C}" WorkUnitID="{0BDB9504-2A00-4A76-9583-7F102422CEC8}"/>
+										</Reference>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E3FC3A9A-A97B-4FEC-953B-2F0E612EA0C8}"/>
 										</Reference>
@@ -3086,6 +3149,7 @@
 							<ChildrenList>
 								<Sound Name="rocket_finish_flame" ID="{47AB5103-DF9E-4AF4-8AD8-752E0F97E5E2}" ShortID="5607800" Type="SoundFX">
 									<PropertyList>
+										<Property Name="PositioningType" Type="int16" Value="1"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
 												<Value>-4</Value>
@@ -3093,6 +3157,9 @@
 										</Property>
 									</PropertyList>
 									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="rocket_attenuation" ID="{70FB6A5D-60AF-46C4-BF33-C9CE97B2440C}" WorkUnitID="{0BDB9504-2A00-4A76-9583-7F102422CEC8}"/>
+										</Reference>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E3FC3A9A-A97B-4FEC-953B-2F0E612EA0C8}"/>
 										</Reference>
@@ -3117,6 +3184,7 @@
 												<Value>-50</Value>
 											</ValueList>
 										</Property>
+										<Property Name="PositioningType" Type="int16" Value="1"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
 												<Value>-4</Value>
@@ -3124,6 +3192,9 @@
 										</Property>
 									</PropertyList>
 									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="rocket_attenuation" ID="{70FB6A5D-60AF-46C4-BF33-C9CE97B2440C}" WorkUnitID="{0BDB9504-2A00-4A76-9583-7F102422CEC8}"/>
+										</Reference>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E3FC3A9A-A97B-4FEC-953B-2F0E612EA0C8}"/>
 										</Reference>
@@ -3155,6 +3226,7 @@
 												</ModifierInfo>
 											</ModifierList>
 										</Property>
+										<Property Name="PositioningType" Type="int16" Value="1"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
 												<Value>-11</Value>
@@ -3162,6 +3234,9 @@
 										</Property>
 									</PropertyList>
 									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="rocket_attenuation" ID="{70FB6A5D-60AF-46C4-BF33-C9CE97B2440C}" WorkUnitID="{0BDB9504-2A00-4A76-9583-7F102422CEC8}"/>
+										</Reference>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E3FC3A9A-A97B-4FEC-953B-2F0E612EA0C8}"/>
 										</Reference>
@@ -3210,6 +3285,7 @@
 												</ModifierInfo>
 											</ModifierList>
 										</Property>
+										<Property Name="PositioningType" Type="int16" Value="1"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
 												<Value>-8</Value>
@@ -3227,6 +3303,9 @@
 										</Property>
 									</PropertyList>
 									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="rocket_attenuation" ID="{70FB6A5D-60AF-46C4-BF33-C9CE97B2440C}" WorkUnitID="{0BDB9504-2A00-4A76-9583-7F102422CEC8}"/>
+										</Reference>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E3FC3A9A-A97B-4FEC-953B-2F0E612EA0C8}"/>
 										</Reference>
@@ -3289,6 +3368,7 @@
 												</ModifierInfo>
 											</ModifierList>
 										</Property>
+										<Property Name="PositioningType" Type="int16" Value="1"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
 												<Value>-7</Value>
@@ -3306,6 +3386,9 @@
 										</Property>
 									</PropertyList>
 									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="rocket_attenuation" ID="{70FB6A5D-60AF-46C4-BF33-C9CE97B2440C}" WorkUnitID="{0BDB9504-2A00-4A76-9583-7F102422CEC8}"/>
+										</Reference>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E3FC3A9A-A97B-4FEC-953B-2F0E612EA0C8}"/>
 										</Reference>
@@ -3391,8 +3474,12 @@
 												</ModifierInfo>
 											</ModifierList>
 										</Property>
+										<Property Name="PositioningType" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="rocket_attenuation" ID="{70FB6A5D-60AF-46C4-BF33-C9CE97B2440C}" WorkUnitID="{0BDB9504-2A00-4A76-9583-7F102422CEC8}"/>
+										</Reference>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E3FC3A9A-A97B-4FEC-953B-2F0E612EA0C8}"/>
 										</Reference>
@@ -3474,8 +3561,12 @@
 												</ModifierInfo>
 											</ModifierList>
 										</Property>
+										<Property Name="PositioningType" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="rocket_attenuation" ID="{70FB6A5D-60AF-46C4-BF33-C9CE97B2440C}" WorkUnitID="{0BDB9504-2A00-4A76-9583-7F102422CEC8}"/>
+										</Reference>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E3FC3A9A-A97B-4FEC-953B-2F0E612EA0C8}"/>
 										</Reference>
@@ -3557,8 +3648,12 @@
 												</ModifierInfo>
 											</ModifierList>
 										</Property>
+										<Property Name="PositioningType" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="rocket_attenuation" ID="{70FB6A5D-60AF-46C4-BF33-C9CE97B2440C}" WorkUnitID="{0BDB9504-2A00-4A76-9583-7F102422CEC8}"/>
+										</Reference>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E3FC3A9A-A97B-4FEC-953B-2F0E612EA0C8}"/>
 										</Reference>
@@ -3806,6 +3901,11 @@
 				<Sound Name="placeholder_loop_02" ID="{1389804C-9F7F-4704-996C-30C68B94787E}" ShortID="525188863" Type="SoundFX">
 					<PropertyList>
 						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-26</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -3836,8 +3936,12 @@
 				<Sound Name="speedtunnel_tunnel_sound" ID="{284C838C-DB30-4705-9EAA-7B1B758A34DF}" ShortID="82524642" Type="SoundFX">
 					<PropertyList>
 						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="PositioningType" Type="int16" Value="1"/>
 					</PropertyList>
 					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="tunnel" ID="{61C8FE58-4222-4184-83CF-A7F51E8F320D}" WorkUnitID="{0BDB9504-2A00-4A76-9583-7F102422CEC8}"/>
+						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E3FC3A9A-A97B-4FEC-953B-2F0E612EA0C8}"/>
 						</Reference>
@@ -3863,6 +3967,7 @@
 				</Sound>
 				<Sound Name="die_out_of_reach" ID="{25B1E4D9-DFCA-45FA-A6CF-A3F0576D9F75}" ShortID="963778008" Type="SoundFX">
 					<PropertyList>
+						<Property Name="PositioningType" Type="int16" Value="1"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
 								<Value>-20</Value>
@@ -3870,6 +3975,9 @@
 						</Property>
 					</PropertyList>
 					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="rocket_attenuation" ID="{70FB6A5D-60AF-46C4-BF33-C9CE97B2440C}" WorkUnitID="{0BDB9504-2A00-4A76-9583-7F102422CEC8}"/>
+						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E3FC3A9A-A97B-4FEC-953B-2F0E612EA0C8}"/>
 						</Reference>
