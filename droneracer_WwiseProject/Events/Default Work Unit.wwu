@@ -619,6 +619,39 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_ambience_menu_music" ID="{D888237C-B644-4AA6-8FC7-09E94313CD3B}">
+							<ChildrenList>
+								<Action Name="Play" ID="{6C2C5580-695E-4A48-8CCA-621C9E9F0592}" ShortID="785811893" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{156BAAB8-1775-4901-83D8-3FE0A6F4CBE7}" Global="false">
+											<ObjectRef Name="ambience_menu_music" ID="{F51B7071-8C1A-4651-B687-0AADC00E5460}" WorkUnitID="{3AA95F97-CDF6-4AA3-B1A6-707722341C4C}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_IngameMusicRandomcontainer" ID="{58430754-FBF8-4521-B390-041E79E40101}">
+							<ChildrenList>
+								<Action Name="Play" ID="{3ED26202-68D5-4EB2-8353-02A281A6485C}" ShortID="842584107" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{FA2AB802-E0B6-4ABF-A8DF-6DC8FF581B85}" Global="false">
+											<ObjectRef Name="IngameMusicRandomcontainer" ID="{E906BC8D-C6EA-4864-93DD-C7B6B06C3538}" WorkUnitID="{3AA95F97-CDF6-4AA3-B1A6-707722341C4C}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_IngameMusicRandomcontainer" ID="{53CFB541-D7A7-4CE8-90FC-85740C79BAAE}">
+							<ChildrenList>
+								<Action Name="Stop" ID="{3988CAB2-7CC9-4EAC-B17C-C24D2D332DA8}" ShortID="129944112" Type="Stop" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{ABB695AA-1CCC-46FF-A7C9-BCDE2550FC20}" Global="false">
+											<ObjectRef Name="IngameMusicRandomcontainer" ID="{E906BC8D-C6EA-4864-93DD-C7B6B06C3538}" WorkUnitID="{3AA95F97-CDF6-4AA3-B1A6-707722341C4C}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>
