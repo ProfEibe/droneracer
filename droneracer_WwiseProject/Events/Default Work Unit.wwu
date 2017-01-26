@@ -124,17 +124,7 @@
 										</Action>
 									</ChildrenList>
 								</Event>
-								<Event Name="drone_boost_activate" ID="{9C52CEBF-46E2-465D-98B2-00BC1D6B98BF}">
-									<ChildrenList>
-										<Action Name="Play" ID="{1B54B96C-BF94-482A-B1B7-A5F278173748}" ShortID="910374483" Type="Play" Scope="One" Global="false">
-											<ElementList>
-												<Element ID="{0F667F33-02A9-43BC-8AFC-E50BFE839773}" Global="false">
-													<ObjectRef Name="drone_turbo" ID="{74349C66-042B-45A1-BBC2-1EF20DA2A82F}" WorkUnitID="{3AA95F97-CDF6-4AA3-B1A6-707722341C4C}"/>
-												</Element>
-											</ElementList>
-										</Action>
-									</ChildrenList>
-								</Event>
+								<Event Name="drone_boost_activate" ID="{9C52CEBF-46E2-465D-98B2-00BC1D6B98BF}"/>
 								<Event Name="drone_boost_stop" ID="{B6B12DB0-A7E0-4648-B091-36074D865374}">
 									<ChildrenList>
 										<Action Name="Stop" ID="{B937E96A-7C8A-46A7-AB5C-4B4F7F199B17}" ShortID="241851813" Type="Stop" Scope="One" Global="false">

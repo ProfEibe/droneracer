@@ -5,6 +5,9 @@
 			<Comment>shared asshat</Comment>
 			<ChildrenList>
 				<Attenuation Name="rocket_attenuation" ID="{70FB6A5D-60AF-46C4-BF33-C9CE97B2440C}" ShortID="54297115">
+					<PropertyList>
+						<Property Name="RadiusMax" Type="Real64" Value="10000"/>
+					</PropertyList>
 					<CurveUsageInfoList>
 						<VolumeDryUsage>
 							<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
@@ -20,13 +23,13 @@
 											<SegmentShape>Log1</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>50.15873</XPos>
+											<XPos>5015.873</XPos>
 											<YPos>-6.08947</YPos>
 											<Flags>0</Flags>
 											<SegmentShape>Exp1</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>100</XPos>
+											<XPos>10000</XPos>
 											<YPos>-15.86783</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -54,7 +57,7 @@
 											<SegmentShape>Log1</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>100</XPos>
+											<XPos>10000</XPos>
 											<YPos>52</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -75,7 +78,7 @@
 											<Flags>5</Flags>
 										</Point>
 										<Point>
-											<XPos>100</XPos>
+											<XPos>10000</XPos>
 											<YPos>100</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -92,6 +95,9 @@
 					</CurveUsageInfoList>
 				</Attenuation>
 				<Attenuation Name="tunnel" ID="{61C8FE58-4222-4184-83CF-A7F51E8F320D}" ShortID="810384713">
+					<PropertyList>
+						<Property Name="RadiusMax" Type="Real64" Value="4500"/>
+					</PropertyList>
 					<CurveUsageInfoList>
 						<VolumeDryUsage>
 							<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
@@ -107,7 +113,13 @@
 											<SegmentShape>Log2</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>100</XPos>
+											<XPos>3007.14286</XPos>
+											<YPos>-8.61524</YPos>
+											<Flags>0</Flags>
+											<SegmentShape>Exp2</SegmentShape>
+										</Point>
+										<Point>
+											<XPos>4500</XPos>
 											<YPos>-200</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -135,13 +147,66 @@
 											<SegmentShape>Exp1</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>100</XPos>
+											<XPos>4500</XPos>
 											<YPos>100</YPos>
 											<Flags>37</Flags>
 										</Point>
 									</PointList>
 								</Curve>
 							</CurveUsageInfo>
+						</LowPassFilterUsage>
+						<HighPassFilterUsage>
+							<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+						</HighPassFilterUsage>
+						<SpreadUsage>
+							<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+						</SpreadUsage>
+						<FocusUsage>
+							<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+						</FocusUsage>
+					</CurveUsageInfoList>
+				</Attenuation>
+				<Attenuation Name="EMPAttenuation" ID="{ED154570-FC6A-4B5F-B455-0402AA4B6119}" ShortID="630517352">
+					<PropertyList>
+						<Property Name="RadiusMax" Type="Real64" Value="50000"/>
+					</PropertyList>
+					<CurveUsageInfoList>
+						<VolumeDryUsage>
+							<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+								<Curve Name="VolumeDry" ID="{33658B4B-77FD-4CA3-959E-545AA7CAA11F}">
+									<PropertyList>
+										<Property Name="Flags" Type="int32" Value="3"/>
+									</PropertyList>
+									<PointList>
+										<Point>
+											<XPos>0</XPos>
+											<YPos>0</YPos>
+											<Flags>5</Flags>
+											<SegmentShape>InvertedSCurve</SegmentShape>
+										</Point>
+										<Point>
+											<XPos>29285.71429</XPos>
+											<YPos>-5.38194</YPos>
+											<Flags>0</Flags>
+											<SegmentShape>InvertedSCurve</SegmentShape>
+										</Point>
+										<Point>
+											<XPos>50000</XPos>
+											<YPos>-200</YPos>
+											<Flags>37</Flags>
+										</Point>
+									</PointList>
+								</Curve>
+							</CurveUsageInfo>
+						</VolumeDryUsage>
+						<VolumeWetGameUsage>
+							<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+						</VolumeWetGameUsage>
+						<VolumeWetUserUsage>
+							<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+						</VolumeWetUserUsage>
+						<LowPassFilterUsage>
+							<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
 						</LowPassFilterUsage>
 						<HighPassFilterUsage>
 							<CurveUsageInfo Platform="Linked" CurveToUse="None"/>

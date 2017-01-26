@@ -11,7 +11,7 @@
 				</GameParameter>
 				<GameParameter Name="DroneHeight_0" ID="{6175123E-E9AB-44ED-B46C-C875736B38DA}">
 					<PropertyList>
-						<Property Name="InitialValue" Type="Real64" Value="500"/>
+						<Property Name="InitialValue" Type="Real64" Value="1000"/>
 						<Property Name="Max" Type="Real64" Value="10000"/>
 					</PropertyList>
 				</GameParameter>

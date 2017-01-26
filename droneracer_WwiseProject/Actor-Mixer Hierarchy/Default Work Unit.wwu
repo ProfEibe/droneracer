@@ -177,6 +177,9 @@
 								</Property>
 								<Property Name="PositioningType" Type="int16" Value="1"/>
 								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>5</Value>
+									</ValueList>
 									<RTPCList>
 										<RTPC Name="" ID="{812BC22A-F373-42BC-9805-5538B7E6821A}" ShortID="122975520">
 											<ReferenceList>
@@ -1405,6 +1408,11 @@
 						<Sound Name="drone_turbo" ID="{74349C66-042B-45A1-BBC2-1EF20DA2A82F}" ShortID="234410202" Type="SoundFX">
 							<PropertyList>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-30</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -1671,6 +1679,11 @@
 									<PropertyList>
 										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 										<Property Name="PositioningType" Type="int16" Value="1"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>3</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Attenuation">
@@ -1766,10 +1779,15 @@
 									<PropertyList>
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 										<Property Name="PositioningType" Type="int16" Value="1"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>3</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Attenuation">
-											<ObjectRef Name="rocket_attenuation" ID="{70FB6A5D-60AF-46C4-BF33-C9CE97B2440C}" WorkUnitID="{0BDB9504-2A00-4A76-9583-7F102422CEC8}"/>
+											<ObjectRef Name="EMPAttenuation" ID="{ED154570-FC6A-4B5F-B455-0402AA4B6119}" WorkUnitID="{0BDB9504-2A00-4A76-9583-7F102422CEC8}"/>
 										</Reference>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E3FC3A9A-A97B-4FEC-953B-2F0E612EA0C8}"/>
@@ -1800,7 +1818,7 @@
 										<Property Name="PositioningType" Type="int16" Value="1"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-1</Value>
+												<Value>2</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -2046,13 +2064,13 @@
 										<Property Name="PositioningType" Type="int16" Value="1"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-3</Value>
+												<Value>20</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Attenuation">
-											<ObjectRef Name="rocket_attenuation" ID="{70FB6A5D-60AF-46C4-BF33-C9CE97B2440C}" WorkUnitID="{0BDB9504-2A00-4A76-9583-7F102422CEC8}"/>
+											<ObjectRef Name="EMPAttenuation" ID="{ED154570-FC6A-4B5F-B455-0402AA4B6119}" WorkUnitID="{0BDB9504-2A00-4A76-9583-7F102422CEC8}"/>
 										</Reference>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E3FC3A9A-A97B-4FEC-953B-2F0E612EA0C8}"/>
@@ -2087,6 +2105,11 @@
 											</ModifierList>
 										</Property>
 										<Property Name="PositioningType" Type="int16" Value="1"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>20</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Attenuation">
@@ -2176,7 +2199,7 @@
 										<Property Name="PositioningType" Type="int16" Value="1"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-11</Value>
+												<Value>20</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -2217,6 +2240,11 @@
 											</ModifierList>
 										</Property>
 										<Property Name="PositioningType" Type="int16" Value="1"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>8</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Attenuation">
@@ -3152,7 +3180,7 @@
 										<Property Name="PositioningType" Type="int16" Value="1"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-4</Value>
+												<Value>6</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -3229,7 +3257,7 @@
 										<Property Name="PositioningType" Type="int16" Value="1"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-11</Value>
+												<Value>-1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -3288,7 +3316,7 @@
 										<Property Name="PositioningType" Type="int16" Value="1"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-8</Value>
+												<Value>2</Value>
 											</ValueList>
 											<ModifierList>
 												<ModifierInfo>
@@ -3371,7 +3399,7 @@
 										<Property Name="PositioningType" Type="int16" Value="1"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-7</Value>
+												<Value>3</Value>
 											</ValueList>
 											<ModifierList>
 												<ModifierInfo>
@@ -3649,6 +3677,11 @@
 											</ModifierList>
 										</Property>
 										<Property Name="PositioningType" Type="int16" Value="1"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>12</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Attenuation">
@@ -3937,6 +3970,11 @@
 					<PropertyList>
 						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 						<Property Name="PositioningType" Type="int16" Value="1"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>10</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Attenuation">
@@ -3989,8 +4027,9 @@
 						<AudioFileSource Name="die_out_of_reach" ID="{5897607E-1027-4952-93EB-68FBE52E2066}" ShortID="868143377">
 							<PropertyList>
 								<Property Name="FadeInDuration" Type="Real64" Value="6.00071308724832E-02"/>
-								<Property Name="FadeOutDuration" Type="Real64" Value="0.145017232941836"/>
-								<Property Name="TrimEnd" Type="Real64" Value="2.11775166037472"/>
+								<Property Name="FadeOutDuration" Type="Real64" Value="0.179619559151786"/>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+								<Property Name="TrimEnd" Type="Real64" Value="5.80104650297619"/>
 							</PropertyList>
 							<Language>SFX</Language>
 							<AudioFile>die_out_of_reach.wav</AudioFile>
@@ -4004,7 +4043,7 @@
 					<PropertyList>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-22</Value>
+								<Value>-10</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -4030,7 +4069,7 @@
 					<PropertyList>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-16</Value>
+								<Value>-3</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
