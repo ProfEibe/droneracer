@@ -54,7 +54,7 @@
 								<Action Name="Play" ID="{646F299C-77C9-413E-8729-F0A1E81495F5}" ShortID="718519409" Type="Play" Scope="One" Global="false">
 									<ElementList>
 										<Element ID="{4111035E-23C6-45F8-8DAE-9247F0B4AE89}" Global="false">
-											<ObjectRef Name="drone_motor_00" ID="{C2C2A858-B18E-4FDB-B62C-7E449F77A721}" WorkUnitID="{3AA95F97-CDF6-4AA3-B1A6-707722341C4C}"/>
+											<ObjectRef Name="water_splash" ID="{E785B502-DE8C-4A3D-BDF7-5F9D8AA6BDA0}" WorkUnitID="{3AA95F97-CDF6-4AA3-B1A6-707722341C4C}"/>
 										</Element>
 									</ElementList>
 								</Action>
@@ -221,7 +221,7 @@
 										<Action Name="Play" ID="{A0B188AC-6A7C-4D77-BF60-B4A64F780741}" ShortID="492848974" Type="Play" Scope="One" Global="false">
 											<ElementList>
 												<Element ID="{5C4CD0D9-D849-41F9-869C-2C0584E117AD}" Global="false">
-													<ObjectRef Name="placeholder" ID="{9E14927C-B7F4-4294-BE51-AAD97BADE07C}" WorkUnitID="{3AA95F97-CDF6-4AA3-B1A6-707722341C4C}"/>
+													<ObjectRef Name="boost_refill" ID="{BE4CD4A2-43B2-435B-9726-8CF47B48CD55}" WorkUnitID="{3AA95F97-CDF6-4AA3-B1A6-707722341C4C}"/>
 												</Element>
 											</ElementList>
 										</Action>
@@ -433,23 +433,13 @@
 								<Action Name="Play" ID="{B96BC133-7AE4-4DB6-B66E-2BBB0610E963}" ShortID="974134029" Type="Play" Scope="One" Global="false">
 									<ElementList>
 										<Element ID="{E36BBE7B-16C0-4B2F-970C-3F5B16CC6926}" Global="false">
-											<ObjectRef Name="placeholder" ID="{9E14927C-B7F4-4294-BE51-AAD97BADE07C}" WorkUnitID="{3AA95F97-CDF6-4AA3-B1A6-707722341C4C}"/>
+											<ObjectRef Name="Slot Machine" ID="{142581E8-C7E2-48C9-9FBE-4D8C1B29C343}" WorkUnitID="{3AA95F97-CDF6-4AA3-B1A6-707722341C4C}"/>
 										</Element>
 									</ElementList>
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="ui_pickup_already_equiped" ID="{160E8132-B8C0-4382-939D-FF593199BC17}">
-							<ChildrenList>
-								<Action Name="Play" ID="{2D2CD920-2F1B-4062-B7B7-031D96484A21}" ShortID="682397662" Type="Play" Scope="One" Global="false">
-									<ElementList>
-										<Element ID="{3C2B75AD-2300-4377-8961-D8BAFF7DCC17}" Global="false">
-											<ObjectRef Name="placeholder" ID="{9E14927C-B7F4-4294-BE51-AAD97BADE07C}" WorkUnitID="{3AA95F97-CDF6-4AA3-B1A6-707722341C4C}"/>
-										</Element>
-									</ElementList>
-								</Action>
-							</ChildrenList>
-						</Event>
+						<Event Name="ui_pickup_already_equiped" ID="{160E8132-B8C0-4382-939D-FF593199BC17}"/>
 						<Event Name="ui_game_lap_finished" ID="{7BCE5D47-9EB1-42E1-BD67-B5F4D34338E8}">
 							<ChildrenList>
 								<Action Name="Play" ID="{DB0DBA5F-5296-4411-BCA0-FD1D0D6577E2}" ShortID="50110023" Type="Play" Scope="One" Global="false">
