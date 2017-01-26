@@ -10,7 +10,7 @@
 								<Action Name="Play" ID="{761CFA9D-E4D4-4ABF-8A86-4F24320497C8}" ShortID="579734624" Type="Play" Scope="One" Global="false">
 									<ElementList>
 										<Element ID="{1BB75BCC-4FB0-4644-B775-57A7CE30EB3B}" Global="false">
-											<ObjectRef Name="drone_checkpoint_correct" ID="{7072EDBA-8118-458A-A257-704F69289343}" WorkUnitID="{3AA95F97-CDF6-4AA3-B1A6-707722341C4C}"/>
+											<ObjectRef Name="correct_checkpoint" ID="{EABCBFEF-2107-4A70-9028-CDAB1FF1FB3D}" WorkUnitID="{3AA95F97-CDF6-4AA3-B1A6-707722341C4C}"/>
 										</Element>
 									</ElementList>
 								</Action>
@@ -21,7 +21,7 @@
 								<Action Name="Play" ID="{E892CC42-2B0A-400E-8657-0D48FF12D0E5}" ShortID="173835769" Type="Play" Scope="One" Global="false">
 									<ElementList>
 										<Element ID="{144EAF1E-3226-4D69-A364-897FED486804}" Global="false">
-											<ObjectRef Name="drone_checkpoint_wrong" ID="{19753E82-485E-496D-93CC-2660D97BFF01}" WorkUnitID="{3AA95F97-CDF6-4AA3-B1A6-707722341C4C}"/>
+											<ObjectRef Name="wrong_checkpoint" ID="{08AB8BF4-1B92-4ACA-9E75-13D330315A92}" WorkUnitID="{3AA95F97-CDF6-4AA3-B1A6-707722341C4C}"/>
 										</Element>
 									</ElementList>
 								</Action>
@@ -422,7 +422,7 @@
 								<Action Name="Play" ID="{CDBF4591-7678-453B-88CB-B9A648C5C671}" ShortID="942157215" Type="Play" Scope="One" Global="false">
 									<ElementList>
 										<Element ID="{F20807AE-C9DB-461F-9790-5BB5AA209335}" Global="false">
-											<ObjectRef Name="placeholder" ID="{9E14927C-B7F4-4294-BE51-AAD97BADE07C}" WorkUnitID="{3AA95F97-CDF6-4AA3-B1A6-707722341C4C}"/>
+											<ObjectRef Name="race_finished_3" ID="{A088792B-F1DC-4CFC-A265-82D65E6BE979}" WorkUnitID="{3AA95F97-CDF6-4AA3-B1A6-707722341C4C}"/>
 										</Element>
 									</ElementList>
 								</Action>
@@ -633,10 +633,42 @@
 						</Event>
 						<Event Name="Stop_IngameMusicRandomcontainer" ID="{53CFB541-D7A7-4CE8-90FC-85740C79BAAE}">
 							<ChildrenList>
-								<Action Name="Stop" ID="{3988CAB2-7CC9-4EAC-B17C-C24D2D332DA8}" ShortID="129944112" Type="Stop" Scope="One" Global="false">
+								<Action Name="Stop" ID="{3988CAB2-7CC9-4EAC-B17C-C24D2D332DA8}" ShortID="129944112" Type="Stop" Scope="One" Global="true">
 									<ElementList>
-										<Element ID="{ABB695AA-1CCC-46FF-A7C9-BCDE2550FC20}" Global="false">
+										<Element ID="{ABB695AA-1CCC-46FF-A7C9-BCDE2550FC20}" Global="true">
 											<ObjectRef Name="IngameMusicRandomcontainer" ID="{E906BC8D-C6EA-4864-93DD-C7B6B06C3538}" WorkUnitID="{3AA95F97-CDF6-4AA3-B1A6-707722341C4C}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="StopAllDrones" ID="{EBB1293D-0973-47B9-A207-E53DF8845BAC}">
+							<ChildrenList>
+								<Action Name="Stop" ID="{36DA4C4C-F858-4FF6-B492-45FCA7363FC4}" ShortID="934099796" Type="Stop" Scope="One" Global="true">
+									<ElementList>
+										<Element ID="{AE2E5B85-0F1E-4E2F-B54B-BF27A122EF1A}" Global="true">
+											<ObjectRef Name="drone_motor_00" ID="{C2C2A858-B18E-4FDB-B62C-7E449F77A721}" WorkUnitID="{3AA95F97-CDF6-4AA3-B1A6-707722341C4C}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Stop" ID="{A1FC5DA0-0DEE-42FE-B924-08A44923BD52}" ShortID="860930244" Type="Stop" Scope="One" Global="true">
+									<ElementList>
+										<Element ID="{5BCF6CC1-0F4F-4AF6-A499-2D5A83C6A9A7}" Global="true">
+											<ObjectRef Name="drone_motor_01" ID="{7B103A8C-EAF2-47DE-A8F4-F209B10C1A7A}" WorkUnitID="{3AA95F97-CDF6-4AA3-B1A6-707722341C4C}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Stop" ID="{FFF4A7FD-2245-4519-BB50-0D5E59257548}" ShortID="72527737" Type="Stop" Scope="One" Global="true">
+									<ElementList>
+										<Element ID="{7230A9A0-E3DB-455C-8960-1F7913EE251C}" Global="true">
+											<ObjectRef Name="drone_motor_02" ID="{C2CFFC92-4F58-4590-A3EC-50CF393F74CB}" WorkUnitID="{3AA95F97-CDF6-4AA3-B1A6-707722341C4C}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Stop" ID="{5EC5BFA0-3620-41E3-ACF9-C3B97FF269F5}" ShortID="460284181" Type="Stop" Scope="One" Global="true">
+									<ElementList>
+										<Element ID="{D1B63BDC-B40A-4C22-877C-C3BB75F0CC3C}" Global="true">
+											<ObjectRef Name="drone_motor_03" ID="{C628EF7C-F7E1-466F-A4EB-75DCDC0EE487}" WorkUnitID="{3AA95F97-CDF6-4AA3-B1A6-707722341C4C}"/>
 										</Element>
 									</ElementList>
 								</Action>

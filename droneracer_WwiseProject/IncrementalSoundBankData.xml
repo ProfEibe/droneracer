@@ -3,30 +3,30 @@
 	<Platform GUID="{C08CB9EF-CB33-499B-9DDD-590C808337B6}">
 		<Banks>
 			<Language ID="0">
-				<File Name="AmbienceSoundbank" Hash="642347032" Timestamp="131299117654597752"/>
-				<File Name="EventAudiobank" Hash="788207733" Timestamp="131299170624357466"/>
-				<File Name="Init" Hash="1008180708" Timestamp="131299164198307667"/>
+				<File Name="AmbienceSoundbank" Hash="2887760061" Timestamp="131299210308940343"/>
+				<File Name="EventAudiobank" Hash="3408281071" Timestamp="131299213436878625"/>
+				<File Name="Init" Hash="1008180708" Timestamp="131299214847479355"/>
 				<File Name="TestSoundbank" Hash="899746150" Timestamp="131299161126112599"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="120610891" Timestamp="131299170624667450"/>
+				<File Name="" Hash="567971858" Timestamp="131299214847499362"/>
 			</Language>
 		</XMLInfo>
 	</Platform>
 	<Platform GUID="{10ABD8C7-2E13-4EC4-A168-E7A1DBC41680}">
 		<Banks>
 			<Language ID="0">
-				<File Name="AmbienceSoundbank" Hash="642347032" Timestamp="131299117626201179"/>
-				<File Name="EventAudiobank" Hash="700814302" Timestamp="131299164178627789"/>
-				<File Name="Init" Hash="322098582" Timestamp="131299164178907711"/>
+				<File Name="AmbienceSoundbank" Hash="2887760061" Timestamp="131299210268468789"/>
+				<File Name="EventAudiobank" Hash="3408281071" Timestamp="131299213417284354"/>
+				<File Name="Init" Hash="322098582" Timestamp="131299214847039257"/>
 				<File Name="TestSoundbank" Hash="899746150" Timestamp="131299161125722407"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="774242596" Timestamp="131299164179047893"/>
+				<File Name="" Hash="931109936" Timestamp="131299214847099391"/>
 			</Language>
 		</XMLInfo>
 	</Platform>
