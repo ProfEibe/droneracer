@@ -1,10 +1,10 @@
 {
     "currentVersion": {
-        "build": 317,
+        "build": 371,
         "major": 2,
-        "minor": 1,
+        "minor": 2,
         "nickname": "",
         "year": 2016
     },
-    "originalSdkFolder": "C:\\Program Files (x86)\\Audiokinetic\\Wwise 2016.2.1.5995\\SDK"
+    "originalSdkFolder": "C:\\Program Files (x86)\\Audiokinetic\\Wwise 2016.2.2.6022\\SDK"
 }

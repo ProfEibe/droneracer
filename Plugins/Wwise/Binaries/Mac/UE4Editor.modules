@@ -1,7 +1,6 @@
 {
-	"Changelist" : 3195953,
-	"CompatibleChangelist" : 0,
-	"BuildId" : "b40b0e9e-86d3-4e21-9648-636068f0aa12",
+	"Changelist" : 3299760,
+	"BuildId" : "0127b1ec-603a-40a6-bc83-e7198afd0bef",
 	"Modules" : 
 	{
 		"AkAudio" : "UE4Editor-AkAudio.dylib",
