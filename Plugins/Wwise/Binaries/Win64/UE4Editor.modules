@@ -1,9 +1,0 @@
-{
-	"Changelist" : 3299760,
-	"BuildId" : "48c7353f-c8fb-4eae-9943-f4cc48005a2f",
-	"Modules" : 
-	{
-		"AkAudio" : "UE4Editor-AkAudio.dll",
-		"AudiokineticTools" : "UE4Editor-AudiokineticTools.dll"
-	}
-}
