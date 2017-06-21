@@ -53,7 +53,7 @@ void UHUDBlueprintLibrary::FindScreenEdgeLocationForWorldLocation(UObject* World
 	else
 	{
 		//Set Offset for Multiplayer
-		m_ScreenPosition += InOffset;
+		m_ScreenPosition -= InOffset;
 
 		// Check to see if it's on screen. If it is, ProjectWorldLocationToScreen is all we need, return it.
 		if (m_ScreenPosition.X >= 0 && m_ScreenPosition.X <= m_ViewportSize.X
