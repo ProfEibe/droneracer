@@ -14,7 +14,7 @@ void UHUDBlueprintLibrary::FindScreenEdgeLocationForWorldLocation(UObject* World
 	FVector2D m_ScreenPosition;
 	FVector m_ScreenAndDistance = FVector();
 
-	const FVector2D m_ViewportSize = InViewportSize;// FVector2D(GEngine->GameViewport->Viewport->GetSizeXY());
+	const FVector2D m_ViewportSize = InViewportSize;
 	const FVector2D  m_ViewportCenter = FVector2D(m_ViewportSize.X / 2, m_ViewportSize.Y / 2);
 
 	float m_invert = 1.0f;
@@ -31,12 +31,9 @@ void UHUDBlueprintLibrary::FindScreenEdgeLocationForWorldLocation(UObject* World
 
 	FVector m_PlayerLocation = m_PlayerCharacter->GetActorLocation();
 
-	//UWidgetLayoutLibrary::ProjectWorldLocationToWidgetPosition(m_PlayerController, InLocation, m_ScreenPosition);
 	UWidgetLayoutLibrary::ProjectWorldLocationToWidgetPositionWithDistance(m_PlayerController, InLocation, m_ScreenAndDistance);
 	m_ScreenPosition = { m_ScreenAndDistance.X, m_ScreenAndDistance.Y };
 	OutDistance = m_ScreenAndDistance.Z;
-
-	//PlayerController->ProjectWorldLocationToScreen(InLocation, *m_ScreenPosition);
 
 
 	if (m_ScreenPosition.X == 0.0f)
@@ -45,8 +42,7 @@ void UHUDBlueprintLibrary::FindScreenEdgeLocationForWorldLocation(UObject* World
 		UWidgetLayoutLibrary::ProjectWorldLocationToWidgetPositionWithDistance(m_PlayerController, location, m_ScreenAndDistance);
 		m_ScreenPosition = { m_ScreenAndDistance.X, m_ScreenAndDistance.Y };
 		OutDistance = m_ScreenAndDistance.Z;
-		//m_PlayerController->ProjectWorldLocationToScreen(location, m_ScreenPosition);
-		m_ScreenPosition += InOffset;
+		m_ScreenPosition -= InOffset;
 		m_invert = -1.0f;
 		m_rotateInvert = 180.0f;
 	}
@@ -75,8 +71,6 @@ void UHUDBlueprintLibrary::FindScreenEdgeLocationForWorldLocation(UObject* World
 
 	float m_cos = cosf(m_AngleRadians);
 	float m_sin = -sinf(m_AngleRadians);
-
-	//*m_ScreenPosition = FVector2D(m_ViewportCenter.X + (m_sin * 150.f), m_ViewportCenter.Y + m_cos * 150.f);
 
 	float m = m_cos / m_sin;
 
