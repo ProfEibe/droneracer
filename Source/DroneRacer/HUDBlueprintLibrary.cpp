@@ -7,11 +7,12 @@
 //Todo: https://forums.unrealengine.com/showthread.php?59398-Easy-Offscreen-Indicator-Blueprint-Node&p=489106&viewfull=1#post489106
 
 
-void UHUDBlueprintLibrary::FindScreenEdgeLocationForWorldLocation(UObject* WorldContextObject, const FVector& InLocation, const FVector2D& InViewportSize, const FVector2D& InOffset, const int PlayerID, const float EdgePercent, FVector2D& OutScreenPosition, float& OutRotationAngleDegrees, bool &bIsOnScreen)
+void UHUDBlueprintLibrary::FindScreenEdgeLocationForWorldLocation(UObject* WorldContextObject, const FVector& InLocation, const FVector2D& InViewportSize, const FVector2D& InOffset, const int PlayerID, const float EdgePercent, FVector2D& OutScreenPosition, float& OutDistance, float& OutRotationAngleDegrees, bool &bIsOnScreen)
 {
 	bIsOnScreen = false;
 	OutRotationAngleDegrees = 0.f;
-	FVector2D m_ScreenPosition = FVector2D();
+	FVector2D m_ScreenPosition;
+	FVector m_ScreenAndDistance = FVector();
 
 	const FVector2D m_ViewportSize = InViewportSize;// FVector2D(GEngine->GameViewport->Viewport->GetSizeXY());
 	const FVector2D  m_ViewportCenter = FVector2D(m_ViewportSize.X / 2, m_ViewportSize.Y / 2);
@@ -30,7 +31,10 @@ void UHUDBlueprintLibrary::FindScreenEdgeLocationForWorldLocation(UObject* World
 
 	FVector m_PlayerLocation = m_PlayerCharacter->GetActorLocation();
 
-	UWidgetLayoutLibrary::ProjectWorldLocationToWidgetPosition(m_PlayerController, InLocation, m_ScreenPosition);
+	//UWidgetLayoutLibrary::ProjectWorldLocationToWidgetPosition(m_PlayerController, InLocation, m_ScreenPosition);
+	UWidgetLayoutLibrary::ProjectWorldLocationToWidgetPositionWithDistance(m_PlayerController, InLocation, m_ScreenAndDistance);
+	m_ScreenPosition = { m_ScreenAndDistance.X, m_ScreenAndDistance.Y };
+	OutDistance = m_ScreenAndDistance.Z;
 
 	//PlayerController->ProjectWorldLocationToScreen(InLocation, *m_ScreenPosition);
 
@@ -38,7 +42,9 @@ void UHUDBlueprintLibrary::FindScreenEdgeLocationForWorldLocation(UObject* World
 	if (m_ScreenPosition.X == 0.0f)
 	{
 		FVector location = FMath::Lerp(InLocation, m_PlayerLocation, 10.0f);
-		UWidgetLayoutLibrary::ProjectWorldLocationToWidgetPosition(m_PlayerController, location, m_ScreenPosition);
+		UWidgetLayoutLibrary::ProjectWorldLocationToWidgetPositionWithDistance(m_PlayerController, location, m_ScreenAndDistance);
+		m_ScreenPosition = { m_ScreenAndDistance.X, m_ScreenAndDistance.Y };
+		OutDistance = m_ScreenAndDistance.Z;
 		//m_PlayerController->ProjectWorldLocationToScreen(location, m_ScreenPosition);
 		m_ScreenPosition += InOffset;
 		m_invert = -1.0f;
@@ -50,7 +56,7 @@ void UHUDBlueprintLibrary::FindScreenEdgeLocationForWorldLocation(UObject* World
 		m_ScreenPosition += InOffset;
 
 		// Check to see if it's on screen. If it is, ProjectWorldLocationToScreen is all we need, return it.
-		if (m_ScreenPosition.X >= 0 && m_ScreenPosition.X <= m_ViewportSize.X 
+		if (m_ScreenPosition.X >= 0 && m_ScreenPosition.X <= m_ViewportSize.X
 			&& m_ScreenPosition.Y >= 0 && m_ScreenPosition.Y <= m_ViewportSize.Y)
 		{
 			OutScreenPosition = m_ScreenPosition;
